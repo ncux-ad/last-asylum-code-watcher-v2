@@ -26,12 +26,13 @@
     "LA11WB5Q": {
       "code": "LA11WB5Q",
       "confidence": 0.53,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:14.799810+00:00",
       "last_seen": "2026-08-29T18:24:05.687698+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:15:17.963461+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": false,
       "sources": {
@@ -46,12 +47,13 @@
     "LA14EBRN": {
       "code": "LA14EBRN",
       "confidence": 0.53,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:16.842677+00:00",
       "last_seen": "2026-08-29T18:24:07.621108+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:15:43.704596+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": false,
       "sources": {
@@ -285,12 +287,13 @@
     "LA26ALLY": {
       "code": "LA26ALLY",
       "confidence": 0.99,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:14.799858+00:00",
       "last_seen": "2026-08-29T18:24:13.703293+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:40:54.737967+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": true,
       "sources": {
@@ -335,12 +338,13 @@
     "LA26FOOL": {
       "code": "LA26FOOL",
       "confidence": 0.99,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:13.736433+00:00",
       "last_seen": "2026-08-29T18:24:13.703328+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:41:11.747734+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": true,
       "reward": "200 Diamonds",
@@ -398,7 +402,7 @@
       "manual_verification": {
         "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T18:13:25.250059+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": true,
       "reward": null,
@@ -424,12 +428,13 @@
     "LA26PLAY": {
       "code": "LA26PLAY",
       "confidence": 0.99,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:14.799867+00:00",
       "last_seen": "2026-08-29T18:24:13.703308+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:41:29.088090+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": true,
       "sources": {
@@ -469,12 +474,13 @@
     "LABOR26": {
       "code": "LABOR26",
       "confidence": 0.99,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:13.736424+00:00",
       "last_seen": "2026-08-29T18:24:13.703320+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:41:46.458858+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": true,
       "sources": {
@@ -524,12 +530,13 @@
     "LADAD26": {
       "code": "LADAD26",
       "confidence": 0.99,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:15.447185+00:00",
       "last_seen": "2026-08-29T18:24:13.703304+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:42:00.799047+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": true,
       "sources": {
@@ -676,12 +683,13 @@
     "LAEGG26": {
       "code": "LAEGG26",
       "confidence": 0.99,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:13.736405+00:00",
       "last_seen": "2026-08-29T18:24:13.703323+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:44:33.591971+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": true,
       "sources": {
@@ -723,35 +731,16 @@
       },
       "status": "confirmed"
     },
-    "LAF13GY": {
-      "code": "LAF13GY",
-      "confidence": 0.53,
-      "first_seen": "2026-08-29T13:29:16.842722+00:00",
-      "last_seen": "2026-08-29T18:24:07.621104+00:00",
-      "manual_verification": {
-        "result": "invalid",
-        "reward": null,
-        "verified_at": "2026-08-29T17:44:47.900920+00:00"
-      },
-      "notified": false,
-      "sources": {
-        "lota": {
-          "last_seen": "2026-08-29T18:24:07.621104+00:00",
-          "status": "observed",
-          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
-        }
-      },
-      "status": "candidate"
-    },
     "LAFD13GY": {
       "code": "LAFD13GY",
       "confidence": 0.53,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:16.842726+00:00",
       "last_seen": "2026-08-29T18:24:07.621112+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:45:09.650804+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": false,
       "sources": {
@@ -759,29 +748,6 @@
           "last_seen": "2026-08-29T18:24:07.621112+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
-        }
-      },
-      "status": "candidate"
-    },
-    "LAKR12K70": {
-      "code": "LAKR12K70",
-      "confidence": 0.53,
-      "expired": null,
-      "expires_at": null,
-      "first_seen": "2026-08-29T18:08:13.280007+00:00",
-      "last_seen": "2026-08-29T18:08:13.280007+00:00",
-      "manual_verification": {
-        "result": "invalid",
-        "reward": null,
-        "verified_at": "2026-08-29T18:13:38.990906+00:00"
-      },
-      "notified": false,
-      "reward": null,
-      "sources": {
-        "discord-manual": {
-          "last_seen": "2026-08-29T18:08:13.280007+00:00",
-          "status": "reported",
-          "url": null
         }
       },
       "status": "candidate"
@@ -810,12 +776,13 @@
     "LANY2026": {
       "code": "LANY2026",
       "confidence": 0.99,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:13.736437+00:00",
       "last_seen": "2026-08-29T18:24:13.703331+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:46:58.222926+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": true,
       "sources": {
@@ -861,26 +828,6 @@
         }
       },
       "status": "confirmed"
-    },
-    "LAPNO1": {
-      "code": "LAPNO1",
-      "confidence": 0.53,
-      "first_seen": "2026-08-29T13:29:16.842683+00:00",
-      "last_seen": "2026-08-29T18:24:07.621127+00:00",
-      "manual_verification": {
-        "result": "invalid",
-        "reward": null,
-        "verified_at": "2026-08-29T17:47:11.094007+00:00"
-      },
-      "notified": false,
-      "sources": {
-        "lota": {
-          "last_seen": "2026-08-29T18:24:07.621127+00:00",
-          "status": "observed",
-          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
-        }
-      },
-      "status": "candidate"
     },
     "LAQIXI26": {
       "code": "LAQIXI26",
@@ -944,12 +891,13 @@
     "LAVD26": {
       "code": "LAVD26",
       "confidence": 0.99,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:13.736419+00:00",
       "last_seen": "2026-08-29T18:24:13.703349+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:48:48.535857+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": true,
       "reward": "100 Diamonds",
@@ -1015,12 +963,13 @@
     "LAW10A7C": {
       "code": "LAW10A7C",
       "confidence": 0.53,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:14.799846+00:00",
       "last_seen": "2026-08-29T18:24:05.687711+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:49:05.785659+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": false,
       "sources": {
@@ -1035,12 +984,13 @@
     "LAW12A3K": {
       "code": "LAW12A3K",
       "confidence": 0.53,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:16.842650+00:00",
       "last_seen": "2026-08-29T18:24:07.621115+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:49:22.435730+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": false,
       "sources": {
@@ -1055,12 +1005,13 @@
     "LAW2W2D": {
       "code": "LAW2W2D",
       "confidence": 0.53,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:14.799863+00:00",
       "last_seen": "2026-08-29T18:24:05.687724+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:49:36.836867+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": false,
       "sources": {
@@ -1075,12 +1026,13 @@
     "LAW3UBT": {
       "code": "LAW3UBT",
       "confidence": 0.53,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:16.842693+00:00",
       "last_seen": "2026-08-29T18:24:07.621131+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:49:54.086831+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": false,
       "sources": {
@@ -1095,12 +1047,13 @@
     "LAW6AOP": {
       "code": "LAW6AOP",
       "confidence": 0.53,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:14.799837+00:00",
       "last_seen": "2026-08-29T18:24:05.687716+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:50:07.706902+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": false,
       "sources": {
@@ -1115,12 +1068,13 @@
     "LAW7D4V": {
       "code": "LAW7D4V",
       "confidence": 0.53,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:15.971627+00:00",
       "last_seen": "2026-08-29T18:24:07.210730+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:50:21.897907+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": false,
       "sources": {
@@ -1135,12 +1089,13 @@
     "LAW83AS": {
       "code": "LAW83AS",
       "confidence": 0.53,
+      "expired": true,
       "first_seen": "2026-08-29T13:29:15.971610+00:00",
       "last_seen": "2026-08-29T18:24:07.210736+00:00",
       "manual_verification": {
-        "result": "invalid",
+        "result": "expired",
         "reward": null,
-        "verified_at": "2026-08-29T17:50:37.827844+00:00"
+        "verified_at": "2026-08-29T18:48:03.090403+00:00"
       },
       "notified": false,
       "sources": {
@@ -1148,99 +1103,6 @@
           "last_seen": "2026-08-29T18:24:07.210736+00:00",
           "status": "observed",
           "url": "https://www.last-asylum.fun/"
-        }
-      },
-      "status": "candidate"
-    },
-    "LAXMAS2025": {
-      "code": "LAXMAS2025",
-      "confidence": 0.89,
-      "first_seen": "2026-08-29T13:29:13.736374+00:00",
-      "last_seen": "2026-08-29T18:24:10.137744+00:00",
-      "manual_verification": {
-        "result": "invalid",
-        "reward": null,
-        "verified_at": "2026-08-29T17:50:52.077757+00:00"
-      },
-      "notified": true,
-      "sources": {
-        "boostbot": {
-          "last_seen": "2026-08-29T18:24:09.388965+00:00",
-          "status": "observed",
-          "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
-        },
-        "gamsgo": {
-          "last_seen": "2026-08-29T18:24:10.137744+00:00",
-          "status": "observed",
-          "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
-        },
-        "pocketgamer": {
-          "last_seen": "2026-08-29T18:24:02.573592+00:00",
-          "status": "observed",
-          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
-        }
-      },
-      "status": "confirmed"
-    },
-    "LAXMAS25": {
-      "code": "LAXMAS25",
-      "confidence": 0.99,
-      "first_seen": "2026-08-29T13:29:14.799885+00:00",
-      "last_seen": "2026-08-29T18:24:13.703335+00:00",
-      "manual_verification": {
-        "result": "invalid",
-        "reward": null,
-        "verified_at": "2026-08-29T17:51:09.177817+00:00"
-      },
-      "notified": true,
-      "sources": {
-        "app-time": {
-          "last_seen": "2026-08-29T18:24:05.687741+00:00",
-          "status": "observed",
-          "url": "https://app-time.ru/games/last-asylum-plague/codes"
-        },
-        "clashiverse": {
-          "last_seen": "2026-08-29T18:24:12.570150+00:00",
-          "status": "observed",
-          "url": "https://clashiverse.com/last-asylum-plague-codes/"
-        },
-        "gamestaunch": {
-          "last_seen": "2026-08-29T18:24:11.183943+00:00",
-          "status": "observed",
-          "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
-        },
-        "levelgeeks": {
-          "last_seen": "2026-08-29T18:24:10.567685+00:00",
-          "status": "observed",
-          "url": "https://levelgeeks.net/last-asylum-plague-codes/"
-        },
-        "progamepilot": {
-          "last_seen": "2026-08-29T18:24:13.703335+00:00",
-          "status": "observed",
-          "url": "https://progamepilot.com/last-asylum-plague-codes/"
-        }
-      },
-      "status": "confirmed"
-    },
-    "SAVE60": {
-      "code": "SAVE60",
-      "confidence": 0.53,
-      "expired": null,
-      "expires_at": null,
-      "first_seen": "2026-08-29T16:53:58.807408+00:00",
-      "last_seen": "2026-08-29T18:24:10.137747+00:00",
-      "manual_verification": {
-        "result": "invalid",
-        "reward": null,
-        "verified_at": "2026-08-29T18:14:52.011908+00:00"
-      },
-      "notified": false,
-      "reward": null,
-      "sources": {
-        "gamsgo": {
-          "last_seen": "2026-08-29T18:24:10.137747+00:00",
-          "status": "observed",
-          "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
         }
       },
       "status": "candidate"
