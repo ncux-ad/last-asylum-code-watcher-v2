@@ -5,35 +5,63 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Last Asylum: Plague — Code Radar</title>
 <style>
-body{font-family:system-ui,sans-serif;max-width:1100px;margin:40px auto;padding:0 18px;background:#0d1117;color:#e6edf3}
-.card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:18px;margin:12px 0}
-table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px;border-bottom:1px solid #30363d}
-.badge{padding:4px 8px;border-radius:8px;background:#21262d}.code{font-family:monospace;font-size:1.1em}
-small{color:#8b949e}a{color:#58a6ff}
-.code{cursor:pointer}
-.copy-btn{margin-left:8px;padding:2px 8px;font-size:.9em;background:#21262d;color:#e6edf3;border:1px solid #30363d;border-radius:6px;cursor:pointer;pointer-events:none}
+*{box-sizing:border-box}
+body{font-family:system-ui,sans-serif;max-width:720px;margin:0 auto;padding:16px;background:#0d1117;color:#e6edf3}
+h1{font-size:1.25em;margin:8px 0 16px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:14px;margin:10px 0}
+.summary{display:flex;gap:18px;flex-wrap:wrap;font-size:.95em}
+a{color:#58a6ff}
+
+.item{display:flex;flex-direction:column;gap:8px}
+.item-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.code{font-family:monospace;font-size:1.15em;cursor:pointer;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.copy-btn{padding:5px 12px;font-size:.85em;background:#21262d;color:#e6edf3;border:1px solid #30363d;border-radius:6px;pointer-events:none}
 .copy-btn.copied{background:#238636;border-color:#238636;color:#fff}
+
+.badges{display:flex;gap:8px;align-items:center;font-size:.9em;white-space:nowrap}
+.badge{padding:3px 8px;border-radius:8px;background:#21262d}
+.badge.confirmed{background:#0f5132;color:#7ee787}
+.badge.probable{background:#3f2d00;color:#d29922}
+.badge.candidate{background:#21262d;color:#8b949e}
+
+.meta{color:#8b949e;font-size:.85em}
+details{margin-top:2px}
+summary{cursor:pointer;color:#58a6ff;font-size:.9em;user-select:none;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸ ";display:inline-block}
+details[open] summary::before{content:"▾ "}
+.sources{margin-top:8px;display:flex;flex-direction:column;gap:4px;font-size:.9em}
+
+@media (max-width:420px){
+ .item-top{flex-direction:column;align-items:flex-start}
+}
 </style>
 </head>
 <body>
 <h1>Last Asylum: Plague — Code Radar</h1>
 <div id="summary"></div>
-<div class="card"><table><thead><tr>
-<th>Code</th><th>Status</th><th>Confidence</th><th>Sources</th><th>First seen</th><th>Last seen</th>
-</tr></thead><tbody id="codes"></tbody></table></div>
+<div id="list"></div>
 <script>
 async function load(){
  const r=await fetch('state.json?'+Date.now()); const d=await r.json();
  const items=Object.values(d.codes).sort((a,b)=>b.confidence-a.confidence);
  document.getElementById('summary').innerHTML =
- `<div class="card"><b>${items.length}</b> known codes · <b>${items.filter(x=>x.status==='confirmed').length}</b> confirmed · <b>${d.events.length}</b> recent events</div>`;
- document.getElementById('codes').innerHTML=items.map(x=>`
- <tr><td class="code" data-code="${x.code}" title="Нажмите, чтобы скопировать">${x.code}<button class="copy-btn">Копировать</button></td>
- <td><span class="badge">${x.status}</span></td>
- <td>${Math.round(x.confidence*100)}%</td>
- <td>${Object.entries(x.sources).map(([s,v])=>v.url?`<a href="${v.url}">${s}</a>`:s).join(', ')}</td>
- <td><small>${new Date(x.first_seen).toLocaleString()}</small></td>
- <td><small>${new Date(x.last_seen).toLocaleString()}</small></td></tr>`).join('');
+ `<div class="card summary"><div><b>${items.length}</b> known codes</div><div><b>${items.filter(x=>x.status==='confirmed').length}</b> confirmed</div><div><b>${d.events.length}</b> recent events</div></div>`;
+ document.getElementById('list').innerHTML = items.map(x=>{
+  const sources = Object.entries(x.sources);
+  return `
+  <div class="card item">
+   <div class="item-top">
+    <div class="code" data-code="${x.code}" title="Нажмите, чтобы скопировать">${x.code}<button class="copy-btn">Копировать</button></div>
+    <div class="badges"><span class="badge ${x.status}">${x.status}</span><span>${Math.round(x.confidence*100)}%</span></div>
+   </div>
+   <div class="meta">Впервые: ${new Date(x.first_seen).toLocaleString()} · Обновлено: ${new Date(x.last_seen).toLocaleString()}</div>
+   <details>
+    <summary>Источники (${sources.length})</summary>
+    <div class="sources">${sources.map(([s,v])=>v.url?`<a href="${v.url}">${s}</a>`:`<span>${s}</span>`).join('')}</div>
+   </details>
+  </div>`;
+ }).join('');
 }
 
 async function copyCode(text){
@@ -48,7 +76,7 @@ async function copyCode(text){
  document.body.removeChild(ta);
 }
 
-document.getElementById('codes').addEventListener('click', async (e)=>{
+document.getElementById('list').addEventListener('click', async (e)=>{
  const cell=e.target.closest('.code');
  if(!cell) return;
  const btn=cell.querySelector('.copy-btn');
