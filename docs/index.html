@@ -39,6 +39,10 @@ summary::before{content:"▸ ";display:inline-block}
 details[open] summary::before{content:"▾ "}
 .sources{margin-top:8px;display:flex;flex-direction:column;gap:4px;font-size:.9em}
 
+.expired-block{margin:16px 0}
+.expired-block>summary{font-size:.95em;padding:6px 2px}
+.expired-items{margin-top:6px}
+
 @media (max-width:420px){
  .item-top{flex-direction:column;align-items:flex-start}
 }
@@ -48,7 +52,49 @@ details[open] summary::before{content:"▾ "}
 <h1>Last Asylum: Plague — Code Radar</h1>
 <div id="summary"></div>
 <div id="list"></div>
+<div id="expired-list"></div>
 <script>
+const MV_LABELS = {
+ ok: {text: 'Работает', cls: 'mv-ok'},
+ invalid: {text: 'Код недействителен', cls: 'mv-bad'},
+ used: {text: 'Уже использован на проверенном аккаунте', cls: 'mv-bad'},
+ expired: {text: 'Истёк', cls: 'mv-bad'},
+};
+
+function isExpired(x){
+ return x.expired === true || x.manual_verification?.result === 'expired';
+}
+
+function renderCard(x){
+ const sources = Object.entries(x.sources);
+ const rewardLine = x.reward ? `<div class="meta">Награда: ${x.reward}</div>` : '';
+ const expiryLine = x.expires_at
+  ? `<div class="meta${x.expired?' expired':''}">${x.expired?'Истёк':'Истекает'}: ${x.expires_at}</div>`
+  : '';
+ const expiredBadge = x.expired ? `<span class="badge expired-flag">expired</span>` : '';
+ const mv = x.manual_verification;
+ const manualLine = mv ? (() => {
+  const l = MV_LABELS[mv.result] || {text: mv.result, cls: 'mv-bad'};
+  const date = new Date(mv.verified_at).toLocaleDateString();
+  return `<div class="mv-badge ${l.cls}" title="Проверено вручную на одном аккаунте/сервере — на других может отличаться">✓ Проверено вручную: ${l.text} (${date})</div>`;
+ })() : '';
+ return `
+ <div class="card item">
+  <div class="item-top">
+   <div class="code" data-code="${x.code}" title="Нажмите, чтобы скопировать">${x.code}<button class="copy-btn">Копировать</button></div>
+   <div class="badges">${expiredBadge}<span class="badge ${x.status}">${x.status}</span><span>${Math.round(x.confidence*100)}%</span></div>
+  </div>
+  ${manualLine}
+  ${rewardLine}
+  ${expiryLine}
+  <div class="meta">Впервые: ${new Date(x.first_seen).toLocaleString()} · Обновлено: ${new Date(x.last_seen).toLocaleString()}</div>
+  <details>
+   <summary>Источники (${sources.length})</summary>
+   <div class="sources">${sources.map(([s,v])=>v.url?`<a href="${v.url}">${s}</a>`:`<span>${s}</span>`).join('')}</div>
+  </details>
+ </div>`;
+}
+
 async function load(){
  const r=await fetch('state.json?'+Date.now()); const d=await r.json();
  const items=Object.values(d.codes).sort((a,b)=>{
@@ -60,41 +106,16 @@ async function load(){
  document.getElementById('summary').innerHTML =
  `<div class="card summary"><div><b>${items.length}</b> known codes</div><div><b>${items.filter(x=>x.status==='confirmed').length}</b> confirmed</div><div><b>${d.events.length}</b> recent events</div></div>`;
 
- const MV_LABELS = {
-  ok: {text: 'Работает', cls: 'mv-ok'},
-  invalid: {text: 'Код недействителен', cls: 'mv-bad'},
-  used: {text: 'Уже использован на проверенном аккаунте', cls: 'mv-bad'},
-  expired: {text: 'Истёк', cls: 'mv-bad'},
- };
- document.getElementById('list').innerHTML = items.map(x=>{
-  const sources = Object.entries(x.sources);
-  const rewardLine = x.reward ? `<div class="meta">Награда: ${x.reward}</div>` : '';
-  const expiryLine = x.expires_at
-   ? `<div class="meta${x.expired?' expired':''}">${x.expired?'Истёк':'Истекает'}: ${x.expires_at}</div>`
-   : '';
-  const expiredBadge = x.expired ? `<span class="badge expired-flag">expired</span>` : '';
-  const mv = x.manual_verification;
-  const manualLine = mv ? (() => {
-   const l = MV_LABELS[mv.result] || {text: mv.result, cls: 'mv-bad'};
-   const date = new Date(mv.verified_at).toLocaleDateString();
-   return `<div class="mv-badge ${l.cls}" title="Проверено вручную на одном аккаунте/сервере — на других может отличаться">✓ Проверено вручную: ${l.text} (${date})</div>`;
-  })() : '';
-  return `
-  <div class="card item">
-   <div class="item-top">
-    <div class="code" data-code="${x.code}" title="Нажмите, чтобы скопировать">${x.code}<button class="copy-btn">Копировать</button></div>
-    <div class="badges">${expiredBadge}<span class="badge ${x.status}">${x.status}</span><span>${Math.round(x.confidence*100)}%</span></div>
-   </div>
-   ${manualLine}
-   ${rewardLine}
-   ${expiryLine}
-   <div class="meta">Впервые: ${new Date(x.first_seen).toLocaleString()} · Обновлено: ${new Date(x.last_seen).toLocaleString()}</div>
-   <details>
-    <summary>Источники (${sources.length})</summary>
-    <div class="sources">${sources.map(([s,v])=>v.url?`<a href="${v.url}">${s}</a>`:`<span>${s}</span>`).join('')}</div>
-   </details>
-  </div>`;
- }).join('');
+ const activeItems = items.filter(x=>!isExpired(x));
+ const expiredItems = items.filter(isExpired);
+
+ document.getElementById('list').innerHTML = activeItems.map(renderCard).join('');
+
+ document.getElementById('expired-list').innerHTML = expiredItems.length ? `
+ <details class="expired-block">
+  <summary>Истёкшие коды (${expiredItems.length})</summary>
+  <div class="expired-items">${expiredItems.map(renderCard).join('')}</div>
+ </details>` : '';
 }
 
 async function copyCode(text){
