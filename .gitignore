@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 data/codes.sqlite3
 data/discord-discoveries.json
+data/manual_verifications.json
