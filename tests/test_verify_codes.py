@@ -56,3 +56,51 @@ def test_prompt_result_skip_has_no_reward():
 
     assert result == "skip"
     assert reward is None
+
+
+def test_apply_to_public_state_ok_overwrites_reward(tmp_path, monkeypatch):
+    state = {"codes": {"LA26ALLY": {"code": "LA26ALLY", "reward": "guessed reward", "expired": None}}}
+    _chdir_with_state(tmp_path, monkeypatch, state)
+
+    verify_codes.apply_to_public_state("LA26ALLY", "ok", "100 Diamonds, confirmed", verified_at="2026-08-29T18:00:00+00:00")
+
+    item = json.loads((tmp_path / "data" / "state.json").read_text())["codes"]["LA26ALLY"]
+    assert item["manual_verification"] == {
+        "result": "ok",
+        "reward": "100 Diamonds, confirmed",
+        "verified_at": "2026-08-29T18:00:00+00:00",
+    }
+    # A real redeem confirmation beats the page-text heuristic guess.
+    assert item["reward"] == "100 Diamonds, confirmed"
+
+
+def test_apply_to_public_state_expired_sets_expired_flag(tmp_path, monkeypatch):
+    state = {"codes": {"LA26LOVE": {"code": "LA26LOVE", "reward": None, "expired": None}}}
+    _chdir_with_state(tmp_path, monkeypatch, state)
+
+    verify_codes.apply_to_public_state("LA26LOVE", "expired", None)
+
+    item = json.loads((tmp_path / "data" / "state.json").read_text())["codes"]["LA26LOVE"]
+    assert item["manual_verification"]["result"] == "expired"
+    assert item["expired"] is True
+
+
+def test_apply_to_public_state_invalid_does_not_touch_reward_or_expired(tmp_path, monkeypatch):
+    state = {"codes": {"LAW10A7C": {"code": "LAW10A7C", "reward": None, "expired": None}}}
+    _chdir_with_state(tmp_path, monkeypatch, state)
+
+    verify_codes.apply_to_public_state("LAW10A7C", "invalid", None)
+
+    item = json.loads((tmp_path / "data" / "state.json").read_text())["codes"]["LAW10A7C"]
+    assert item["manual_verification"]["result"] == "invalid"
+    assert item["reward"] is None
+    assert item["expired"] is None
+
+
+def test_apply_to_public_state_unknown_code_is_a_noop(tmp_path, monkeypatch):
+    state = {"codes": {}}
+    _chdir_with_state(tmp_path, monkeypatch, state)
+
+    verify_codes.apply_to_public_state("GHOSTCODE1", "ok", "500 Gold")
+
+    assert json.loads((tmp_path / "data" / "state.json").read_text())["codes"] == {}

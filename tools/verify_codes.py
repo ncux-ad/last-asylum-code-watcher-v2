@@ -13,6 +13,16 @@ script just opens the page for convenience and walks the operator
 through the list of unverified candidates, recording what they report
 back.
 
+Results go two places:
+- data/manual_verifications.json - the operator's full private log
+  (gitignored, never published).
+- data/state.json - a lightweight "manual_verification" field per
+  code, which DOES get published to the dashboard, because a real
+  redeem attempt is more authoritative than the source-count
+  heuristic (e.g. a code with 3 sources can still be expired). It's
+  clearly labeled as checked on one account/server, not a global
+  guarantee - see the dashboard's tooltip.
+
 Usage:
     pip install -r requirements-manual-verify.txt
     playwright install chromium
@@ -34,19 +44,43 @@ def load_verifications():
     return json.loads(VERIFICATIONS_PATH.read_text(encoding="utf-8"))
 
 
-def save_verification(code, result, reward):
+def save_verification(code, result, reward, verified_at=None):
+    verified_at = verified_at or datetime.now(timezone.utc).isoformat()
     data = load_verifications()
-    data[code] = {
-        "result": result,
-        "reward": reward,
-        "verified_at": datetime.now(timezone.utc).isoformat(),
-    }
+    data[code] = {"result": result, "reward": reward, "verified_at": verified_at}
     VERIFICATIONS_PATH.parent.mkdir(parents=True, exist_ok=True)
     VERIFICATIONS_PATH.write_text(
         json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True),
         encoding="utf-8",
     )
     return data
+
+
+def apply_to_public_state(code, result, reward, verified_at=None):
+    """Merge a verification result into the public data/state.json.
+
+    Only touches the "manual_verification" field (plus "reward"/"expired"
+    when the result makes them strictly more accurate) - never overwrites
+    the scraper-owned status/confidence/sources.
+    """
+    if not STATE_PATH.exists():
+        return
+    verified_at = verified_at or datetime.now(timezone.utc).isoformat()
+    state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
+    item = state.get("codes", {}).get(code)
+    if item is None:
+        return
+
+    item["manual_verification"] = {"result": result, "reward": reward, "verified_at": verified_at}
+    if result == "ok" and reward:
+        item["reward"] = reward
+    if result == "expired":
+        item["expired"] = True
+
+    STATE_PATH.write_text(
+        json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True),
+        encoding="utf-8",
+    )
 
 
 def load_candidates():
@@ -98,12 +132,14 @@ def main():
             result, reward = prompt_result(code)
             if result == "skip":
                 continue
-            save_verification(code, result, reward)
+            verified_at = datetime.now(timezone.utc).isoformat()
+            save_verification(code, result, reward, verified_at)
+            apply_to_public_state(code, result, reward, verified_at)
             print(f"Сохранено: {code} -> {result}" + (f" ({reward})" if reward else ""))
 
         browser.close()
 
-    print(f"\nГотово. Результаты в {VERIFICATIONS_PATH}")
+    print(f"\nГотово. Результаты в {VERIFICATIONS_PATH}, опубликованы в {STATE_PATH}.")
 
 
 if __name__ == "__main__":

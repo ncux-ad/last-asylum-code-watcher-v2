@@ -30,6 +30,10 @@ a{color:#58a6ff}
 .badge.candidate{background:#21262d;color:#8b949e}
 .badge.expired-flag{background:#4c1116;color:#ff7b72}
 
+.mv-badge{display:inline-block;font-size:.85em;padding:5px 10px;border-radius:8px;cursor:help;width:fit-content}
+.mv-badge.mv-ok{background:#0f5132;color:#7ee787}
+.mv-badge.mv-bad{background:#4c1116;color:#ff7b72}
+
 .meta{color:#8b949e;font-size:.85em}
 .meta.expired{color:#ff7b72}
 details{margin-top:2px}
@@ -89,6 +93,12 @@ async function load(){
  document.getElementById('history').innerHTML =
  `<div class="card"><div class="history-title">Новые коды за 30 дней · всего ${chart.total}</div>${chart.svg}</div>`;
 
+ const MV_LABELS = {
+  ok: {text: 'Работает', cls: 'mv-ok'},
+  invalid: {text: 'Код недействителен', cls: 'mv-bad'},
+  used: {text: 'Уже использован на проверенном аккаунте', cls: 'mv-bad'},
+  expired: {text: 'Истёк', cls: 'mv-bad'},
+ };
  document.getElementById('list').innerHTML = items.map(x=>{
   const sources = Object.entries(x.sources);
   const rewardLine = x.reward ? `<div class="meta">Награда: ${x.reward}</div>` : '';
@@ -96,12 +106,19 @@ async function load(){
    ? `<div class="meta${x.expired?' expired':''}">${x.expired?'Истёк':'Истекает'}: ${x.expires_at}</div>`
    : '';
   const expiredBadge = x.expired ? `<span class="badge expired-flag">expired</span>` : '';
+  const mv = x.manual_verification;
+  const manualLine = mv ? (() => {
+   const l = MV_LABELS[mv.result] || {text: mv.result, cls: 'mv-bad'};
+   const date = new Date(mv.verified_at).toLocaleDateString();
+   return `<div class="mv-badge ${l.cls}" title="Проверено вручную на одном аккаунте/сервере — на других может отличаться">✓ Проверено вручную: ${l.text} (${date})</div>`;
+  })() : '';
   return `
   <div class="card item">
    <div class="item-top">
     <div class="code" data-code="${x.code}" title="Нажмите, чтобы скопировать">${x.code}<button class="copy-btn">Копировать</button></div>
     <div class="badges">${expiredBadge}<span class="badge ${x.status}">${x.status}</span><span>${Math.round(x.confidence*100)}%</span></div>
    </div>
+   ${manualLine}
    ${rewardLine}
    ${expiryLine}
    <div class="meta">Впервые: ${new Date(x.first_seen).toLocaleString()} · Обновлено: ${new Date(x.last_seen).toLocaleString()}</div>
