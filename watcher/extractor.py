@@ -22,7 +22,9 @@ def extract_codes(html: str) -> set[str]:
     for code in CODE_RE.findall(text):
         if code in STOPWORDS:
             continue
-        if code.isalpha() and len(code) < 7:
+        if code.isalpha():
+            # Real codes always mix letters and digits (e.g. LA26ALLY,
+            # LA25W8CM); a pure-letters match is prose, not a code.
             continue
         found.add(code)
 
