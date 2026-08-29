@@ -7,6 +7,13 @@ SOURCES = [
     ("lastasylum", "https://lastasylum.com/gift-codes"),
     ("last-asylum-fun", "https://www.last-asylum.fun/"),
     ("lota", "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"),
+    ("topuplive", "https://www.topuplive.com/news/last-asylum-plague-codes.html"),
+    ("boostbot", "https://boostbot.org/blog/last-asylum-plague-gift-codes/"),
+    ("gamsgo", "https://www.gamsgo.com/blog/last-asylum-plague-codes"),
+    ("levelgeeks", "https://levelgeeks.net/last-asylum-plague-codes/"),
+    ("gamestaunch", "https://gamestaunch.com/codes/last-asylum-plague-codes/"),
+    ("clashiverse", "https://clashiverse.com/last-asylum-plague-codes/"),
+    ("progamepilot", "https://progamepilot.com/last-asylum-plague-codes/"),
 ]
 
 SEARCH_QUERIES = [

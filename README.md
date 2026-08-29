@@ -127,6 +127,13 @@ Workflow имеет `contents: write`, потому что история код
 - LastAsylumPlague.com;
 - LastAsylum.com;
 - Last-Asylum.fun;
-- LOTA.
+- LOTA;
+- TopUpLive;
+- BoostBot;
+- GamsGo;
+- LevelGeeks;
+- GamesTaunch;
+- ClashiVerse;
+- ProGamePilot.
 
-Список редактируется в `watcher/config.py`.
+Список редактируется в `watcher/config.py`. Проверены: отдают 200 и реальные коды через текущий парсер, `robots.txt` не запрещает нужные пути. Не добавлены `lastasylumguide.com` (коды рендерятся через JS, в сыром HTML их нет — наш парсер JS не выполняет) и `ldshop.gg` (блокирует запросы без браузерных заголовков, 403).
