@@ -4,6 +4,11 @@ from bs4 import BeautifulSoup
 # Conservative pattern: Last Asylum codes are normally compact uppercase/alphanumeric.
 CODE_RE = re.compile(r"(?<![A-Za-z0-9])([A-Z][A-Z0-9]{5,15})(?![A-Za-z0-9])")
 
+# Sites like lota.games recycle generic "lucky number" filler codes
+# (LOVE666, VIP888, LAPJAP777...) across many unrelated games — these
+# aren't Last Asylum specific, they're bait for the listing page.
+GENERIC_LUCKY_SUFFIX_RE = re.compile(r"(\d)\1\1$")
+
 STOPWORDS = {
     "LASTASYLUM", "PLAGUE", "ANDROID", "GOOGLEPLAY", "APPSTORE",
     "POCKETGAMER", "GIFT", "CODES", "CODE", "ACTIVE", "EXPIRED",
@@ -25,6 +30,8 @@ def extract_codes(html: str) -> set[str]:
         if code.isalpha():
             # Real codes always mix letters and digits (e.g. LA26ALLY,
             # LA25W8CM); a pure-letters match is prose, not a code.
+            continue
+        if GENERIC_LUCKY_SUFFIX_RE.search(code):
             continue
         found.add(code)
 
