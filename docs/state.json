@@ -731,24 +731,6 @@
       },
       "status": "confirmed"
     },
-    "LAF13GY": {
-      "code": "LAF13GY",
-      "confidence": 0.53,
-      "expired": null,
-      "expires_at": null,
-      "first_seen": "2026-08-29T18:48:57.719341+00:00",
-      "last_seen": "2026-08-29T18:48:57.719341+00:00",
-      "notified": false,
-      "reward": null,
-      "sources": {
-        "lota": {
-          "last_seen": "2026-08-29T18:48:57.719341+00:00",
-          "status": "observed",
-          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
-        }
-      },
-      "status": "candidate"
-    },
     "LAFD13GY": {
       "code": "LAFD13GY",
       "confidence": 0.53,
@@ -846,24 +828,6 @@
         }
       },
       "status": "confirmed"
-    },
-    "LAPNO1": {
-      "code": "LAPNO1",
-      "confidence": 0.53,
-      "expired": null,
-      "expires_at": null,
-      "first_seen": "2026-08-29T18:48:57.719373+00:00",
-      "last_seen": "2026-08-29T18:48:57.719373+00:00",
-      "notified": false,
-      "reward": null,
-      "sources": {
-        "lota": {
-          "last_seen": "2026-08-29T18:48:57.719373+00:00",
-          "status": "observed",
-          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
-        }
-      },
-      "status": "candidate"
     },
     "LAQIXI26": {
       "code": "LAQIXI26",
@@ -1142,90 +1106,6 @@
         }
       },
       "status": "candidate"
-    },
-    "LAXMAS2025": {
-      "code": "LAXMAS2025",
-      "confidence": 0.89,
-      "expired": null,
-      "expires_at": null,
-      "first_seen": "2026-08-29T18:48:51.432993+00:00",
-      "last_seen": "2026-08-29T18:49:00.851085+00:00",
-      "notified": true,
-      "reward": null,
-      "sources": {
-        "boostbot": {
-          "last_seen": "2026-08-29T18:48:59.582263+00:00",
-          "status": "observed",
-          "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
-        },
-        "gamsgo": {
-          "last_seen": "2026-08-29T18:49:00.851085+00:00",
-          "status": "observed",
-          "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
-        },
-        "pocketgamer": {
-          "last_seen": "2026-08-29T18:48:51.432993+00:00",
-          "status": "observed",
-          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
-        }
-      },
-      "status": "confirmed"
-    },
-    "LAXMAS25": {
-      "code": "LAXMAS25",
-      "confidence": 0.99,
-      "expired": null,
-      "expires_at": null,
-      "first_seen": "2026-08-29T18:48:54.867293+00:00",
-      "last_seen": "2026-08-29T18:49:05.097015+00:00",
-      "notified": true,
-      "reward": null,
-      "sources": {
-        "app-time": {
-          "last_seen": "2026-08-29T18:48:54.867293+00:00",
-          "status": "observed",
-          "url": "https://app-time.ru/games/last-asylum-plague/codes"
-        },
-        "clashiverse": {
-          "last_seen": "2026-08-29T18:49:03.575051+00:00",
-          "status": "observed",
-          "url": "https://clashiverse.com/last-asylum-plague-codes/"
-        },
-        "gamestaunch": {
-          "last_seen": "2026-08-29T18:49:01.689192+00:00",
-          "status": "observed",
-          "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
-        },
-        "levelgeeks": {
-          "last_seen": "2026-08-29T18:49:01.253807+00:00",
-          "status": "observed",
-          "url": "https://levelgeeks.net/last-asylum-plague-codes/"
-        },
-        "progamepilot": {
-          "last_seen": "2026-08-29T18:49:05.097015+00:00",
-          "status": "observed",
-          "url": "https://progamepilot.com/last-asylum-plague-codes/"
-        }
-      },
-      "status": "confirmed"
-    },
-    "SAVE60": {
-      "code": "SAVE60",
-      "confidence": 0.53,
-      "expired": null,
-      "expires_at": null,
-      "first_seen": "2026-08-29T18:49:00.851089+00:00",
-      "last_seen": "2026-08-29T18:49:00.851089+00:00",
-      "notified": false,
-      "reward": null,
-      "sources": {
-        "gamsgo": {
-          "last_seen": "2026-08-29T18:49:00.851089+00:00",
-          "status": "observed",
-          "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
-        }
-      },
-      "status": "candidate"
     }
   },
   "events": [
@@ -1469,6 +1349,14 @@
       "kind": "new",
       "source": "gamsgo"
     }
+  ],
+  "not_found": [
+    "LAF13GY",
+    "LAKR12K70",
+    "LAPNO1",
+    "LAXMAS2025",
+    "LAXMAS25",
+    "SAVE60"
   ],
   "version": 2
 }
