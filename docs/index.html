@@ -85,7 +85,12 @@ function buildHistoryChart(events){
 
 async function load(){
  const r=await fetch('state.json?'+Date.now()); const d=await r.json();
- const items=Object.values(d.codes).sort((a,b)=>b.confidence-a.confidence);
+ const items=Object.values(d.codes).sort((a,b)=>{
+  const aWorks = a.manual_verification?.result === 'ok' ? 1 : 0;
+  const bWorks = b.manual_verification?.result === 'ok' ? 1 : 0;
+  if(aWorks !== bWorks) return bWorks - aWorks;
+  return b.confidence - a.confidence;
+ });
  document.getElementById('summary').innerHTML =
  `<div class="card summary"><div><b>${items.length}</b> known codes</div><div><b>${items.filter(x=>x.status==='confirmed').length}</b> confirmed</div><div><b>${d.events.length}</b> recent events</div></div>`;
 
