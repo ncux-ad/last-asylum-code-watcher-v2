@@ -13,8 +13,16 @@ class State:
             self.data = json.loads(self.path.read_text(encoding="utf-8"))
         else:
             self.data = {"version": 2, "codes": {}, "events": []}
+        self.data.setdefault("not_found", [])
 
     def observe(self, code, source, url=None, status="observed", reward=None, expires_at=None, expired=None):
+        if code in self.data["not_found"]:
+            # A human confirmed the game has never heard of this code
+            # (as opposed to expired/invalid, which mean it existed).
+            # Aggregator sites keep re-listing it regardless, so every
+            # source's observe() call for it is ignored here for good.
+            return
+
         now = utcnow()
         item = self.data["codes"].get(code)
 
@@ -62,6 +70,31 @@ class State:
             item["status"] = "probable"
         else:
             item["status"] = "candidate"
+
+    def mark_not_found(self, code):
+        self.data["codes"].pop(code, None)
+        if code not in self.data["not_found"]:
+            self.data["not_found"].append(code)
+            self.data["not_found"].sort()
+
+    def apply_manual_verification(self, code, result, reward, verified_at):
+        """Merge an operator-run redemption check (tools/verify_codes.py)
+        into the public record. "not_found" purges the code and
+        blocklists it in observe() so aggregator sites can't resurrect
+        it; every other result only annotates the existing entry."""
+        if result == "not_found":
+            self.mark_not_found(code)
+            return
+
+        item = self.data["codes"].get(code)
+        if item is None:
+            return
+
+        item["manual_verification"] = {"result": result, "reward": reward, "verified_at": verified_at}
+        if result == "ok" and reward:
+            item["reward"] = reward
+        if result == "expired":
+            item["expired"] = True
 
     def mark_missing(self, source, currently_seen):
         for code, item in self.data["codes"].items():

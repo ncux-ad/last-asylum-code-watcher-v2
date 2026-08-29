@@ -32,6 +32,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+from watcher.state import State
+
 REDEMPTION_URL = "https://gevents.globallap.com/gamecode/index.html?gameId=440"
 STATE_PATH = Path("data/state.json")
 VERIFICATIONS_PATH = Path("data/manual_verifications.json")
@@ -57,42 +59,17 @@ def save_verification(code, result, reward, verified_at=None):
 
 
 def apply_to_public_state(code, result, reward, verified_at=None):
-    """Merge a verification result into the public data/state.json.
-
-    "not_found" means the game itself has never heard of the code (as
-    opposed to "invalid"/"expired", which mean it existed) - that's
-    noise, not signal, so the code is dropped from the public dashboard
-    entirely. It stays in manual_verifications.json so a future scrape
-    re-discovering the same junk code doesn't surface it as a candidate
-    again.
-
-    For every other result, only the "manual_verification" field (plus
-    "reward"/"expired" when the result makes them strictly more
-    accurate) is touched - never the scraper-owned status/confidence/
-    sources.
+    """Merge a verification result into the public data/state.json via
+    the same State class the scheduled scraper uses, so both agree on
+    schema and on the not_found blocklist (see State.observe()) that
+    stops aggregator sites from resurrecting a purged code.
     """
     if not STATE_PATH.exists():
         return
     verified_at = verified_at or datetime.now(timezone.utc).isoformat()
-    state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
-    codes = state.get("codes", {})
-
-    if result == "not_found":
-        codes.pop(code, None)
-    else:
-        item = codes.get(code)
-        if item is None:
-            return
-        item["manual_verification"] = {"result": result, "reward": reward, "verified_at": verified_at}
-        if result == "ok" and reward:
-            item["reward"] = reward
-        if result == "expired":
-            item["expired"] = True
-
-    STATE_PATH.write_text(
-        json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True),
-        encoding="utf-8",
-    )
+    state = State(STATE_PATH)
+    state.apply_manual_verification(code, result, reward, verified_at)
+    state.save()
 
 
 def load_candidates():
