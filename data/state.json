@@ -1,1 +1,5861 @@
-{"version":2,"codes":{},"events":[]}
+{
+  "codes": {
+    "ACCANTO": {
+      "code": "ACCANTO",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443989+00:00",
+      "last_seen": "2026-08-29T13:12:10.443989+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443989+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ACCORDANCE": {
+      "code": "ACCORDANCE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172981+00:00",
+      "last_seen": "2026-08-29T13:12:08.172981+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172981+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ACCOUNT": {
+      "code": "ACCOUNT",
+      "confidence": 0.89,
+      "first_seen": "2026-08-29T13:12:09.095252+00:00",
+      "last_seen": "2026-08-29T13:12:11.010493+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443749+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095252+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010493+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "confirmed"
+    },
+    "ACTIONS": {
+      "code": "ACTIONS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444172+00:00",
+      "last_seen": "2026-08-29T13:12:10.444172+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444172+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ACTIVITIES": {
+      "code": "ACTIVITIES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444266+00:00",
+      "last_seen": "2026-08-29T13:12:10.444266+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444266+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ADDICTING": {
+      "code": "ADDICTING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172997+00:00",
+      "last_seen": "2026-08-29T13:12:08.172997+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172997+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "AFFILIATED": {
+      "code": "AFFILIATED",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.575498+00:00",
+      "last_seen": "2026-08-29T13:12:09.575498+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575498+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "AGAINST": {
+      "code": "AGAINST",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444302+00:00",
+      "last_seen": "2026-08-29T13:12:10.444302+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444302+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "AGGIORNATO": {
+      "code": "AGGIORNATO",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443891+00:00",
+      "last_seen": "2026-08-29T13:12:10.443891+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443891+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ALLIANCE": {
+      "code": "ALLIANCE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444094+00:00",
+      "last_seen": "2026-08-29T13:12:10.444094+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444094+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ALLIANCES": {
+      "code": "ALLIANCES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444231+00:00",
+      "last_seen": "2026-08-29T13:12:10.444231+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444231+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ARTICLE": {
+      "code": "ARTICLE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172689+00:00",
+      "last_seen": "2026-08-29T13:12:08.172689+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172689+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ASPIRING": {
+      "code": "ASPIRING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172529+00:00",
+      "last_seen": "2026-08-29T13:12:08.172529+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172529+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ASSOCIATES": {
+      "code": "ASSOCIATES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172678+00:00",
+      "last_seen": "2026-08-29T13:12:08.172678+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172678+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ATTENTION": {
+      "code": "ATTENTION",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010738+00:00",
+      "last_seen": "2026-08-29T13:12:11.010738+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010738+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "ATTIVIT": {
+      "code": "ATTIVIT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444032+00:00",
+      "last_seen": "2026-08-29T13:12:10.444032+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444032+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ATTUALE": {
+      "code": "ATTUALE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444211+00:00",
+      "last_seen": "2026-08-29T13:12:10.444211+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444211+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "AVAILABLE": {
+      "code": "AVAILABLE",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:09.095276+00:00",
+      "last_seen": "2026-08-29T13:12:11.010559+00:00",
+      "notified": true,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095276+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010559+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "probable"
+    },
+    "B6FCCA4745": {
+      "code": "B6FCCA4745",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010648+00:00",
+      "last_seen": "2026-08-29T13:12:11.010648+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010648+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "B7C01CCE4F": {
+      "code": "B7C01CCE4F",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010436+00:00",
+      "last_seen": "2026-08-29T13:12:11.010436+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010436+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "BECAUSE": {
+      "code": "BECAUSE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172720+00:00",
+      "last_seen": "2026-08-29T13:12:08.172720+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172720+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "BEGINNER": {
+      "code": "BEGINNER",
+      "confidence": 0.89,
+      "first_seen": "2026-08-29T13:12:08.172911+00:00",
+      "last_seen": "2026-08-29T13:12:10.444222+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444222+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575494+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172911+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "confirmed"
+    },
+    "BIGINDIEPITCH": {
+      "code": "BIGINDIEPITCH",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172732+00:00",
+      "last_seen": "2026-08-29T13:12:08.172732+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172732+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "BLOCKCHAINGAMER": {
+      "code": "BLOCKCHAINGAMER",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.173008+00:00",
+      "last_seen": "2026-08-29T13:12:08.173008+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.173008+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "BOOKMARK": {
+      "code": "BOOKMARK",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172631+00:00",
+      "last_seen": "2026-08-29T13:12:08.172631+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172631+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "BOWBLITZ": {
+      "code": "BOWBLITZ",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172866+00:00",
+      "last_seen": "2026-08-29T13:12:08.172866+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172866+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "BRASSELL": {
+      "code": "BRASSELL",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172833+00:00",
+      "last_seen": "2026-08-29T13:12:08.172833+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172833+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "BROWSER": {
+      "code": "BROWSER",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.095269+00:00",
+      "last_seen": "2026-08-29T13:12:09.095269+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095269+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "candidate"
+    },
+    "BUILDER": {
+      "code": "BUILDER",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172889+00:00",
+      "last_seen": "2026-08-29T13:12:08.172889+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172889+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "BUILDING": {
+      "code": "BUILDING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444006+00:00",
+      "last_seen": "2026-08-29T13:12:10.444006+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444006+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "BUILDINGS": {
+      "code": "BUILDINGS",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172877+00:00",
+      "last_seen": "2026-08-29T13:12:10.444199+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444199+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172877+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "CALCOLA": {
+      "code": "CALCOLA",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443914+00:00",
+      "last_seen": "2026-08-29T13:12:10.443914+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443914+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CALCOLATORE": {
+      "code": "CALCOLATORE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444058+00:00",
+      "last_seen": "2026-08-29T13:12:10.444058+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444058+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CARRYING": {
+      "code": "CARRYING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172668+00:00",
+      "last_seen": "2026-08-29T13:12:08.172668+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172668+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CASTLES": {
+      "code": "CASTLES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172571+00:00",
+      "last_seen": "2026-08-29T13:12:08.172571+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172571+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CATEGORIA": {
+      "code": "CATEGORIA",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443779+00:00",
+      "last_seen": "2026-08-29T13:12:10.443779+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443779+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CATEGORIES": {
+      "code": "CATEGORIES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.095340+00:00",
+      "last_seen": "2026-08-29T13:12:09.095340+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095340+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CHALLENGE": {
+      "code": "CHALLENGE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010508+00:00",
+      "last_seen": "2026-08-29T13:12:11.010508+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010508+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "CHARACTER": {
+      "code": "CHARACTER",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:09.095219+00:00",
+      "last_seen": "2026-08-29T13:12:11.010459+00:00",
+      "notified": true,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095219+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010459+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "probable"
+    },
+    "CHECKED": {
+      "code": "CHECKED",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172812+00:00",
+      "last_seen": "2026-08-29T13:12:08.172812+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172812+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CITIZENS": {
+      "code": "CITIZENS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172906+00:00",
+      "last_seen": "2026-08-29T13:12:08.172906+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172906+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CLAIMED": {
+      "code": "CLAIMED",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010448+00:00",
+      "last_seen": "2026-08-29T13:12:11.010448+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010448+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "CLASSIC": {
+      "code": "CLASSIC",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172764+00:00",
+      "last_seen": "2026-08-29T13:12:08.172764+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172764+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CLOUDWALKER": {
+      "code": "CLOUDWALKER",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.575432+00:00",
+      "last_seen": "2026-08-29T13:12:09.575432+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575432+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "COLLECT": {
+      "code": "COLLECT",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:09.095316+00:00",
+      "last_seen": "2026-08-29T13:12:10.443807+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443807+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095316+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "probable"
+    },
+    "COLLECTED": {
+      "code": "COLLECTED",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444193+00:00",
+      "last_seen": "2026-08-29T13:12:10.444193+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444193+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "COLLECTION": {
+      "code": "COLLECTION",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010391+00:00",
+      "last_seen": "2026-08-29T13:12:11.010391+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010391+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "COMMENT": {
+      "code": "COMMENT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.095306+00:00",
+      "last_seen": "2026-08-29T13:12:09.095306+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095306+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "candidate"
+    },
+    "COMMENTS": {
+      "code": "COMMENTS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172699+00:00",
+      "last_seen": "2026-08-29T13:12:08.172699+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172699+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "COMMUNITY": {
+      "code": "COMMUNITY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443995+00:00",
+      "last_seen": "2026-08-29T13:12:10.443995+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443995+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "COMPANION": {
+      "code": "COMPANION",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.575467+00:00",
+      "last_seen": "2026-08-29T13:12:09.575467+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575467+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "COMPARE": {
+      "code": "COMPARE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443765+00:00",
+      "last_seen": "2026-08-29T13:12:10.443765+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443765+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "COMPATTO": {
+      "code": "COMPATTO",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443825+00:00",
+      "last_seen": "2026-08-29T13:12:10.443825+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443825+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "COMPETITION": {
+      "code": "COMPETITION",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444217+00:00",
+      "last_seen": "2026-08-29T13:12:10.444217+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444217+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CONFRONTARE": {
+      "code": "CONFRONTARE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443869+00:00",
+      "last_seen": "2026-08-29T13:12:10.443869+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443869+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CONNECTS": {
+      "code": "CONNECTS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172545+00:00",
+      "last_seen": "2026-08-29T13:12:08.172545+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172545+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CONSTANTLY": {
+      "code": "CONSTANTLY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010585+00:00",
+      "last_seen": "2026-08-29T13:12:11.010585+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010585+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "CONSTRUCTION": {
+      "code": "CONSTRUCTION",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444308+00:00",
+      "last_seen": "2026-08-29T13:12:10.444308+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444308+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CONTENT": {
+      "code": "CONTENT",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:09.095287+00:00",
+      "last_seen": "2026-08-29T13:12:10.443771+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443771+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095287+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "probable"
+    },
+    "CONTROLLED": {
+      "code": "CONTROLLED",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443932+00:00",
+      "last_seen": "2026-08-29T13:12:10.443932+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443932+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "COORDINATED": {
+      "code": "COORDINATED",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443983+00:00",
+      "last_seen": "2026-08-29T13:12:10.443983+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443983+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "COORDINATION": {
+      "code": "COORDINATION",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443897+00:00",
+      "last_seen": "2026-08-29T13:12:10.443897+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443897+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "COSTRUZIONE": {
+      "code": "COSTRUZIONE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444000+00:00",
+      "last_seen": "2026-08-29T13:12:10.444000+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444000+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "COSTRUZIONI": {
+      "code": "COSTRUZIONI",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444294+00:00",
+      "last_seen": "2026-08-29T13:12:10.444294+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444294+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CROCCHI": {
+      "code": "CROCCHI",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444011+00:00",
+      "last_seen": "2026-08-29T13:12:10.444011+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444011+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "CURRENTLY": {
+      "code": "CURRENTLY",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172714+00:00",
+      "last_seen": "2026-08-29T13:12:09.095293+00:00",
+      "notified": true,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095293+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172714+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "D3809EAD49": {
+      "code": "D3809EAD49",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010563+00:00",
+      "last_seen": "2026-08-29T13:12:11.010563+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010563+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "DEBUFFS": {
+      "code": "DEBUFFS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444162+00:00",
+      "last_seen": "2026-08-29T13:12:10.444162+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444162+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "DESTROYED": {
+      "code": "DESTROYED",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172922+00:00",
+      "last_seen": "2026-08-29T13:12:08.172922+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172922+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "DETTAGLIATE": {
+      "code": "DETTAGLIATE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444134+00:00",
+      "last_seen": "2026-08-29T13:12:10.444134+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444134+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "DIAMONDS": {
+      "code": "DIAMONDS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172939+00:00",
+      "last_seen": "2026-08-29T13:12:08.172939+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172939+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "DIFFERENT": {
+      "code": "DIFFERENT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444246+00:00",
+      "last_seen": "2026-08-29T13:12:10.444246+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444246+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "DIRECTLY": {
+      "code": "DIRECTLY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.095331+00:00",
+      "last_seen": "2026-08-29T13:12:09.095331+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095331+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "candidate"
+    },
+    "DISCOVER": {
+      "code": "DISCOVER",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.575509+00:00",
+      "last_seen": "2026-08-29T13:12:09.575509+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575509+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "E4B76C261B": {
+      "code": "E4B76C261B",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010666+00:00",
+      "last_seen": "2026-08-29T13:12:11.010666+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010666+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "ECONOMY": {
+      "code": "ECONOMY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444106+00:00",
+      "last_seen": "2026-08-29T13:12:10.444106+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444106+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "EDIFICIO": {
+      "code": "EDIFICIO",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443975+00:00",
+      "last_seen": "2026-08-29T13:12:10.443975+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443975+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "EFFETTI": {
+      "code": "EFFETTI",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444288+00:00",
+      "last_seen": "2026-08-29T13:12:10.444288+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444288+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ENEMIES": {
+      "code": "ENEMIES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444049+00:00",
+      "last_seen": "2026-08-29T13:12:10.444049+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444049+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ENGLISH": {
+      "code": "ENGLISH",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010657+00:00",
+      "last_seen": "2026-08-29T13:12:11.010657+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010657+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "ENTERED": {
+      "code": "ENTERED",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172585+00:00",
+      "last_seen": "2026-08-29T13:12:08.172585+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172585+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "ENVIRONMENT": {
+      "code": "ENVIRONMENT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444083+00:00",
+      "last_seen": "2026-08-29T13:12:10.444083+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444083+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "EXACTLY": {
+      "code": "EXACTLY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172806+00:00",
+      "last_seen": "2026-08-29T13:12:08.172806+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172806+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "EXCLUSIVE": {
+      "code": "EXCLUSIVE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.575473+00:00",
+      "last_seen": "2026-08-29T13:12:09.575473+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575473+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "EXILIUM": {
+      "code": "EXILIUM",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172590+00:00",
+      "last_seen": "2026-08-29T13:12:08.172590+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172590+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "EXPENSIVE": {
+      "code": "EXPENSIVE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443969+00:00",
+      "last_seen": "2026-08-29T13:12:10.443969+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443969+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "EXPERIENCE": {
+      "code": "EXPERIENCE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172849+00:00",
+      "last_seen": "2026-08-29T13:12:08.172849+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172849+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "F1EC126DB0": {
+      "code": "F1EC126DB0",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010514+00:00",
+      "last_seen": "2026-08-29T13:12:11.010514+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010514+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "FANTASY": {
+      "code": "FANTASY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172458+00:00",
+      "last_seen": "2026-08-29T13:12:08.172458+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172458+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "FE51DC8875": {
+      "code": "FE51DC8875",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010502+00:00",
+      "last_seen": "2026-08-29T13:12:11.010502+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010502+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "FEATURES": {
+      "code": "FEATURES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172962+00:00",
+      "last_seen": "2026-08-29T13:12:08.172962+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172962+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "FOLLOWING": {
+      "code": "FOLLOWING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172900+00:00",
+      "last_seen": "2026-08-29T13:12:08.172900+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172900+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "FOOTBALL": {
+      "code": "FOOTBALL",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172758+00:00",
+      "last_seen": "2026-08-29T13:12:08.172758+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172758+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "FREEBIES": {
+      "code": "FREEBIES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172576+00:00",
+      "last_seen": "2026-08-29T13:12:08.172576+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172576+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "FREQUENTLY": {
+      "code": "FREQUENTLY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172523+00:00",
+      "last_seen": "2026-08-29T13:12:08.172523+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172523+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "FRONTALI": {
+      "code": "FRONTALI",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444152+00:00",
+      "last_seen": "2026-08-29T13:12:10.444152+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444152+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "FRONTLINE": {
+      "code": "FRONTLINE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172790+00:00",
+      "last_seen": "2026-08-29T13:12:08.172790+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172790+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "GAMECODE": {
+      "code": "GAMECODE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.095363+00:00",
+      "last_seen": "2026-08-29T13:12:09.095363+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095363+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "candidate"
+    },
+    "GAMEKNOT": {
+      "code": "GAMEKNOT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172860+00:00",
+      "last_seen": "2026-08-29T13:12:08.172860+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172860+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "GAMEPLAY": {
+      "code": "GAMEPLAY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444226+00:00",
+      "last_seen": "2026-08-29T13:12:10.444226+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444226+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "GEVENTS": {
+      "code": "GEVENTS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.095325+00:00",
+      "last_seen": "2026-08-29T13:12:09.095325+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095325+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "candidate"
+    },
+    "GLOBALLAP": {
+      "code": "GLOBALLAP",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.095301+00:00",
+      "last_seen": "2026-08-29T13:12:09.095301+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095301+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "candidate"
+    },
+    "GLOSSARY": {
+      "code": "GLOSSARY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444111+00:00",
+      "last_seen": "2026-08-29T13:12:10.444111+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444111+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "GUIDANO": {
+      "code": "GUIDANO",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444260+00:00",
+      "last_seen": "2026-08-29T13:12:10.444260+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444260+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "HEALING": {
+      "code": "HEALING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172928+00:00",
+      "last_seen": "2026-08-29T13:12:08.172928+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172928+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "HELPFUL": {
+      "code": "HELPFUL",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172663+00:00",
+      "last_seen": "2026-08-29T13:12:08.172663+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172663+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "HELPING": {
+      "code": "HELPING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172894+00:00",
+      "last_seen": "2026-08-29T13:12:08.172894+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172894+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "HOSPITAL": {
+      "code": "HOSPITAL",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172817+00:00",
+      "last_seen": "2026-08-29T13:12:08.172817+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172817+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "IMMEDIATELY": {
+      "code": "IMMEDIATELY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010536+00:00",
+      "last_seen": "2026-08-29T13:12:11.010536+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010536+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "IMPROVES": {
+      "code": "IMPROVES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443885+00:00",
+      "last_seen": "2026-08-29T13:12:10.443885+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443885+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "INCLUDING": {
+      "code": "INCLUDING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444205+00:00",
+      "last_seen": "2026-08-29T13:12:10.444205+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444205+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "INCORRECT": {
+      "code": "INCORRECT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010548+00:00",
+      "last_seen": "2026-08-29T13:12:11.010548+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010548+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "INCREASE": {
+      "code": "INCREASE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172642+00:00",
+      "last_seen": "2026-08-29T13:12:08.172642+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172642+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "INSTRUCTIONS": {
+      "code": "INSTRUCTIONS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010427+00:00",
+      "last_seen": "2026-08-29T13:12:11.010427+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010427+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "INVALID": {
+      "code": "INVALID",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010694+00:00",
+      "last_seen": "2026-08-29T13:12:11.010694+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010694+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "KINGDOM": {
+      "code": "KINGDOM",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443903+00:00",
+      "last_seen": "2026-08-29T13:12:10.443903+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443903+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "KINGDOMS": {
+      "code": "KINGDOMS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444078+00:00",
+      "last_seen": "2026-08-29T13:12:10.444078+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444078+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "LA11WB5Q": {
+      "code": "LA11WB5Q",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.764836+00:00",
+      "last_seen": "2026-08-29T13:12:08.764836+00:00",
+      "notified": false,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764836+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LA14EBRN": {
+      "code": "LA14EBRN",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010682+00:00",
+      "last_seen": "2026-08-29T13:12:11.010682+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010682+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LA15WPN4D": {
+      "code": "LA15WPN4D",
+      "confidence": 0.89,
+      "first_seen": "2026-08-29T13:12:09.095351+00:00",
+      "last_seen": "2026-08-29T13:12:11.010699+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443836+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095351+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010699+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "confirmed"
+    },
+    "LA1OW9F7X": {
+      "code": "LA1OW9F7X",
+      "confidence": 0.89,
+      "first_seen": "2026-08-29T13:12:08.172822+00:00",
+      "last_seen": "2026-08-29T13:12:11.010533+00:00",
+      "notified": true,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095261+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010533+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172822+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "confirmed"
+    },
+    "LA20WBZ9": {
+      "code": "LA20WBZ9",
+      "confidence": 0.99,
+      "first_seen": "2026-08-29T13:12:08.764811+00:00",
+      "last_seen": "2026-08-29T13:12:11.010525+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764811+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444074+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575406+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010525+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "confirmed"
+    },
+    "LA25W8CM": {
+      "code": "LA25W8CM",
+      "confidence": 0.89,
+      "first_seen": "2026-08-29T13:12:08.764765+00:00",
+      "last_seen": "2026-08-29T13:12:11.010455+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764765+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575455+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010455+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "confirmed"
+    },
+    "LA26ALLY": {
+      "code": "LA26ALLY",
+      "confidence": 0.89,
+      "first_seen": "2026-08-29T13:12:08.764857+00:00",
+      "last_seen": "2026-08-29T13:12:11.010632+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764857+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575486+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010632+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "confirmed"
+    },
+    "LA26FOOL": {
+      "code": "LA26FOOL",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172743+00:00",
+      "last_seen": "2026-08-29T13:12:08.764844+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764844+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172743+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "LA26PLAY": {
+      "code": "LA26PLAY",
+      "confidence": 0.89,
+      "first_seen": "2026-08-29T13:12:08.764830+00:00",
+      "last_seen": "2026-08-29T13:12:11.010569+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764830+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444237+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010569+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "confirmed"
+    },
+    "LAAS777": {
+      "code": "LAAS777",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.764863+00:00",
+      "last_seen": "2026-08-29T13:12:11.010663+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764863+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010663+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "probable"
+    },
+    "LABOR26": {
+      "code": "LABOR26",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172969+00:00",
+      "last_seen": "2026-08-29T13:12:08.764869+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764869+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172969+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "LADAD26": {
+      "code": "LADAD26",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:09.575489+00:00",
+      "last_seen": "2026-08-29T13:12:10.444299+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444299+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575489+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        }
+      },
+      "status": "probable"
+    },
+    "LADCEX1223": {
+      "code": "LADCEX1223",
+      "confidence": 0.99,
+      "first_seen": "2026-08-29T13:12:08.172637+00:00",
+      "last_seen": "2026-08-29T13:12:11.010744+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764915+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443848+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095312+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010744+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172637+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "confirmed"
+    },
+    "LADOG26": {
+      "code": "LADOG26",
+      "confidence": 0.89,
+      "first_seen": "2026-08-29T13:12:08.764817+00:00",
+      "last_seen": "2026-08-29T13:12:11.010529+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764817+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095266+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010529+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "confirmed"
+    },
+    "LAEGG26": {
+      "code": "LAEGG26",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172855+00:00",
+      "last_seen": "2026-08-29T13:12:08.172855+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172855+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAF13GY": {
+      "code": "LAF13GY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010635+00:00",
+      "last_seen": "2026-08-29T13:12:11.010635+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010635+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAFD13GY": {
+      "code": "LAFD13GY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010614+00:00",
+      "last_seen": "2026-08-29T13:12:11.010614+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010614+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAIOSLA": {
+      "code": "LAIOSLA",
+      "confidence": 0.99,
+      "first_seen": "2026-08-29T13:12:08.172784+00:00",
+      "last_seen": "2026-08-29T13:12:11.010702+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764886+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575459+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010702+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172784+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "confirmed"
+    },
+    "LAKR15K9A": {
+      "code": "LAKR15K9A",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010717+00:00",
+      "last_seen": "2026-08-29T13:12:11.010717+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010717+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LANY2026": {
+      "code": "LANY2026",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172499+00:00",
+      "last_seen": "2026-08-29T13:12:08.764797+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764797+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172499+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "LAPGPOFF": {
+      "code": "LAPGPOFF",
+      "confidence": 0.89,
+      "first_seen": "2026-08-29T13:12:08.172600+00:00",
+      "last_seen": "2026-08-29T13:12:09.575463+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764848+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575463+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172600+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "confirmed"
+    },
+    "LAPJAP777": {
+      "code": "LAPJAP777",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.764895+00:00",
+      "last_seen": "2026-08-29T13:12:11.010714+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764895+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010714+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "probable"
+    },
+    "LAPKOR777": {
+      "code": "LAPKOR777",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010754+00:00",
+      "last_seen": "2026-08-29T13:12:11.010754+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010754+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAPNO1": {
+      "code": "LAPNO1",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010466+00:00",
+      "last_seen": "2026-08-29T13:12:11.010466+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010466+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAQIXI26": {
+      "code": "LAQIXI26",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010591+00:00",
+      "last_seen": "2026-08-29T13:12:11.010591+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010591+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAVD26": {
+      "code": "LAVD26",
+      "confidence": 0.99,
+      "first_seen": "2026-08-29T13:12:08.173019+00:00",
+      "last_seen": "2026-08-29T13:12:11.010759+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764918+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575451+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010759+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.173019+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "confirmed"
+    },
+    "LAW10A7C": {
+      "code": "LAW10A7C",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.764880+00:00",
+      "last_seen": "2026-08-29T13:12:08.764880+00:00",
+      "notified": false,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764880+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAW12A3K": {
+      "code": "LAW12A3K",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010626+00:00",
+      "last_seen": "2026-08-29T13:12:11.010626+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010626+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAW2W2D": {
+      "code": "LAW2W2D",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.764823+00:00",
+      "last_seen": "2026-08-29T13:12:08.764823+00:00",
+      "notified": false,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764823+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAW3UBT": {
+      "code": "LAW3UBT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010603+00:00",
+      "last_seen": "2026-08-29T13:12:11.010603+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010603+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAW6AOP": {
+      "code": "LAW6AOP",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.764900+00:00",
+      "last_seen": "2026-08-29T13:12:08.764900+00:00",
+      "notified": false,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764900+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAW7D4V": {
+      "code": "LAW7D4V",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443743+00:00",
+      "last_seen": "2026-08-29T13:12:10.443743+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443743+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAW83AS": {
+      "code": "LAW83AS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443754+00:00",
+      "last_seen": "2026-08-29T13:12:10.443754+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443754+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAXMAS2025": {
+      "code": "LAXMAS2025",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172616+00:00",
+      "last_seen": "2026-08-29T13:12:08.172616+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172616+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAXMAS25": {
+      "code": "LAXMAS25",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.764803+00:00",
+      "last_seen": "2026-08-29T13:12:08.764803+00:00",
+      "notified": false,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764803+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LETTERS": {
+      "code": "LETTERS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010472+00:00",
+      "last_seen": "2026-08-29T13:12:11.010472+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010472+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LIFELONG": {
+      "code": "LIFELONG",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172580+00:00",
+      "last_seen": "2026-08-29T13:12:08.172580+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172580+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "LIMITED": {
+      "code": "LIMITED",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:10.444037+00:00",
+      "last_seen": "2026-08-29T13:12:11.010723+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444037+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010723+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "probable"
+    },
+    "LIVELLO": {
+      "code": "LIVELLO",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443831+00:00",
+      "last_seen": "2026-08-29T13:12:10.443831+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443831+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "LOADING": {
+      "code": "LOADING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.575444+00:00",
+      "last_seen": "2026-08-29T13:12:09.575444+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575444+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LOOTBAR": {
+      "code": "LOOTBAR",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444043+00:00",
+      "last_seen": "2026-08-29T13:12:10.444043+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444043+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "LOVE666": {
+      "code": "LOVE666",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010520+00:00",
+      "last_seen": "2026-08-29T13:12:11.010520+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010520+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LOWERCASE": {
+      "code": "LOWERCASE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010597+00:00",
+      "last_seen": "2026-08-29T13:12:11.010597+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010597+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LUCK777": {
+      "code": "LUCK777",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.764889+00:00",
+      "last_seen": "2026-08-29T13:12:11.010706+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764889+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010706+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "probable"
+    },
+    "LUCKILY": {
+      "code": "LUCKILY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172673+00:00",
+      "last_seen": "2026-08-29T13:12:08.172673+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172673+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "LUMBERYARD": {
+      "code": "LUMBERYARD",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172555+00:00",
+      "last_seen": "2026-08-29T13:12:08.172555+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172555+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "MAILBOX": {
+      "code": "MAILBOX",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010726+00:00",
+      "last_seen": "2026-08-29T13:12:11.010726+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010726+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "MAKESHIFT": {
+      "code": "MAKESHIFT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172774+00:00",
+      "last_seen": "2026-08-29T13:12:08.172774+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172774+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "MASSIME": {
+      "code": "MASSIME",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443863+00:00",
+      "last_seen": "2026-08-29T13:12:10.443863+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443863+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "MEMBERS": {
+      "code": "MEMBERS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443925+00:00",
+      "last_seen": "2026-08-29T13:12:10.443925+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443925+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "MISSION": {
+      "code": "MISSION",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172605+00:00",
+      "last_seen": "2026-08-29T13:12:08.172605+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172605+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "MISSIONS": {
+      "code": "MISSIONS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443792+00:00",
+      "last_seen": "2026-08-29T13:12:10.443792+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443792+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "NECESSARI": {
+      "code": "NECESSARI",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444063+00:00",
+      "last_seen": "2026-08-29T13:12:10.444063+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444063+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "NEGATIVE": {
+      "code": "NEGATIVE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444020+00:00",
+      "last_seen": "2026-08-29T13:12:10.444020+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444020+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "NETWORK": {
+      "code": "NETWORK",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172871+00:00",
+      "last_seen": "2026-08-29T13:12:08.172871+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172871+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "OBJECTIVES": {
+      "code": "OBJECTIVES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443839+00:00",
+      "last_seen": "2026-08-29T13:12:10.443839+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443839+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "OFFICIAL": {
+      "code": "OFFICIAL",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172738+00:00",
+      "last_seen": "2026-08-29T13:12:09.095321+00:00",
+      "notified": true,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095321+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172738+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "OVERALL": {
+      "code": "OVERALL",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444128+00:00",
+      "last_seen": "2026-08-29T13:12:10.444128+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444128+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "PANDEMIC": {
+      "code": "PANDEMIC",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172727+00:00",
+      "last_seen": "2026-08-29T13:12:08.172727+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172727+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "PANNELLO": {
+      "code": "PANNELLO",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444254+00:00",
+      "last_seen": "2026-08-29T13:12:10.444254+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444254+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "PASSION": {
+      "code": "PASSION",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172916+00:00",
+      "last_seen": "2026-08-29T13:12:08.172916+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172916+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "PATIENTS": {
+      "code": "PATIENTS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172647+00:00",
+      "last_seen": "2026-08-29T13:12:08.172647+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172647+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "PCGAMESINSIDER": {
+      "code": "PCGAMESINSIDER",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172991+00:00",
+      "last_seen": "2026-08-29T13:12:08.172991+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172991+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "PENALTY": {
+      "code": "PENALTY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443852+00:00",
+      "last_seen": "2026-08-29T13:12:10.443852+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443852+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "PERFORMANCE": {
+      "code": "PERFORMANCE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444117+00:00",
+      "last_seen": "2026-08-29T13:12:10.444117+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444117+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "PICTURE": {
+      "code": "PICTURE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.095346+00:00",
+      "last_seen": "2026-08-29T13:12:09.095346+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095346+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "candidate"
+    },
+    "PLAYERS": {
+      "code": "PLAYERS",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:10.444069+00:00",
+      "last_seen": "2026-08-29T13:12:11.010484+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444069+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010484+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "probable"
+    },
+    "POSSIBLE": {
+      "code": "POSSIBLE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010554+00:00",
+      "last_seen": "2026-08-29T13:12:11.010554+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010554+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "PRIVACY": {
+      "code": "PRIVACY",
+      "confidence": 0.89,
+      "first_seen": "2026-08-29T13:12:08.172769+00:00",
+      "last_seen": "2026-08-29T13:12:11.010654+00:00",
+      "notified": true,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095337+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010654+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172769+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "confirmed"
+    },
+    "PROCESS": {
+      "code": "PROCESS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172974+00:00",
+      "last_seen": "2026-08-29T13:12:08.172974+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172974+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "PROCLAIMED": {
+      "code": "PROCLAIMED",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172540+00:00",
+      "last_seen": "2026-08-29T13:12:08.172540+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172540+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "PRODUCTION": {
+      "code": "PRODUCTION",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172933+00:00",
+      "last_seen": "2026-08-29T13:12:10.444251+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444251+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172933+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "PROFILE": {
+      "code": "PROFILE",
+      "confidence": 0.89,
+      "first_seen": "2026-08-29T13:12:08.172566+00:00",
+      "last_seen": "2026-08-29T13:12:10.443797+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443797+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095297+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172566+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "confirmed"
+    },
+    "PROTECT": {
+      "code": "PROTECT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172986+00:00",
+      "last_seen": "2026-08-29T13:12:08.172986+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172986+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "RACCOLTA": {
+      "code": "RACCOLTA",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443702+00:00",
+      "last_seen": "2026-08-29T13:12:10.443702+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443702+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "REASONS": {
+      "code": "REASONS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010579+00:00",
+      "last_seen": "2026-08-29T13:12:11.010579+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010579+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "REBUILD": {
+      "code": "REBUILD",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172709+00:00",
+      "last_seen": "2026-08-29T13:12:08.172709+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172709+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "REBUILDING": {
+      "code": "REBUILDING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172704+00:00",
+      "last_seen": "2026-08-29T13:12:08.172704+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172704+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "RECEIVE": {
+      "code": "RECEIVE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010676+00:00",
+      "last_seen": "2026-08-29T13:12:11.010676+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010676+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "RECOMMENDED": {
+      "code": "RECOMMENDED",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010688+00:00",
+      "last_seen": "2026-08-29T13:12:11.010688+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010688+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "RECONSTRUCT": {
+      "code": "RECONSTRUCT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172517+00:00",
+      "last_seen": "2026-08-29T13:12:08.172517+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172517+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "RECOVER": {
+      "code": "RECOVER",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172652+00:00",
+      "last_seen": "2026-08-29T13:12:08.172652+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172652+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "RECRUIT": {
+      "code": "RECRUIT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172883+00:00",
+      "last_seen": "2026-08-29T13:12:08.172883+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172883+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "REDEEMING": {
+      "code": "REDEEMING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172753+00:00",
+      "last_seen": "2026-08-29T13:12:08.172753+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172753+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "REDEMPTION": {
+      "code": "REDEMPTION",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.095357+00:00",
+      "last_seen": "2026-08-29T13:12:09.095357+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095357+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "candidate"
+    },
+    "REGULARLY": {
+      "code": "REGULARLY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.095281+00:00",
+      "last_seen": "2026-08-29T13:12:09.095281+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095281+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "candidate"
+    },
+    "RELATED": {
+      "code": "RELATED",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172621+00:00",
+      "last_seen": "2026-08-29T13:12:11.010710+00:00",
+      "notified": true,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010710+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172621+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "REMEMBER": {
+      "code": "REMEMBER",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010487+00:00",
+      "last_seen": "2026-08-29T13:12:11.010487+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010487+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "REQUIRED": {
+      "code": "REQUIRED",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443937+00:00",
+      "last_seen": "2026-08-29T13:12:10.443937+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443937+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "REQUIRING": {
+      "code": "REQUIRING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444272+00:00",
+      "last_seen": "2026-08-29T13:12:10.444272+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444272+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "RESEARCH": {
+      "code": "RESEARCH",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444026+00:00",
+      "last_seen": "2026-08-29T13:12:10.444026+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444026+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "RESOURCE": {
+      "code": "RESOURCE",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172779+00:00",
+      "last_seen": "2026-08-29T13:12:10.444017+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444017+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172779+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "RESOURCES": {
+      "code": "RESOURCES",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172800+00:00",
+      "last_seen": "2026-08-29T13:12:10.444054+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444054+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172800+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "RICHIESTE": {
+      "code": "RICHIESTE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444240+00:00",
+      "last_seen": "2026-08-29T13:12:10.444240+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444240+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "RISORSE": {
+      "code": "RISORSE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444283+00:00",
+      "last_seen": "2026-08-29T13:12:10.444283+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444283+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SAMSUNG": {
+      "code": "SAMSUNG",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.764851+00:00",
+      "last_seen": "2026-08-29T13:12:08.764851+00:00",
+      "notified": false,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764851+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "SECTION": {
+      "code": "SECTION",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.575503+00:00",
+      "last_seen": "2026-08-29T13:12:09.575503+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575503+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "SELEZIONA": {
+      "code": "SELEZIONA",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443908+00:00",
+      "last_seen": "2026-08-29T13:12:10.443908+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443908+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SELEZIONARE": {
+      "code": "SELEZIONARE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443874+00:00",
+      "last_seen": "2026-08-29T13:12:10.443874+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443874+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SENSITIVE": {
+      "code": "SENSITIVE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172684+00:00",
+      "last_seen": "2026-08-29T13:12:08.172684+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172684+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SEPARARLI": {
+      "code": "SEPARARLI",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443785+00:00",
+      "last_seen": "2026-08-29T13:12:10.443785+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443785+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SERVERS": {
+      "code": "SERVERS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010443+00:00",
+      "last_seen": "2026-08-29T13:12:11.010443+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010443+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "SERVICE": {
+      "code": "SERVICE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010573+00:00",
+      "last_seen": "2026-08-29T13:12:11.010573+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010573+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "SHORTCUT": {
+      "code": "SHORTCUT",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443736+00:00",
+      "last_seen": "2026-08-29T13:12:10.443736+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443736+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SOLDIER": {
+      "code": "SOLDIER",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443819+00:00",
+      "last_seen": "2026-08-29T13:12:10.443819+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443819+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SOPRAVVIVENZA": {
+      "code": "SOPRAVVIVENZA",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444140+00:00",
+      "last_seen": "2026-08-29T13:12:10.444140+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444140+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SPECIFIC": {
+      "code": "SPECIFIC",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010542+00:00",
+      "last_seen": "2026-08-29T13:12:11.010542+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010542+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "SPEEDUP": {
+      "code": "SPEEDUP",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172828+00:00",
+      "last_seen": "2026-08-29T13:12:08.172828+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172828+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SPEEDUPS": {
+      "code": "SPEEDUPS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172534+00:00",
+      "last_seen": "2026-08-29T13:12:08.172534+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172534+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "STORYTELLING": {
+      "code": "STORYTELLING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172748+00:00",
+      "last_seen": "2026-08-29T13:12:08.172748+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172748+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "STRAIGHTFORWARD": {
+      "code": "STRAIGHTFORWARD",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172550+00:00",
+      "last_seen": "2026-08-29T13:12:08.172550+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172550+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "STRATEGIES": {
+      "code": "STRATEGIES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443943+00:00",
+      "last_seen": "2026-08-29T13:12:10.443943+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443943+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "STRATEGY": {
+      "code": "STRATEGY",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172595+00:00",
+      "last_seen": "2026-08-29T13:12:10.443810+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443810+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172595+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "STRENGTH": {
+      "code": "STRENGTH",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443801+00:00",
+      "last_seen": "2026-08-29T13:12:10.443801+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443801+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "STRICTLY": {
+      "code": "STRICTLY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172838+00:00",
+      "last_seen": "2026-08-29T13:12:08.172838+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172838+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "STRONGER": {
+      "code": "STRONGER",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443813+00:00",
+      "last_seen": "2026-08-29T13:12:10.443813+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443813+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SUPPORTI": {
+      "code": "SUPPORTI",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444182+00:00",
+      "last_seen": "2026-08-29T13:12:10.444182+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444182+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SURVIVAL": {
+      "code": "SURVIVAL",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443880+00:00",
+      "last_seen": "2026-08-29T13:12:10.443880+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443880+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SURVIVE": {
+      "code": "SURVIVE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172626+00:00",
+      "last_seen": "2026-08-29T13:12:08.172626+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172626+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "SURVIVOR": {
+      "code": "SURVIVOR",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172844+00:00",
+      "last_seen": "2026-08-29T13:12:08.172844+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172844+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "TARGETS": {
+      "code": "TARGETS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443759+00:00",
+      "last_seen": "2026-08-29T13:12:10.443759+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443759+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "TECHNOLOGY": {
+      "code": "TECHNOLOGY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444089+00:00",
+      "last_seen": "2026-08-29T13:12:10.444089+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444089+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "TEMPORARY": {
+      "code": "TEMPORARY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444100+00:00",
+      "last_seen": "2026-08-29T13:12:10.444100+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444100+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "THREATS": {
+      "code": "THREATS",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443858+00:00",
+      "last_seen": "2026-08-29T13:12:10.443858+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443858+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "THROUGH": {
+      "code": "THROUGH",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172610+00:00",
+      "last_seen": "2026-08-29T13:12:08.172610+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172610+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "TOUGHER": {
+      "code": "TOUGHER",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444123+00:00",
+      "last_seen": "2026-08-29T13:12:10.444123+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444123+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "TOWNSFOLK": {
+      "code": "TOWNSFOLK",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172658+00:00",
+      "last_seen": "2026-08-29T13:12:08.172658+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172658+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "TRAILING": {
+      "code": "TRAILING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010620+00:00",
+      "last_seen": "2026-08-29T13:12:11.010620+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010620+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "TROUBLE": {
+      "code": "TROUBLE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172795+00:00",
+      "last_seen": "2026-08-29T13:12:08.172795+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172795+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "TROVARE": {
+      "code": "TROVARE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443919+00:00",
+      "last_seen": "2026-08-29T13:12:10.443919+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443919+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "TWAPL666": {
+      "code": "TWAPL666",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010732+00:00",
+      "last_seen": "2026-08-29T13:12:11.010732+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010732+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "TWITTER": {
+      "code": "TWITTER",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.764907+00:00",
+      "last_seen": "2026-08-29T13:12:10.444202+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764907+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444202+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "probable"
+    },
+    "TWLAP666": {
+      "code": "TWLAP666",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.764872+00:00",
+      "last_seen": "2026-08-29T13:12:11.010672+00:00",
+      "notified": true,
+      "sources": {
+        "app-time": {
+          "last_seen": "2026-08-29T13:12:08.764872+00:00",
+          "status": "observed",
+          "url": "https://app-time.ru/games/last-asylum-plague/codes"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010672+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "probable"
+    },
+    "TWLAP888": {
+      "code": "TWLAP888",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010478+00:00",
+      "last_seen": "2026-08-29T13:12:11.010478+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010478+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "UFFICIALI": {
+      "code": "UFFICIALI",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.444277+00:00",
+      "last_seen": "2026-08-29T13:12:10.444277+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444277+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "UNOFFICIAL": {
+      "code": "UNOFFICIAL",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:09.575479+00:00",
+      "last_seen": "2026-08-29T13:12:09.575479+00:00",
+      "notified": false,
+      "sources": {
+        "lastasylum": {
+          "last_seen": "2026-08-29T13:12:09.575479+00:00",
+          "status": "observed",
+          "url": "https://lastasylum.com/gift-codes"
+        }
+      },
+      "status": "candidate"
+    },
+    "UPDATED": {
+      "code": "UPDATED",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.172510+00:00",
+      "last_seen": "2026-08-29T13:12:11.010463+00:00",
+      "notified": true,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010463+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172510+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    },
+    "UPDATES": {
+      "code": "UPDATES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172694+00:00",
+      "last_seen": "2026-08-29T13:12:08.172694+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172694+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "UPGRADES": {
+      "code": "UPGRADES",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:10.443774+00:00",
+      "last_seen": "2026-08-29T13:12:10.443774+00:00",
+      "notified": false,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443774+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "UPPERCASE": {
+      "code": "UPPERCASE",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010608+00:00",
+      "last_seen": "2026-08-29T13:12:11.010608+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010608+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "USUALLY": {
+      "code": "USUALLY",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:10.444314+00:00",
+      "last_seen": "2026-08-29T13:12:11.010747+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.444314+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010747+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "probable"
+    },
+    "VARIETY": {
+      "code": "VARIETY",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.172561+00:00",
+      "last_seen": "2026-08-29T13:12:08.172561+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.172561+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "VIP888": {
+      "code": "VIP888",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010642+00:00",
+      "last_seen": "2026-08-29T13:12:11.010642+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010642+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "VISITING": {
+      "code": "VISITING",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:08.173002+00:00",
+      "last_seen": "2026-08-29T13:12:08.173002+00:00",
+      "notified": false,
+      "sources": {
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.173002+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "candidate"
+    },
+    "WALKTHROUGH": {
+      "code": "WALKTHROUGH",
+      "confidence": 0.53,
+      "first_seen": "2026-08-29T13:12:11.010496+00:00",
+      "last_seen": "2026-08-29T13:12:11.010496+00:00",
+      "notified": false,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010496+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "WEBSITE": {
+      "code": "WEBSITE",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:09.095368+00:00",
+      "last_seen": "2026-08-29T13:12:10.443845+00:00",
+      "notified": true,
+      "sources": {
+        "last-asylum-fun": {
+          "last_seen": "2026-08-29T13:12:10.443845+00:00",
+          "status": "observed",
+          "url": "https://www.last-asylum.fun/"
+        },
+        "lastasylumplague": {
+          "last_seen": "2026-08-29T13:12:09.095368+00:00",
+          "status": "observed",
+          "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
+        }
+      },
+      "status": "probable"
+    },
+    "WORKING": {
+      "code": "WORKING",
+      "confidence": 0.71,
+      "first_seen": "2026-08-29T13:12:08.173014+00:00",
+      "last_seen": "2026-08-29T13:12:11.010750+00:00",
+      "notified": true,
+      "sources": {
+        "lota": {
+          "last_seen": "2026-08-29T13:12:11.010750+00:00",
+          "status": "observed",
+          "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        },
+        "pocketgamer": {
+          "last_seen": "2026-08-29T13:12:08.173014+00:00",
+          "status": "observed",
+          "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
+        }
+      },
+      "status": "probable"
+    }
+  },
+  "events": [
+    {
+      "at": "2026-08-29T13:12:08.172481+00:00",
+      "code": "FANTASY",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172503+00:00",
+      "code": "LANY2026",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172512+00:00",
+      "code": "UPDATED",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172519+00:00",
+      "code": "RECONSTRUCT",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172525+00:00",
+      "code": "FREQUENTLY",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172531+00:00",
+      "code": "ASPIRING",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172536+00:00",
+      "code": "SPEEDUPS",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172541+00:00",
+      "code": "PROCLAIMED",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172547+00:00",
+      "code": "CONNECTS",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172552+00:00",
+      "code": "STRAIGHTFORWARD",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172557+00:00",
+      "code": "LUMBERYARD",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172562+00:00",
+      "code": "VARIETY",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172568+00:00",
+      "code": "PROFILE",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172573+00:00",
+      "code": "CASTLES",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172577+00:00",
+      "code": "FREEBIES",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172582+00:00",
+      "code": "LIFELONG",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172587+00:00",
+      "code": "ENTERED",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172592+00:00",
+      "code": "EXILIUM",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172597+00:00",
+      "code": "STRATEGY",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172602+00:00",
+      "code": "LAPGPOFF",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172607+00:00",
+      "code": "MISSION",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172613+00:00",
+      "code": "THROUGH",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172618+00:00",
+      "code": "LAXMAS2025",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172623+00:00",
+      "code": "RELATED",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172628+00:00",
+      "code": "SURVIVE",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172633+00:00",
+      "code": "BOOKMARK",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172639+00:00",
+      "code": "LADCEX1223",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172644+00:00",
+      "code": "INCREASE",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172649+00:00",
+      "code": "PATIENTS",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172654+00:00",
+      "code": "RECOVER",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172660+00:00",
+      "code": "TOWNSFOLK",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172665+00:00",
+      "code": "HELPFUL",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172670+00:00",
+      "code": "CARRYING",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172675+00:00",
+      "code": "LUCKILY",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172680+00:00",
+      "code": "ASSOCIATES",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172686+00:00",
+      "code": "SENSITIVE",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172691+00:00",
+      "code": "ARTICLE",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172696+00:00",
+      "code": "UPDATES",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172701+00:00",
+      "code": "COMMENTS",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172706+00:00",
+      "code": "REBUILDING",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172711+00:00",
+      "code": "REBUILD",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172717+00:00",
+      "code": "CURRENTLY",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172724+00:00",
+      "code": "BECAUSE",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172729+00:00",
+      "code": "PANDEMIC",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172734+00:00",
+      "code": "BIGINDIEPITCH",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172740+00:00",
+      "code": "OFFICIAL",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172745+00:00",
+      "code": "LA26FOOL",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172750+00:00",
+      "code": "STORYTELLING",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172755+00:00",
+      "code": "REDEEMING",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172760+00:00",
+      "code": "FOOTBALL",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172766+00:00",
+      "code": "CLASSIC",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172771+00:00",
+      "code": "PRIVACY",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172776+00:00",
+      "code": "MAKESHIFT",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172781+00:00",
+      "code": "RESOURCE",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172786+00:00",
+      "code": "LAIOSLA",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172792+00:00",
+      "code": "FRONTLINE",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172797+00:00",
+      "code": "TROUBLE",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172802+00:00",
+      "code": "RESOURCES",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172808+00:00",
+      "code": "EXACTLY",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172814+00:00",
+      "code": "CHECKED",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172819+00:00",
+      "code": "HOSPITAL",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172824+00:00",
+      "code": "LA1OW9F7X",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172830+00:00",
+      "code": "SPEEDUP",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172835+00:00",
+      "code": "BRASSELL",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172840+00:00",
+      "code": "STRICTLY",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172845+00:00",
+      "code": "SURVIVOR",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172851+00:00",
+      "code": "EXPERIENCE",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172857+00:00",
+      "code": "LAEGG26",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172862+00:00",
+      "code": "GAMEKNOT",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172868+00:00",
+      "code": "BOWBLITZ",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172873+00:00",
+      "code": "NETWORK",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172879+00:00",
+      "code": "BUILDINGS",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172886+00:00",
+      "code": "RECRUIT",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172891+00:00",
+      "code": "BUILDER",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172897+00:00",
+      "code": "HELPING",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172902+00:00",
+      "code": "FOLLOWING",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172908+00:00",
+      "code": "CITIZENS",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172913+00:00",
+      "code": "BEGINNER",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172918+00:00",
+      "code": "PASSION",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172924+00:00",
+      "code": "DESTROYED",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172930+00:00",
+      "code": "HEALING",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172935+00:00",
+      "code": "PRODUCTION",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172941+00:00",
+      "code": "DIAMONDS",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172965+00:00",
+      "code": "FEATURES",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172971+00:00",
+      "code": "LABOR26",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172977+00:00",
+      "code": "PROCESS",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172983+00:00",
+      "code": "ACCORDANCE",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172988+00:00",
+      "code": "PROTECT",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172993+00:00",
+      "code": "PCGAMESINSIDER",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.172999+00:00",
+      "code": "ADDICTING",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.173004+00:00",
+      "code": "VISITING",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.173010+00:00",
+      "code": "BLOCKCHAINGAMER",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.173016+00:00",
+      "code": "WORKING",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.173021+00:00",
+      "code": "LAVD26",
+      "kind": "new",
+      "source": "pocketgamer"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764783+00:00",
+      "code": "LA25W8CM",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764806+00:00",
+      "code": "LAXMAS25",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764813+00:00",
+      "code": "LA20WBZ9",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764819+00:00",
+      "code": "LADOG26",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764825+00:00",
+      "code": "LAW2W2D",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764832+00:00",
+      "code": "LA26PLAY",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764838+00:00",
+      "code": "LA11WB5Q",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764853+00:00",
+      "code": "SAMSUNG",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764859+00:00",
+      "code": "LA26ALLY",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764865+00:00",
+      "code": "LAAS777",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764874+00:00",
+      "code": "TWLAP666",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764882+00:00",
+      "code": "LAW10A7C",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764891+00:00",
+      "code": "LUCK777",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764897+00:00",
+      "code": "LAPJAP777",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764902+00:00",
+      "code": "LAW6AOP",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:08.764909+00:00",
+      "code": "TWITTER",
+      "kind": "new",
+      "source": "app-time"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095239+00:00",
+      "code": "CHARACTER",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095256+00:00",
+      "code": "ACCOUNT",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095271+00:00",
+      "code": "BROWSER",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095278+00:00",
+      "code": "AVAILABLE",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095284+00:00",
+      "code": "REGULARLY",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095289+00:00",
+      "code": "CONTENT",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095303+00:00",
+      "code": "GLOBALLAP",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095308+00:00",
+      "code": "COMMENT",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095318+00:00",
+      "code": "COLLECT",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095327+00:00",
+      "code": "GEVENTS",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095333+00:00",
+      "code": "DIRECTLY",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095343+00:00",
+      "code": "CATEGORIES",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095348+00:00",
+      "code": "PICTURE",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095353+00:00",
+      "code": "LA15WPN4D",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095359+00:00",
+      "code": "REDEMPTION",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095364+00:00",
+      "code": "GAMECODE",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.095370+00:00",
+      "code": "WEBSITE",
+      "kind": "new",
+      "source": "lastasylumplague"
+    },
+    {
+      "at": "2026-08-29T13:12:09.575437+00:00",
+      "code": "CLOUDWALKER",
+      "kind": "new",
+      "source": "lastasylum"
+    },
+    {
+      "at": "2026-08-29T13:12:09.575447+00:00",
+      "code": "LOADING",
+      "kind": "new",
+      "source": "lastasylum"
+    },
+    {
+      "at": "2026-08-29T13:12:09.575469+00:00",
+      "code": "COMPANION",
+      "kind": "new",
+      "source": "lastasylum"
+    },
+    {
+      "at": "2026-08-29T13:12:09.575475+00:00",
+      "code": "EXCLUSIVE",
+      "kind": "new",
+      "source": "lastasylum"
+    },
+    {
+      "at": "2026-08-29T13:12:09.575482+00:00",
+      "code": "UNOFFICIAL",
+      "kind": "new",
+      "source": "lastasylum"
+    },
+    {
+      "at": "2026-08-29T13:12:09.575491+00:00",
+      "code": "LADAD26",
+      "kind": "new",
+      "source": "lastasylum"
+    },
+    {
+      "at": "2026-08-29T13:12:09.575500+00:00",
+      "code": "AFFILIATED",
+      "kind": "new",
+      "source": "lastasylum"
+    },
+    {
+      "at": "2026-08-29T13:12:09.575505+00:00",
+      "code": "SECTION",
+      "kind": "new",
+      "source": "lastasylum"
+    },
+    {
+      "at": "2026-08-29T13:12:09.575511+00:00",
+      "code": "DISCOVER",
+      "kind": "new",
+      "source": "lastasylum"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443721+00:00",
+      "code": "RACCOLTA",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443739+00:00",
+      "code": "SHORTCUT",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443745+00:00",
+      "code": "LAW7D4V",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443756+00:00",
+      "code": "LAW83AS",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443761+00:00",
+      "code": "TARGETS",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443767+00:00",
+      "code": "COMPARE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443775+00:00",
+      "code": "UPGRADES",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443781+00:00",
+      "code": "CATEGORIA",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443788+00:00",
+      "code": "SEPARARLI",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443794+00:00",
+      "code": "MISSIONS",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443804+00:00",
+      "code": "STRENGTH",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443815+00:00",
+      "code": "STRONGER",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443821+00:00",
+      "code": "SOLDIER",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443827+00:00",
+      "code": "COMPATTO",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443833+00:00",
+      "code": "LIVELLO",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443841+00:00",
+      "code": "OBJECTIVES",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443854+00:00",
+      "code": "PENALTY",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443860+00:00",
+      "code": "THREATS",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443865+00:00",
+      "code": "MASSIME",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443871+00:00",
+      "code": "CONFRONTARE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443876+00:00",
+      "code": "SELEZIONARE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443882+00:00",
+      "code": "SURVIVAL",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443888+00:00",
+      "code": "IMPROVES",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443893+00:00",
+      "code": "AGGIORNATO",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443899+00:00",
+      "code": "COORDINATION",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443905+00:00",
+      "code": "KINGDOM",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443910+00:00",
+      "code": "SELEZIONA",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443916+00:00",
+      "code": "CALCOLA",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443921+00:00",
+      "code": "TROVARE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443928+00:00",
+      "code": "MEMBERS",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443934+00:00",
+      "code": "CONTROLLED",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443940+00:00",
+      "code": "REQUIRED",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443965+00:00",
+      "code": "STRATEGIES",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443971+00:00",
+      "code": "EXPENSIVE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443980+00:00",
+      "code": "EDIFICIO",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443985+00:00",
+      "code": "COORDINATED",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443991+00:00",
+      "code": "ACCANTO",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.443996+00:00",
+      "code": "COMMUNITY",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444002+00:00",
+      "code": "COSTRUZIONE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444008+00:00",
+      "code": "BUILDING",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444013+00:00",
+      "code": "CROCCHI",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444022+00:00",
+      "code": "NEGATIVE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444028+00:00",
+      "code": "RESEARCH",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444034+00:00",
+      "code": "ATTIVIT",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444040+00:00",
+      "code": "LIMITED",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444045+00:00",
+      "code": "LOOTBAR",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444051+00:00",
+      "code": "ENEMIES",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444060+00:00",
+      "code": "CALCOLATORE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444065+00:00",
+      "code": "NECESSARI",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444071+00:00",
+      "code": "PLAYERS",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444080+00:00",
+      "code": "KINGDOMS",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444085+00:00",
+      "code": "ENVIRONMENT",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444091+00:00",
+      "code": "TECHNOLOGY",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444096+00:00",
+      "code": "ALLIANCE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444102+00:00",
+      "code": "TEMPORARY",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444108+00:00",
+      "code": "ECONOMY",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444114+00:00",
+      "code": "GLOSSARY",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444119+00:00",
+      "code": "PERFORMANCE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444125+00:00",
+      "code": "TOUGHER",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444131+00:00",
+      "code": "OVERALL",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444136+00:00",
+      "code": "DETTAGLIATE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444143+00:00",
+      "code": "SOPRAVVIVENZA",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444155+00:00",
+      "code": "FRONTALI",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444165+00:00",
+      "code": "DEBUFFS",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444176+00:00",
+      "code": "ACTIONS",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444187+00:00",
+      "code": "SUPPORTI",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444195+00:00",
+      "code": "COLLECTED",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444207+00:00",
+      "code": "INCLUDING",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444213+00:00",
+      "code": "ATTUALE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444219+00:00",
+      "code": "COMPETITION",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444227+00:00",
+      "code": "GAMEPLAY",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444233+00:00",
+      "code": "ALLIANCES",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444242+00:00",
+      "code": "RICHIESTE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444248+00:00",
+      "code": "DIFFERENT",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444256+00:00",
+      "code": "PANNELLO",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444262+00:00",
+      "code": "GUIDANO",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444268+00:00",
+      "code": "ACTIVITIES",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444274+00:00",
+      "code": "REQUIRING",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444279+00:00",
+      "code": "UFFICIALI",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444284+00:00",
+      "code": "RISORSE",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444290+00:00",
+      "code": "EFFETTI",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444296+00:00",
+      "code": "COSTRUZIONI",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444304+00:00",
+      "code": "AGAINST",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444310+00:00",
+      "code": "CONSTRUCTION",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:10.444316+00:00",
+      "code": "USUALLY",
+      "kind": "new",
+      "source": "last-asylum-fun"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010412+00:00",
+      "code": "COLLECTION",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010430+00:00",
+      "code": "INSTRUCTIONS",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010438+00:00",
+      "code": "B7C01CCE4F",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010445+00:00",
+      "code": "SERVERS",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010450+00:00",
+      "code": "CLAIMED",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010468+00:00",
+      "code": "LAPNO1",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010474+00:00",
+      "code": "LETTERS",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010480+00:00",
+      "code": "TWLAP888",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010489+00:00",
+      "code": "REMEMBER",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010499+00:00",
+      "code": "WALKTHROUGH",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010505+00:00",
+      "code": "FE51DC8875",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010510+00:00",
+      "code": "CHALLENGE",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010516+00:00",
+      "code": "F1EC126DB0",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010521+00:00",
+      "code": "LOVE666",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010538+00:00",
+      "code": "IMMEDIATELY",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010544+00:00",
+      "code": "SPECIFIC",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010550+00:00",
+      "code": "INCORRECT",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010556+00:00",
+      "code": "POSSIBLE",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010565+00:00",
+      "code": "D3809EAD49",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010575+00:00",
+      "code": "SERVICE",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010581+00:00",
+      "code": "REASONS",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010587+00:00",
+      "code": "CONSTANTLY",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010593+00:00",
+      "code": "LAQIXI26",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010599+00:00",
+      "code": "LOWERCASE",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010605+00:00",
+      "code": "LAW3UBT",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010610+00:00",
+      "code": "UPPERCASE",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010616+00:00",
+      "code": "LAFD13GY",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010622+00:00",
+      "code": "TRAILING",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010629+00:00",
+      "code": "LAW12A3K",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010638+00:00",
+      "code": "LAF13GY",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010644+00:00",
+      "code": "VIP888",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010650+00:00",
+      "code": "B6FCCA4745",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010659+00:00",
+      "code": "ENGLISH",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010668+00:00",
+      "code": "E4B76C261B",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010678+00:00",
+      "code": "RECEIVE",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010684+00:00",
+      "code": "LA14EBRN",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010690+00:00",
+      "code": "RECOMMENDED",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010696+00:00",
+      "code": "INVALID",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010719+00:00",
+      "code": "LAKR15K9A",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010728+00:00",
+      "code": "MAILBOX",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010734+00:00",
+      "code": "TWAPL666",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010740+00:00",
+      "code": "ATTENTION",
+      "kind": "new",
+      "source": "lota"
+    },
+    {
+      "at": "2026-08-29T13:12:11.010756+00:00",
+      "code": "LAPKOR777",
+      "kind": "new",
+      "source": "lota"
+    }
+  ],
+  "version": 2
+}
