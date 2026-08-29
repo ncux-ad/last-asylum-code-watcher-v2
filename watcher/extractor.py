@@ -77,8 +77,9 @@ def extract_candidates(html: str, today=None) -> list[dict]:
     for tag in soup(["script", "style", "noscript", "svg"]):
         tag.decompose()
 
+    lines = soup.get_text("\n", strip=True).split("\n")
     found = {}
-    for raw_line in soup.get_text("\n", strip=True).split("\n"):
+    for i, raw_line in enumerate(lines):
         upper_line = raw_line.upper()
         for code in CODE_RE.findall(upper_line):
             if code in found:
@@ -94,14 +95,22 @@ def extract_candidates(html: str, today=None) -> list[dict]:
             if HEX_ONLY_RE.match(code):
                 continue
 
+            # Reward/expiry text sometimes sits on the same line as the
+            # code, sometimes on the line right after it (a table row
+            # like "CODE | 100 Diamonds" flattens to two text lines) —
+            # check both.
+            context = raw_line
+            if i + 1 < len(lines):
+                context += "\n" + lines[i + 1]
+
             reward = None
-            rm = REWARD_RE.search(raw_line)
+            rm = REWARD_RE.search(context)
             if rm:
                 reward = f"{rm.group(1)} {rm.group(2)}".strip()
 
             expires_at = None
             expired = None
-            em = EXPIRY_HINT_RE.search(raw_line)
+            em = EXPIRY_HINT_RE.search(context)
             if em:
                 parsed = _parse_expiry(em.group(1), today)
                 if parsed:

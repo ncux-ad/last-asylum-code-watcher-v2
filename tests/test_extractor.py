@@ -96,3 +96,17 @@ def test_extract_candidates_no_expiry_hint():
     candidates = {c["code"]: c for c in extract_candidates(html)}
     assert candidates["LA26ALLY"]["expires_at"] is None
     assert candidates["LA26ALLY"]["expired"] is None
+
+def test_extract_candidates_reward_on_next_line():
+    # Real-world shape (pocketgamer.com): a table row flattens to the
+    # code on its own line, reward text on the line right after it.
+    html = """
+    <table>
+      <tr><td>LADCEX1223</td><td>100 Diamonds x1, 5m Speedup x12</td></tr>
+      <tr><td>LAVD26</td><td>- rewards</td></tr>
+    </table>
+    """
+    candidates = {c["code"]: c for c in extract_candidates(html)}
+    assert candidates["LADCEX1223"]["reward"] == "100 Diamonds"
+    # A placeholder link like "- rewards" has no digit, so no reward guess.
+    assert candidates["LAVD26"]["reward"] is None
