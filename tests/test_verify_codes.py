@@ -104,3 +104,40 @@ def test_apply_to_public_state_unknown_code_is_a_noop(tmp_path, monkeypatch):
     verify_codes.apply_to_public_state("GHOSTCODE1", "ok", "500 Gold")
 
     assert json.loads((tmp_path / "data" / "state.json").read_text())["codes"] == {}
+
+
+def test_apply_to_public_state_not_found_removes_code(tmp_path, monkeypatch):
+    state = {
+        "codes": {
+            "SAVE60": {"code": "SAVE60", "reward": None, "expired": None},
+            "LA26ALLY": {"code": "LA26ALLY", "reward": None, "expired": None},
+        }
+    }
+    _chdir_with_state(tmp_path, monkeypatch, state)
+
+    verify_codes.apply_to_public_state("SAVE60", "not_found", None)
+
+    codes = json.loads((tmp_path / "data" / "state.json").read_text())["codes"]
+    assert "SAVE60" not in codes
+    assert "LA26ALLY" in codes
+
+
+def test_apply_to_public_state_not_found_missing_code_is_a_noop(tmp_path, monkeypatch):
+    state = {"codes": {}}
+    _chdir_with_state(tmp_path, monkeypatch, state)
+
+    verify_codes.apply_to_public_state("GHOSTCODE1", "not_found", None)
+
+    assert json.loads((tmp_path / "data" / "state.json").read_text())["codes"] == {}
+
+
+def test_load_candidates_excludes_not_found_codes_removed_from_state(tmp_path, monkeypatch):
+    # A code already purged via "not_found" no longer exists in state.json,
+    # so it just can't come back as a candidate until the scraper re-adds it -
+    # and if it does, it should be filtered again because it's still a key
+    # in manual_verifications.json.
+    state = {"codes": {"LA26ALLY": {"status": "candidate"}}}
+    _chdir_with_state(tmp_path, monkeypatch, state)
+    verify_codes.save_verification("SAVE60", "not_found", None)
+
+    assert verify_codes.load_candidates() == ["LA26ALLY"]

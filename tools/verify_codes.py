@@ -35,7 +35,7 @@ from pathlib import Path
 REDEMPTION_URL = "https://gevents.globallap.com/gamecode/index.html?gameId=440"
 STATE_PATH = Path("data/state.json")
 VERIFICATIONS_PATH = Path("data/manual_verifications.json")
-RESULT_CHOICES = ("ok", "invalid", "used", "expired", "skip")
+RESULT_CHOICES = ("ok", "invalid", "used", "expired", "not_found", "skip")
 
 
 def load_verifications():
@@ -59,23 +59,35 @@ def save_verification(code, result, reward, verified_at=None):
 def apply_to_public_state(code, result, reward, verified_at=None):
     """Merge a verification result into the public data/state.json.
 
-    Only touches the "manual_verification" field (plus "reward"/"expired"
-    when the result makes them strictly more accurate) - never overwrites
-    the scraper-owned status/confidence/sources.
+    "not_found" means the game itself has never heard of the code (as
+    opposed to "invalid"/"expired", which mean it existed) - that's
+    noise, not signal, so the code is dropped from the public dashboard
+    entirely. It stays in manual_verifications.json so a future scrape
+    re-discovering the same junk code doesn't surface it as a candidate
+    again.
+
+    For every other result, only the "manual_verification" field (plus
+    "reward"/"expired" when the result makes them strictly more
+    accurate) is touched - never the scraper-owned status/confidence/
+    sources.
     """
     if not STATE_PATH.exists():
         return
     verified_at = verified_at or datetime.now(timezone.utc).isoformat()
     state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
-    item = state.get("codes", {}).get(code)
-    if item is None:
-        return
+    codes = state.get("codes", {})
 
-    item["manual_verification"] = {"result": result, "reward": reward, "verified_at": verified_at}
-    if result == "ok" and reward:
-        item["reward"] = reward
-    if result == "expired":
-        item["expired"] = True
+    if result == "not_found":
+        codes.pop(code, None)
+    else:
+        item = codes.get(code)
+        if item is None:
+            return
+        item["manual_verification"] = {"result": result, "reward": reward, "verified_at": verified_at}
+        if result == "ok" and reward:
+            item["reward"] = reward
+        if result == "expired":
+            item["expired"] = True
 
     STATE_PATH.write_text(
         json.dumps(state, ensure_ascii=False, indent=2, sort_keys=True),
