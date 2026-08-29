@@ -1,7 +1,7 @@
 import urllib.parse
 import requests
 from bs4 import BeautifulSoup
-from .extractor import extract_codes
+from .extractor import extract_candidates
 
 HEADERS = {"User-Agent": "LastAsylumCodeRadar/2.0"}
 
@@ -18,12 +18,22 @@ def google_news_rss(query):
     return [x.find("link").text for x in soup.find_all("item") if x.find("link")]
 
 def scan_search(query):
-    codes = set()
+    merged = {}
     for url in google_news_rss(query)[:15]:
         try:
             r = requests.get(url, headers=HEADERS, timeout=15)
-            if r.ok:
-                codes |= extract_codes(r.text)
+            if not r.ok:
+                continue
+            for candidate in extract_candidates(r.text):
+                existing = merged.get(candidate["code"])
+                if existing is None:
+                    merged[candidate["code"]] = candidate
+                    continue
+                if not existing.get("reward") and candidate.get("reward"):
+                    existing["reward"] = candidate["reward"]
+                if not existing.get("expires_at") and candidate.get("expires_at"):
+                    existing["expires_at"] = candidate["expires_at"]
+                    existing["expired"] = candidate["expired"]
         except requests.RequestException:
             pass
-    return codes
+    return list(merged.values())

@@ -13,6 +13,10 @@ h1{font-size:1.25em;margin:8px 0 16px}
 .summary{display:flex;gap:18px;flex-wrap:wrap;font-size:.95em}
 a{color:#58a6ff}
 
+.history-title{color:#8b949e;font-size:.85em;margin-bottom:8px}
+.history-chart{display:block;overflow:visible}
+.history-chart rect{transition:fill .15s}
+
 .item{display:flex;flex-direction:column;gap:8px}
 .item-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .code{font-family:monospace;font-size:1.15em;cursor:pointer;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
@@ -24,8 +28,10 @@ a{color:#58a6ff}
 .badge.confirmed{background:#0f5132;color:#7ee787}
 .badge.probable{background:#3f2d00;color:#d29922}
 .badge.candidate{background:#21262d;color:#8b949e}
+.badge.expired-flag{background:#4c1116;color:#ff7b72}
 
 .meta{color:#8b949e;font-size:.85em}
+.meta.expired{color:#ff7b72}
 details{margin-top:2px}
 summary{cursor:pointer;color:#58a6ff;font-size:.9em;user-select:none;list-style:none}
 summary::-webkit-details-marker{display:none}
@@ -41,21 +47,63 @@ details[open] summary::before{content:"▾ "}
 <body>
 <h1>Last Asylum: Plague — Code Radar</h1>
 <div id="summary"></div>
+<div id="history"></div>
 <div id="list"></div>
 <script>
+function buildHistoryChart(events){
+ const days = 30;
+ const today = new Date(); today.setUTCHours(0,0,0,0);
+ const keys = [];
+ const counts = new Map();
+ for(let i=days-1;i>=0;i--){
+  const d = new Date(today); d.setUTCDate(d.getUTCDate()-i);
+  const key = d.toISOString().slice(0,10);
+  keys.push(key);
+  counts.set(key, 0);
+ }
+ events.filter(e=>e.kind==='new').forEach(e=>{
+  const key = (e.at||'').slice(0,10);
+  if(counts.has(key)) counts.set(key, counts.get(key)+1);
+ });
+ const values = keys.map(k=>counts.get(k));
+ const max = Math.max(1, ...values);
+ const w = 600, h = 100, gap = 2, bw = w/days;
+ const bars = values.map((v,i)=>{
+  const bh = v ? Math.max(3, (v/max)*(h-16)) : 2;
+  const x = i*bw;
+  const y = h - bh;
+  const color = v>0 ? '#58a6ff' : '#21262d';
+  return `<rect x="${x+gap/2}" y="${y}" width="${Math.max(1,bw-gap)}" height="${bh}" rx="1.5" fill="${color}"><title>${keys[i]}: ${v} new</title></rect>`;
+ }).join('');
+ const total = values.reduce((a,b)=>a+b,0);
+ return { total, svg: `<svg class="history-chart" viewBox="0 0 ${w} ${h}" width="100%" height="${h}" preserveAspectRatio="none">${bars}</svg>` };
+}
+
 async function load(){
  const r=await fetch('state.json?'+Date.now()); const d=await r.json();
  const items=Object.values(d.codes).sort((a,b)=>b.confidence-a.confidence);
  document.getElementById('summary').innerHTML =
  `<div class="card summary"><div><b>${items.length}</b> known codes</div><div><b>${items.filter(x=>x.status==='confirmed').length}</b> confirmed</div><div><b>${d.events.length}</b> recent events</div></div>`;
+
+ const chart = buildHistoryChart(d.events||[]);
+ document.getElementById('history').innerHTML =
+ `<div class="card"><div class="history-title">Новые коды за 30 дней · всего ${chart.total}</div>${chart.svg}</div>`;
+
  document.getElementById('list').innerHTML = items.map(x=>{
   const sources = Object.entries(x.sources);
+  const rewardLine = x.reward ? `<div class="meta">Награда: ${x.reward}</div>` : '';
+  const expiryLine = x.expires_at
+   ? `<div class="meta${x.expired?' expired':''}">${x.expired?'Истёк':'Истекает'}: ${x.expires_at}</div>`
+   : '';
+  const expiredBadge = x.expired ? `<span class="badge expired-flag">expired</span>` : '';
   return `
   <div class="card item">
    <div class="item-top">
     <div class="code" data-code="${x.code}" title="Нажмите, чтобы скопировать">${x.code}<button class="copy-btn">Копировать</button></div>
-    <div class="badges"><span class="badge ${x.status}">${x.status}</span><span>${Math.round(x.confidence*100)}%</span></div>
+    <div class="badges">${expiredBadge}<span class="badge ${x.status}">${x.status}</span><span>${Math.round(x.confidence*100)}%</span></div>
    </div>
+   ${rewardLine}
+   ${expiryLine}
    <div class="meta">Впервые: ${new Date(x.first_seen).toLocaleString()} · Обновлено: ${new Date(x.last_seen).toLocaleString()}</div>
    <details>
     <summary>Источники (${sources.length})</summary>

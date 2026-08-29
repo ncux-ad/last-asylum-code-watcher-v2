@@ -14,7 +14,7 @@ class State:
         else:
             self.data = {"version": 2, "codes": {}, "events": []}
 
-    def observe(self, code, source, url=None, status="observed"):
+    def observe(self, code, source, url=None, status="observed", reward=None, expires_at=None, expired=None):
         now = utcnow()
         item = self.data["codes"].get(code)
 
@@ -27,6 +27,9 @@ class State:
                 "status": "candidate",
                 "confidence": 0.0,
                 "notified": False,
+                "reward": None,
+                "expires_at": None,
+                "expired": None,
             }
             self.data["codes"][code] = item
             self.event("new", code, source)
@@ -37,6 +40,13 @@ class State:
             "url": url,
             "status": status,
         }
+        # First useful guess wins; we don't try to arbitrate between
+        # sources that disagree on reward/expiry text.
+        if reward and not item.get("reward"):
+            item["reward"] = reward
+        if expires_at and not item.get("expires_at"):
+            item["expires_at"] = expires_at
+            item["expired"] = expired
         self.recalculate(code)
 
     def recalculate(self, code):

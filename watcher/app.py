@@ -20,9 +20,13 @@ def notify_new_candidates(state):
             f"Код: {code}\n"
             f"Статус: {item['status']}\n"
             f"Confidence: {item['confidence']:.0%}\n"
-            f"Источники: {len(sources)}\n\n"
-            + "\n".join(f"• {s}" for s in sources)
         )
+        if item.get("reward"):
+            text += f"Награда: {item['reward']}\n"
+        if item.get("expires_at"):
+            flag = " (уже истёк)" if item.get("expired") else ""
+            text += f"Истекает: {item['expires_at']}{flag}\n"
+        text += f"Источники: {len(sources)}\n\n" + "\n".join(f"• {s}" for s in sources)
 
         try:
             send_telegram(TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, text)
@@ -34,18 +38,20 @@ def main():
 
     for name, url in SOURCES:
         try:
-            source, codes = scan_source(name, url)
-            for code in codes:
-                state.observe(code, source, url)
-            state.mark_missing(source, codes)
-            print(f"[OK] {name}: {len(codes)} codes")
+            source, candidates = scan_source(name, url)
+            for c in candidates:
+                state.observe(c["code"], source, url, reward=c.get("reward"),
+                              expires_at=c.get("expires_at"), expired=c.get("expired"))
+            state.mark_missing(source, [c["code"] for c in candidates])
+            print(f"[OK] {name}: {len(candidates)} codes")
         except Exception as e:
             print(f"[WARN] {name}: {e}")
 
     for query in SEARCH_QUERIES:
         try:
-            for code in scan_search(query):
-                state.observe(code, "google-news", None, "discovery")
+            for c in scan_search(query):
+                state.observe(c["code"], "google-news", None, "discovery", reward=c.get("reward"),
+                              expires_at=c.get("expires_at"), expired=c.get("expired"))
         except Exception as e:
             print(f"[WARN] search {query}: {e}")
 

@@ -1,4 +1,5 @@
-from watcher.extractor import extract_codes
+from datetime import date
+from watcher.extractor import extract_codes, extract_candidates
 
 def test_extract_codes():
     html = """
@@ -60,3 +61,38 @@ def test_extract_codes_ignores_hex_only_fragments():
     assert "B6FCCA4745" not in codes
     assert "D3809EAD49" not in codes
     assert "LA26ALLY" in codes
+
+def test_extract_candidates_reward():
+    html = "<html><body><p>LA26ALLY - 500 Gold and 10 Gems</p></body></html>"
+    candidates = {c["code"]: c for c in extract_candidates(html)}
+    assert candidates["LA26ALLY"]["reward"] == "500 Gold"
+
+def test_extract_candidates_no_reward():
+    html = "<html><body><p>Use code LA26ALLY at the settings menu</p></body></html>"
+    candidates = {c["code"]: c for c in extract_candidates(html)}
+    assert candidates["LA26ALLY"]["reward"] is None
+
+def test_extract_candidates_expiry_with_year():
+    html = "<html><body><p>LA26ALLY expires 2026-09-15</p></body></html>"
+    candidates = {c["code"]: c for c in extract_candidates(html, today=date(2026, 8, 29))}
+    assert candidates["LA26ALLY"]["expires_at"] == "2026-09-15"
+    assert candidates["LA26ALLY"]["expired"] is False
+
+def test_extract_candidates_expiry_already_passed():
+    html = "<html><body><p>LA26ALLY valid until Aug 1, 2026</p></body></html>"
+    candidates = {c["code"]: c for c in extract_candidates(html, today=date(2026, 8, 29))}
+    assert candidates["LA26ALLY"]["expires_at"] == "2026-08-01"
+    assert candidates["LA26ALLY"]["expired"] is True
+
+def test_extract_candidates_expiry_no_year_rolls_forward():
+    # "today" is Aug 29, 2026; "Jan 5" with no year is more than 180 days
+    # in the past for this year, so it should be read as Jan 5, 2027.
+    html = "<html><body><p>LA26ALLY expires Jan 5</p></body></html>"
+    candidates = {c["code"]: c for c in extract_candidates(html, today=date(2026, 8, 29))}
+    assert candidates["LA26ALLY"]["expires_at"] == "2027-01-05"
+
+def test_extract_candidates_no_expiry_hint():
+    html = "<html><body><p>LA26ALLY is a great code</p></body></html>"
+    candidates = {c["code"]: c for c in extract_candidates(html)}
+    assert candidates["LA26ALLY"]["expires_at"] is None
+    assert candidates["LA26ALLY"]["expired"] is None

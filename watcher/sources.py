@@ -1,5 +1,5 @@
 import requests
-from .extractor import extract_codes
+from .extractor import extract_candidates
 
 HEADERS = {
     "User-Agent": "LastAsylumCodeRadar/2.0 (+public-page-monitor)"
@@ -12,4 +12,4 @@ def fetch(url, timeout=20):
 
 def scan_source(name, url):
     html = fetch(url)
-    return name, extract_codes(html)
+    return name, extract_candidates(html)
