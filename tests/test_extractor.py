@@ -46,3 +46,17 @@ def test_extract_codes_ignores_generic_lucky_codes():
     assert "LUCK777" not in codes
     assert "LAPJAP777" not in codes
     assert "LA26ALLY" in codes
+
+def test_extract_codes_ignores_hex_only_fragments():
+    # lota.games embeds game UUIDs in its catalog page; hex-only
+    # fragments of those (0-9, A-F) look like codes but aren't.
+    html = """
+    <html><body>
+      B6FCCA4745 D3809EAD49
+      Real code: LA26ALLY
+    </body></html>
+    """
+    codes = extract_codes(html)
+    assert "B6FCCA4745" not in codes
+    assert "D3809EAD49" not in codes
+    assert "LA26ALLY" in codes

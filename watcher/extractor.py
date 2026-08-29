@@ -9,6 +9,12 @@ CODE_RE = re.compile(r"(?<![A-Za-z0-9])([A-Z][A-Z0-9]{5,15})(?![A-Za-z0-9])")
 # aren't Last Asylum specific, they're bait for the listing page.
 GENERIC_LUCKY_SUFFIX_RE = re.compile(r"(\d)\1\1$")
 
+# Pages like lota.games's game catalog embed UUIDs (e.g. game IDs);
+# fragments of those look like codes but are pure hex digits/letters
+# (0-9, A-F). Real codes seen so far always contain a non-hex letter
+# (LA20WBZ9, LADCEX1223...), so an all-hex match is an ID, not a code.
+HEX_ONLY_RE = re.compile(r"^[0-9A-F]+$")
+
 STOPWORDS = {
     "LASTASYLUM", "PLAGUE", "ANDROID", "GOOGLEPLAY", "APPSTORE",
     "POCKETGAMER", "GIFT", "CODES", "CODE", "ACTIVE", "EXPIRED",
@@ -32,6 +38,8 @@ def extract_codes(html: str) -> set[str]:
             # LA25W8CM); a pure-letters match is prose, not a code.
             continue
         if GENERIC_LUCKY_SUFFIX_RE.search(code):
+            continue
+        if HEX_ONLY_RE.match(code):
             continue
         found.add(code)
 
