@@ -6,7 +6,7 @@
       "expired": null,
       "expires_at": null,
       "first_seen": "2026-08-29T16:53:59.737881+00:00",
-      "last_seen": "2026-08-30T20:50:06.856935+00:00",
+      "last_seen": "2026-08-30T23:19:02.352498+00:00",
       "manual_verification": {
         "result": "invalid",
         "reward": null,
@@ -16,7 +16,7 @@
       "reward": null,
       "sources": {
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856935+00:00",
+          "last_seen": "2026-08-30T23:19:02.352498+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         }
@@ -28,7 +28,7 @@
       "confidence": 0.53,
       "expired": true,
       "first_seen": "2026-08-29T13:29:14.799810+00:00",
-      "last_seen": "2026-08-30T20:50:01.212884+00:00",
+      "last_seen": "2026-08-30T23:18:56.651714+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -37,7 +37,7 @@
       "notified": false,
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212884+00:00",
+          "last_seen": "2026-08-30T23:18:56.651714+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         }
@@ -49,7 +49,7 @@
       "confidence": 0.53,
       "expired": true,
       "first_seen": "2026-08-29T13:29:16.842677+00:00",
-      "last_seen": "2026-08-30T20:50:03.564417+00:00",
+      "last_seen": "2026-08-30T23:18:58.476015+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -58,7 +58,7 @@
       "notified": false,
       "sources": {
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564417+00:00",
+          "last_seen": "2026-08-30T23:18:58.476015+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         }
@@ -69,7 +69,7 @@
       "code": "LA15WPN4D",
       "confidence": 0.99,
       "first_seen": "2026-08-29T13:29:15.092061+00:00",
-      "last_seen": "2026-08-30T20:50:10.119252+00:00",
+      "last_seen": "2026-08-30T23:19:04.807984+00:00",
       "manual_verification": {
         "result": "ok",
         "reward": "100 алмазов, 60 5мин ускорений, 3 10к зерна, 3 10к бревен",
@@ -79,37 +79,37 @@
       "reward": "100 алмазов, 60 5мин ускорений, 3 10к зерна, 3 10к бревен",
       "sources": {
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856902+00:00",
+          "last_seen": "2026-08-30T23:19:02.352463+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "gamsgo": {
-          "last_seen": "2026-08-30T17:42:33.489374+00:00",
+          "last_seen": "2026-08-30T23:19:01.252244+00:00",
           "status": "observed",
           "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
         },
         "last-asylum-fun": {
-          "last_seen": "2026-08-30T20:50:02.944973+00:00",
+          "last_seen": "2026-08-30T23:18:57.735563+00:00",
           "status": "observed",
           "url": "https://www.last-asylum.fun/"
         },
         "lastasylumplague": {
-          "last_seen": "2026-08-30T20:50:01.610464+00:00",
+          "last_seen": "2026-08-30T23:18:56.885790+00:00",
           "status": "observed",
           "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406346+00:00",
+          "last_seen": "2026-08-30T23:19:01.784613+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564409+00:00",
+          "last_seen": "2026-08-30T23:18:58.476007+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119252+00:00",
+          "last_seen": "2026-08-30T23:19:04.807984+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         }
@@ -120,7 +120,7 @@
       "code": "LA1OW9F7X",
       "confidence": 0.99,
       "first_seen": "2026-08-29T13:29:13.736429+00:00",
-      "last_seen": "2026-08-30T20:50:10.119283+00:00",
+      "last_seen": "2026-08-30T23:19:04.808016+00:00",
       "manual_verification": {
         "result": "ok",
         "reward": "1 - 200 алмазов, 40 5мин ускорения, 2 10к зерна, 2 10к бревна",
@@ -130,47 +130,47 @@
       "reward": "1 - 200 алмазов, 40 5мин ускорения, 2 10к зерна, 2 10к бревна",
       "sources": {
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768609+00:00",
+          "last_seen": "2026-08-30T23:19:00.226219+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856917+00:00",
+          "last_seen": "2026-08-30T23:19:02.352479+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "gamsgo": {
-          "last_seen": "2026-08-30T17:42:33.489364+00:00",
+          "last_seen": "2026-08-30T23:19:01.252234+00:00",
           "status": "observed",
           "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
         },
         "lastasylumplague": {
-          "last_seen": "2026-08-30T20:50:01.610471+00:00",
+          "last_seen": "2026-08-30T23:18:56.885797+00:00",
           "status": "observed",
           "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406317+00:00",
+          "last_seen": "2026-08-30T23:19:01.784584+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564406+00:00",
+          "last_seen": "2026-08-30T23:18:58.476003+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         },
         "pocketgamer": {
-          "last_seen": "2026-08-30T20:50:00.145492+00:00",
+          "last_seen": "2026-08-30T23:18:56.137974+00:00",
           "status": "observed",
           "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119283+00:00",
+          "last_seen": "2026-08-30T23:19:04.808016+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         },
         "topuplive": {
-          "last_seen": "2026-08-30T20:50:04.967249+00:00",
+          "last_seen": "2026-08-30T23:18:59.620961+00:00",
           "status": "observed",
           "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html"
         }
@@ -181,7 +181,7 @@
       "code": "LA20WBZ9",
       "confidence": 0.99,
       "first_seen": "2026-08-29T13:29:14.799890+00:00",
-      "last_seen": "2026-08-30T20:50:10.119280+00:00",
+      "last_seen": "2026-08-30T23:19:04.808013+00:00",
       "manual_verification": {
         "result": "ok",
         "reward": "3 100 алмазов, 60 5мин ускорений, 3 10к зерна, 3 10к бревна",
@@ -191,42 +191,42 @@
       "reward": "3 100 алмазов, 60 5мин ускорений, 3 10к зерна, 3 10к бревна",
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212889+00:00",
+          "last_seen": "2026-08-30T23:18:56.651719+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         },
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856891+00:00",
+          "last_seen": "2026-08-30T23:19:02.352452+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "gamsgo": {
-          "last_seen": "2026-08-30T17:42:33.489367+00:00",
+          "last_seen": "2026-08-30T23:19:01.252237+00:00",
           "status": "observed",
           "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
         },
         "last-asylum-fun": {
-          "last_seen": "2026-08-30T20:50:02.944988+00:00",
+          "last_seen": "2026-08-30T23:18:57.735577+00:00",
           "status": "observed",
           "url": "https://www.last-asylum.fun/"
         },
         "lastasylum": {
-          "last_seen": "2026-08-30T20:50:02.225030+00:00",
+          "last_seen": "2026-08-30T23:18:57.339817+00:00",
           "status": "observed",
           "url": "https://lastasylum.com/gift-codes"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406310+00:00",
+          "last_seen": "2026-08-30T23:19:01.784577+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564401+00:00",
+          "last_seen": "2026-08-30T23:18:58.475999+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119280+00:00",
+          "last_seen": "2026-08-30T23:19:04.808013+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         }
@@ -237,7 +237,7 @@
       "code": "LA25W8CM",
       "confidence": 0.99,
       "first_seen": "2026-08-29T13:29:14.799876+00:00",
-      "last_seen": "2026-08-30T20:50:10.119240+00:00",
+      "last_seen": "2026-08-30T23:19:04.807963+00:00",
       "manual_verification": {
         "result": "ok",
         "reward": "5 - 100 алмазов, 80 5мин ускорений, 6 10к зерна, 6 10к бревна",
@@ -247,37 +247,37 @@
       "reward": "5 - 100 алмазов, 80 5мин ускорений, 6 10к зерна, 6 10к бревна",
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212879+00:00",
+          "last_seen": "2026-08-30T23:18:56.651709+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         },
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768613+00:00",
+          "last_seen": "2026-08-30T23:19:00.226223+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856885+00:00",
+          "last_seen": "2026-08-30T23:19:02.352447+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "lastasylum": {
-          "last_seen": "2026-08-30T20:50:02.225019+00:00",
+          "last_seen": "2026-08-30T23:18:57.339807+00:00",
           "status": "observed",
           "url": "https://lastasylum.com/gift-codes"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406326+00:00",
+          "last_seen": "2026-08-30T23:19:01.784593+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564397+00:00",
+          "last_seen": "2026-08-30T23:18:58.475995+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119240+00:00",
+          "last_seen": "2026-08-30T23:19:04.807963+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         }
@@ -289,7 +289,7 @@
       "confidence": 0.99,
       "expired": true,
       "first_seen": "2026-08-29T13:29:14.799858+00:00",
-      "last_seen": "2026-08-30T20:50:10.119234+00:00",
+      "last_seen": "2026-08-30T23:19:04.807954+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -298,37 +298,37 @@
       "notified": true,
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212872+00:00",
+          "last_seen": "2026-08-30T23:18:56.651703+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         },
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768621+00:00",
+          "last_seen": "2026-08-30T23:19:00.226229+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856847+00:00",
+          "last_seen": "2026-08-30T23:19:02.352424+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "lastasylum": {
-          "last_seen": "2026-08-30T20:50:02.224996+00:00",
+          "last_seen": "2026-08-30T23:18:57.339786+00:00",
           "status": "observed",
           "url": "https://lastasylum.com/gift-codes"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406329+00:00",
+          "last_seen": "2026-08-30T23:19:01.784597+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564430+00:00",
+          "last_seen": "2026-08-30T23:18:58.476028+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119234+00:00",
+          "last_seen": "2026-08-30T23:19:04.807954+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         }
@@ -340,7 +340,7 @@
       "confidence": 0.99,
       "expired": true,
       "first_seen": "2026-08-29T13:29:13.736433+00:00",
-      "last_seen": "2026-08-30T20:50:10.119268+00:00",
+      "last_seen": "2026-08-30T23:19:04.808001+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -350,42 +350,42 @@
       "reward": "200 Diamonds",
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212918+00:00",
+          "last_seen": "2026-08-30T23:18:56.651746+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         },
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768593+00:00",
+          "last_seen": "2026-08-30T23:19:00.226203+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856921+00:00",
+          "last_seen": "2026-08-30T23:19:02.352482+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "gamsgo": {
-          "last_seen": "2026-08-30T17:42:33.489353+00:00",
+          "last_seen": "2026-08-30T23:19:01.252222+00:00",
           "status": "observed",
           "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406357+00:00",
+          "last_seen": "2026-08-30T23:19:01.784625+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "pocketgamer": {
-          "last_seen": "2026-08-30T20:50:00.145498+00:00",
+          "last_seen": "2026-08-30T23:18:56.137979+00:00",
           "status": "observed",
           "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119268+00:00",
+          "last_seen": "2026-08-30T23:19:04.808001+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         },
         "topuplive": {
-          "last_seen": "2026-08-30T20:50:04.967254+00:00",
+          "last_seen": "2026-08-30T23:18:59.620965+00:00",
           "status": "observed",
           "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html"
         }
@@ -398,7 +398,7 @@
       "expired": true,
       "expires_at": null,
       "first_seen": "2026-08-29T16:53:59.267651+00:00",
-      "last_seen": "2026-08-30T20:50:10.119256+00:00",
+      "last_seen": "2026-08-30T23:19:04.807988+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -408,17 +408,17 @@
       "reward": null,
       "sources": {
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856907+00:00",
+          "last_seen": "2026-08-30T23:19:02.352467+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406341+00:00",
+          "last_seen": "2026-08-30T23:19:01.784609+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119256+00:00",
+          "last_seen": "2026-08-30T23:19:04.807988+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         }
@@ -430,7 +430,7 @@
       "confidence": 0.99,
       "expired": true,
       "first_seen": "2026-08-29T13:29:14.799867+00:00",
-      "last_seen": "2026-08-30T20:50:10.119248+00:00",
+      "last_seen": "2026-08-30T23:19:04.807979+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -439,32 +439,32 @@
       "notified": true,
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212907+00:00",
+          "last_seen": "2026-08-30T23:18:56.651735+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         },
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856899+00:00",
+          "last_seen": "2026-08-30T23:19:02.352459+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "last-asylum-fun": {
-          "last_seen": "2026-08-30T20:50:02.944979+00:00",
+          "last_seen": "2026-08-30T23:18:57.735569+00:00",
           "status": "observed",
           "url": "https://www.last-asylum.fun/"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406337+00:00",
+          "last_seen": "2026-08-30T23:19:01.784605+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564442+00:00",
+          "last_seen": "2026-08-30T23:18:58.476040+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119248+00:00",
+          "last_seen": "2026-08-30T23:19:04.807979+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         }
@@ -476,7 +476,7 @@
       "confidence": 0.99,
       "expired": true,
       "first_seen": "2026-08-29T13:29:13.736424+00:00",
-      "last_seen": "2026-08-30T20:50:10.119260+00:00",
+      "last_seen": "2026-08-30T23:19:04.807992+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -485,42 +485,42 @@
       "notified": true,
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212915+00:00",
+          "last_seen": "2026-08-30T23:18:56.651743+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         },
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768601+00:00",
+          "last_seen": "2026-08-30T23:19:00.226211+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856910+00:00",
+          "last_seen": "2026-08-30T23:19:02.352471+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "gamsgo": {
-          "last_seen": "2026-08-30T17:42:33.489357+00:00",
+          "last_seen": "2026-08-30T23:19:01.252226+00:00",
           "status": "observed",
           "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406350+00:00",
+          "last_seen": "2026-08-30T23:19:01.784617+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "pocketgamer": {
-          "last_seen": "2026-08-30T20:50:00.145453+00:00",
+          "last_seen": "2026-08-30T23:18:56.137940+00:00",
           "status": "observed",
           "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119260+00:00",
+          "last_seen": "2026-08-30T23:19:04.807992+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         },
         "topuplive": {
-          "last_seen": "2026-08-30T20:50:04.967217+00:00",
+          "last_seen": "2026-08-30T23:18:59.620931+00:00",
           "status": "observed",
           "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html"
         }
@@ -532,7 +532,7 @@
       "confidence": 0.99,
       "expired": true,
       "first_seen": "2026-08-29T13:29:15.447185+00:00",
-      "last_seen": "2026-08-30T20:50:10.119244+00:00",
+      "last_seen": "2026-08-30T23:19:04.807971+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -541,32 +541,32 @@
       "notified": true,
       "sources": {
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856895+00:00",
+          "last_seen": "2026-08-30T23:19:02.352456+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "gamsgo": {
-          "last_seen": "2026-08-30T17:42:33.489371+00:00",
+          "last_seen": "2026-08-30T23:19:01.252241+00:00",
           "status": "observed",
           "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
         },
         "last-asylum-fun": {
-          "last_seen": "2026-08-30T20:50:02.944984+00:00",
+          "last_seen": "2026-08-30T23:18:57.735573+00:00",
           "status": "observed",
           "url": "https://www.last-asylum.fun/"
         },
         "lastasylum": {
-          "last_seen": "2026-08-30T20:50:02.225025+00:00",
+          "last_seen": "2026-08-30T23:18:57.339813+00:00",
           "status": "observed",
           "url": "https://lastasylum.com/gift-codes"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406333+00:00",
+          "last_seen": "2026-08-30T23:19:01.784601+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119244+00:00",
+          "last_seen": "2026-08-30T23:19:04.807971+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         }
@@ -577,7 +577,7 @@
       "code": "LADCEX1223",
       "confidence": 0.99,
       "first_seen": "2026-08-29T13:29:13.736414+00:00",
-      "last_seen": "2026-08-30T20:50:10.119276+00:00",
+      "last_seen": "2026-08-30T23:19:04.808009+00:00",
       "manual_verification": {
         "result": "ok",
         "reward": "1 - 100 алмазов, 12 5мин ускорений, 3 5к зерна, 3 5к бревна",
@@ -587,62 +587,62 @@
       "reward": "1 - 100 алмазов, 12 5мин ускорений, 3 5к зерна, 3 5к бревна",
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212894+00:00",
+          "last_seen": "2026-08-30T23:18:56.651723+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         },
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768605+00:00",
+          "last_seen": "2026-08-30T23:19:00.226215+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "clashiverse": {
-          "last_seen": "2026-08-30T20:50:08.559313+00:00",
+          "last_seen": "2026-08-30T23:19:03.681242+00:00",
           "status": "observed",
           "url": "https://clashiverse.com/last-asylum-plague-codes/"
         },
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856931+00:00",
+          "last_seen": "2026-08-30T23:19:02.352494+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "gamsgo": {
-          "last_seen": "2026-08-30T17:42:33.489327+00:00",
+          "last_seen": "2026-08-30T23:19:01.252197+00:00",
           "status": "observed",
           "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
         },
         "last-asylum-fun": {
-          "last_seen": "2026-08-30T20:50:02.944951+00:00",
+          "last_seen": "2026-08-30T23:18:57.735542+00:00",
           "status": "observed",
           "url": "https://www.last-asylum.fun/"
         },
         "lastasylumplague": {
-          "last_seen": "2026-08-30T20:50:01.610475+00:00",
+          "last_seen": "2026-08-30T23:18:56.885801+00:00",
           "status": "observed",
           "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406321+00:00",
+          "last_seen": "2026-08-30T23:19:01.784589+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564413+00:00",
+          "last_seen": "2026-08-30T23:18:58.476011+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         },
         "pocketgamer": {
-          "last_seen": "2026-08-30T20:50:00.145503+00:00",
+          "last_seen": "2026-08-30T23:18:56.137983+00:00",
           "status": "observed",
           "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119276+00:00",
+          "last_seen": "2026-08-30T23:19:04.808009+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         },
         "topuplive": {
-          "last_seen": "2026-08-30T20:50:04.967258+00:00",
+          "last_seen": "2026-08-30T23:18:59.620969+00:00",
           "status": "observed",
           "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html"
         }
@@ -653,7 +653,7 @@
       "code": "LADOG26",
       "confidence": 0.99,
       "first_seen": "2026-08-29T13:29:14.799851+00:00",
-      "last_seen": "2026-08-30T20:50:05.768550+00:00",
+      "last_seen": "2026-08-30T23:19:00.226163+00:00",
       "manual_verification": {
         "result": "ok",
         "reward": "1 - 200 алмазов, 20 5мин ускорений, 2 10к зерна, 2 10к бревна, 1 18к травы",
@@ -663,22 +663,22 @@
       "reward": "1 - 200 алмазов, 20 5мин ускорений, 2 10к зерна, 2 10к бревна, 1 18к травы",
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212833+00:00",
+          "last_seen": "2026-08-30T23:18:56.651682+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         },
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768550+00:00",
+          "last_seen": "2026-08-30T23:19:00.226163+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "lastasylumplague": {
-          "last_seen": "2026-08-30T20:50:01.610443+00:00",
+          "last_seen": "2026-08-30T23:18:56.885769+00:00",
           "status": "observed",
           "url": "https://lastasylumplague.com/guides/active-gift-codes-and-how-to-redeem-ios-android/"
         },
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564359+00:00",
+          "last_seen": "2026-08-30T23:18:58.475950+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         }
@@ -690,7 +690,7 @@
       "confidence": 0.99,
       "expired": true,
       "first_seen": "2026-08-29T13:29:13.736405+00:00",
-      "last_seen": "2026-08-30T20:50:10.119264+00:00",
+      "last_seen": "2026-08-30T23:19:04.807997+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -699,37 +699,37 @@
       "notified": true,
       "sources": {
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768597+00:00",
+          "last_seen": "2026-08-30T23:19:00.226207+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856914+00:00",
+          "last_seen": "2026-08-30T23:19:02.352475+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "gamsgo": {
-          "last_seen": "2026-08-30T17:42:33.489360+00:00",
+          "last_seen": "2026-08-30T23:19:01.252230+00:00",
           "status": "observed",
           "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406353+00:00",
+          "last_seen": "2026-08-30T23:19:01.784621+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "pocketgamer": {
-          "last_seen": "2026-08-30T20:50:00.145484+00:00",
+          "last_seen": "2026-08-30T23:18:56.137966+00:00",
           "status": "observed",
           "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119264+00:00",
+          "last_seen": "2026-08-30T23:19:04.807997+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         },
         "topuplive": {
-          "last_seen": "2026-08-30T20:50:04.967243+00:00",
+          "last_seen": "2026-08-30T23:18:59.620955+00:00",
           "status": "observed",
           "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html"
         }
@@ -741,7 +741,7 @@
       "confidence": 0.53,
       "expired": true,
       "first_seen": "2026-08-29T13:29:16.842726+00:00",
-      "last_seen": "2026-08-30T20:50:03.564422+00:00",
+      "last_seen": "2026-08-30T23:18:58.476020+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -750,7 +750,7 @@
       "notified": false,
       "sources": {
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564422+00:00",
+          "last_seen": "2026-08-30T23:18:58.476020+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         }
@@ -761,7 +761,7 @@
       "code": "LAKR15K9A",
       "confidence": 0.71,
       "first_seen": "2026-08-29T13:29:16.842689+00:00",
-      "last_seen": "2026-08-30T20:50:05.768583+00:00",
+      "last_seen": "2026-08-30T23:19:00.226194+00:00",
       "manual_verification": {
         "result": "ok",
         "reward": "3 - 100 алмазов, 5 билетов призыва, 40 5мин ускорений, 1 50к зерна, 1 50к бревна",
@@ -771,12 +771,12 @@
       "reward": "3 - 100 алмазов, 5 билетов призыва, 40 5мин ускорений, 1 50к зерна, 1 50к бревна",
       "sources": {
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768583+00:00",
+          "last_seen": "2026-08-30T23:19:00.226194+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564385+00:00",
+          "last_seen": "2026-08-30T23:18:58.475976+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         }
@@ -788,7 +788,7 @@
       "confidence": 0.99,
       "expired": true,
       "first_seen": "2026-08-29T13:29:13.736437+00:00",
-      "last_seen": "2026-08-30T20:50:10.119272+00:00",
+      "last_seen": "2026-08-30T23:19:04.808005+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -797,42 +797,42 @@
       "notified": true,
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212926+00:00",
+          "last_seen": "2026-08-30T23:18:56.651754+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         },
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768624+00:00",
+          "last_seen": "2026-08-30T23:19:00.226233+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "clashiverse": {
-          "last_seen": "2026-08-30T20:50:08.559307+00:00",
+          "last_seen": "2026-08-30T23:19:03.681235+00:00",
           "status": "observed",
           "url": "https://clashiverse.com/last-asylum-plague-codes/"
         },
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856928+00:00",
+          "last_seen": "2026-08-30T23:19:02.352490+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "gamsgo": {
-          "last_seen": "2026-08-30T17:42:33.489377+00:00",
+          "last_seen": "2026-08-30T23:19:01.252247+00:00",
           "status": "observed",
           "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406365+00:00",
+          "last_seen": "2026-08-30T23:19:01.784633+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "pocketgamer": {
-          "last_seen": "2026-08-30T20:50:00.145514+00:00",
+          "last_seen": "2026-08-30T23:18:56.137992+00:00",
           "status": "observed",
           "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119272+00:00",
+          "last_seen": "2026-08-30T23:19:04.808005+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         }
@@ -843,7 +843,7 @@
       "code": "LAQIXI26",
       "confidence": 0.99,
       "first_seen": "2026-08-29T13:29:16.842710+00:00",
-      "last_seen": "2026-08-30T20:50:10.119212+00:00",
+      "last_seen": "2026-08-30T23:19:04.807924+00:00",
       "manual_verification": {
         "result": "ok",
         "reward": "1 - 200 алмазов, 20 5мин ускорений, 2 10к зерна, 2 10к бревна, 1 18к травы",
@@ -853,22 +853,22 @@
       "reward": "1 - 200 алмазов, 20 5мин ускорений, 2 10к зерна, 2 10к бревна, 1 18к травы",
       "sources": {
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768617+00:00",
+          "last_seen": "2026-08-30T23:19:00.226226+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406286+00:00",
+          "last_seen": "2026-08-30T23:19:01.784555+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564392+00:00",
+          "last_seen": "2026-08-30T23:18:58.475989+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119212+00:00",
+          "last_seen": "2026-08-30T23:19:04.807924+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         }
@@ -881,7 +881,7 @@
       "expired": null,
       "expires_at": null,
       "first_seen": "2026-08-29T18:08:13.279949+00:00",
-      "last_seen": "2026-08-30T20:50:05.768576+00:00",
+      "last_seen": "2026-08-30T23:19:00.226187+00:00",
       "manual_verification": {
         "result": "ok",
         "reward": "1 - 200 алмазов, 20 5мин ускорений, 2 10к зерна, 2 10к бревна, 1 18к травы",
@@ -891,7 +891,7 @@
       "reward": "1 - 200 алмазов, 20 5мин ускорений, 2 10к зерна, 2 10к бревна, 1 18к травы",
       "sources": {
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768576+00:00",
+          "last_seen": "2026-08-30T23:19:00.226187+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
@@ -908,7 +908,7 @@
       "confidence": 0.99,
       "expired": true,
       "first_seen": "2026-08-29T13:29:13.736419+00:00",
-      "last_seen": "2026-08-30T20:50:10.119287+00:00",
+      "last_seen": "2026-08-30T23:19:04.808020+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -918,57 +918,57 @@
       "reward": "100 Diamonds",
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212922+00:00",
+          "last_seen": "2026-08-30T23:18:56.651750+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         },
         "boostbot": {
-          "last_seen": "2026-08-30T20:50:05.768588+00:00",
+          "last_seen": "2026-08-30T23:19:00.226199+00:00",
           "status": "observed",
           "url": "https://boostbot.org/blog/last-asylum-plague-gift-codes/"
         },
         "clashiverse": {
-          "last_seen": "2026-08-30T20:50:08.559283+00:00",
+          "last_seen": "2026-08-30T23:19:03.681213+00:00",
           "status": "observed",
           "url": "https://clashiverse.com/last-asylum-plague-codes/"
         },
         "gamestaunch": {
-          "last_seen": "2026-08-30T20:50:06.856924+00:00",
+          "last_seen": "2026-08-30T23:19:02.352486+00:00",
           "status": "observed",
           "url": "https://gamestaunch.com/codes/last-asylum-plague-codes/"
         },
         "gamsgo": {
-          "last_seen": "2026-08-30T17:42:33.489347+00:00",
+          "last_seen": "2026-08-30T23:19:01.252217+00:00",
           "status": "observed",
           "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
         },
         "lastasylum": {
-          "last_seen": "2026-08-30T20:50:02.225035+00:00",
+          "last_seen": "2026-08-30T23:18:57.339821+00:00",
           "status": "observed",
           "url": "https://lastasylum.com/gift-codes"
         },
         "levelgeeks": {
-          "last_seen": "2026-08-30T20:50:06.406361+00:00",
+          "last_seen": "2026-08-30T23:19:01.784629+00:00",
           "status": "observed",
           "url": "https://levelgeeks.net/last-asylum-plague-codes/"
         },
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564434+00:00",
+          "last_seen": "2026-08-30T23:18:58.476032+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         },
         "pocketgamer": {
-          "last_seen": "2026-08-30T20:50:00.145509+00:00",
+          "last_seen": "2026-08-30T23:18:56.137988+00:00",
           "status": "observed",
           "url": "https://www.pocketgamer.com/last-asylum-plague/codes/"
         },
         "progamepilot": {
-          "last_seen": "2026-08-30T20:50:10.119287+00:00",
+          "last_seen": "2026-08-30T23:19:04.808020+00:00",
           "status": "observed",
           "url": "https://progamepilot.com/last-asylum-plague-codes/"
         },
         "topuplive": {
-          "last_seen": "2026-08-30T20:50:04.967263+00:00",
+          "last_seen": "2026-08-30T23:18:59.620974+00:00",
           "status": "observed",
           "url": "https://www.topuplive.com/news/last-asylum-plague-codes.html"
         }
@@ -980,7 +980,7 @@
       "confidence": 0.53,
       "expired": true,
       "first_seen": "2026-08-29T13:29:14.799846+00:00",
-      "last_seen": "2026-08-30T20:50:01.212898+00:00",
+      "last_seen": "2026-08-30T23:18:56.651727+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -989,7 +989,7 @@
       "notified": false,
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212898+00:00",
+          "last_seen": "2026-08-30T23:18:56.651727+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         }
@@ -1001,7 +1001,7 @@
       "confidence": 0.53,
       "expired": true,
       "first_seen": "2026-08-29T13:29:16.842650+00:00",
-      "last_seen": "2026-08-30T20:50:03.564426+00:00",
+      "last_seen": "2026-08-30T23:18:58.476024+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -1010,7 +1010,7 @@
       "notified": false,
       "sources": {
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564426+00:00",
+          "last_seen": "2026-08-30T23:18:58.476024+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         }
@@ -1022,7 +1022,7 @@
       "confidence": 0.53,
       "expired": true,
       "first_seen": "2026-08-29T13:29:14.799863+00:00",
-      "last_seen": "2026-08-30T20:50:01.212911+00:00",
+      "last_seen": "2026-08-30T23:18:56.651739+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -1031,7 +1031,7 @@
       "notified": false,
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212911+00:00",
+          "last_seen": "2026-08-30T23:18:56.651739+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         }
@@ -1043,7 +1043,7 @@
       "confidence": 0.53,
       "expired": true,
       "first_seen": "2026-08-29T13:29:16.842693+00:00",
-      "last_seen": "2026-08-30T20:50:03.564438+00:00",
+      "last_seen": "2026-08-30T23:18:58.476036+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -1052,7 +1052,7 @@
       "notified": false,
       "sources": {
         "lota": {
-          "last_seen": "2026-08-30T20:50:03.564438+00:00",
+          "last_seen": "2026-08-30T23:18:58.476036+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
         }
@@ -1064,7 +1064,7 @@
       "confidence": 0.53,
       "expired": true,
       "first_seen": "2026-08-29T13:29:14.799837+00:00",
-      "last_seen": "2026-08-30T20:50:01.212902+00:00",
+      "last_seen": "2026-08-30T23:18:56.651731+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -1073,7 +1073,7 @@
       "notified": false,
       "sources": {
         "app-time": {
-          "last_seen": "2026-08-30T20:50:01.212902+00:00",
+          "last_seen": "2026-08-30T23:18:56.651731+00:00",
           "status": "observed",
           "url": "https://app-time.ru/games/last-asylum-plague/codes"
         }
@@ -1085,7 +1085,7 @@
       "confidence": 0.53,
       "expired": true,
       "first_seen": "2026-08-29T13:29:15.971627+00:00",
-      "last_seen": "2026-08-30T20:50:02.944992+00:00",
+      "last_seen": "2026-08-30T23:18:57.735581+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -1094,7 +1094,7 @@
       "notified": false,
       "sources": {
         "last-asylum-fun": {
-          "last_seen": "2026-08-30T20:50:02.944992+00:00",
+          "last_seen": "2026-08-30T23:18:57.735581+00:00",
           "status": "observed",
           "url": "https://www.last-asylum.fun/"
         }
@@ -1106,7 +1106,7 @@
       "confidence": 0.53,
       "expired": true,
       "first_seen": "2026-08-29T13:29:15.971610+00:00",
-      "last_seen": "2026-08-30T20:50:02.944997+00:00",
+      "last_seen": "2026-08-30T23:18:57.735586+00:00",
       "manual_verification": {
         "result": "expired",
         "reward": null,
@@ -1115,7 +1115,7 @@
       "notified": false,
       "sources": {
         "last-asylum-fun": {
-          "last_seen": "2026-08-30T20:50:02.944997+00:00",
+          "last_seen": "2026-08-30T23:18:57.735586+00:00",
           "status": "observed",
           "url": "https://www.last-asylum.fun/"
         }
