@@ -7,6 +7,7 @@ def send_telegram(token, chat_id, text, message_thread_id=None):
     payload = {
         "chat_id": chat_id,
         "text": text,
+        "parse_mode": "HTML",
         "disable_web_page_preview": True,
     }
     if message_thread_id:
