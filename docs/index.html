@@ -43,6 +43,12 @@ details[open] summary::before{content:"▾ "}
 .expired-block>summary{font-size:.95em;padding:6px 2px}
 .expired-items{margin-top:6px}
 
+.controls{display:flex;gap:10px;margin:10px 0;flex-wrap:wrap}
+.search-input{flex:1;min-width:180px;padding:10px 12px;font-size:1em;background:#161b22;color:#e6edf3;border:1px solid #30363d;border-radius:8px}
+.search-input:focus{outline:none;border-color:#58a6ff}
+.sort-select{padding:10px 12px;font-size:.9em;background:#161b22;color:#e6edf3;border:1px solid #30363d;border-radius:8px}
+.no-results{color:#8b949e;text-align:center;padding:20px}
+
 @media (max-width:420px){
  .item-top{flex-direction:column;align-items:flex-start}
 }
@@ -51,6 +57,13 @@ details[open] summary::before{content:"▾ "}
 <body>
 <h1>Last Asylum: Plague — Code Radar</h1>
 <div id="summary"></div>
+<div class="controls">
+ <input id="search" class="search-input" type="text" placeholder="Поиск по коду...">
+ <select id="sort" class="sort-select">
+  <option value="new">Сначала новые</option>
+  <option value="confidence">Сначала надёжные</option>
+ </select>
+</div>
 <div id="list"></div>
 <div id="expired-list"></div>
 <script>
@@ -95,21 +108,39 @@ function renderCard(x){
  </div>`;
 }
 
-async function load(){
- const r=await fetch('state.json?'+Date.now()); const d=await r.json();
- const items=Object.values(d.codes).sort((a,b)=>{
-  const aWorks = a.manual_verification?.result === 'ok' ? 1 : 0;
-  const bWorks = b.manual_verification?.result === 'ok' ? 1 : 0;
-  if(aWorks !== bWorks) return bWorks - aWorks;
-  return b.confidence - a.confidence;
- });
+let ALL_ITEMS = [];
+let ALL_EVENTS = [];
+
+function sortByConfidence(a,b){
+ const aWorks = a.manual_verification?.result === 'ok' ? 1 : 0;
+ const bWorks = b.manual_verification?.result === 'ok' ? 1 : 0;
+ if(aWorks !== bWorks) return bWorks - aWorks;
+ return b.confidence - a.confidence;
+}
+
+function sortByNewest(a,b){
+ return new Date(b.first_seen) - new Date(a.first_seen);
+}
+
+function render(){
+ const query = document.getElementById('search').value.trim().toUpperCase();
+ const sortMode = document.getElementById('sort').value;
+ const sortFn = sortMode === 'new' ? sortByNewest : sortByConfidence;
+
+ const filtered = query
+  ? ALL_ITEMS.filter(x => x.code.toUpperCase().includes(query))
+  : ALL_ITEMS;
+ const items = [...filtered].sort(sortFn);
+
  document.getElementById('summary').innerHTML =
- `<div class="card summary"><div><b>${items.length}</b> known codes</div><div><b>${items.filter(x=>x.status==='confirmed').length}</b> confirmed</div><div><b>${d.events.length}</b> recent events</div></div>`;
+ `<div class="card summary"><div><b>${ALL_ITEMS.length}</b> known codes</div><div><b>${ALL_ITEMS.filter(x=>x.status==='confirmed').length}</b> confirmed</div><div><b>${ALL_EVENTS.length}</b> recent events</div></div>`;
 
  const activeItems = items.filter(x=>!isExpired(x));
  const expiredItems = items.filter(isExpired);
 
- document.getElementById('list').innerHTML = activeItems.map(renderCard).join('');
+ document.getElementById('list').innerHTML = activeItems.length
+  ? activeItems.map(renderCard).join('')
+  : (query ? '<div class="no-results">Ничего не найдено</div>' : '');
 
  document.getElementById('expired-list').innerHTML = expiredItems.length ? `
  <details class="expired-block">
@@ -117,6 +148,16 @@ async function load(){
   <div class="expired-items">${expiredItems.map(renderCard).join('')}</div>
  </details>` : '';
 }
+
+async function load(){
+ const r=await fetch('state.json?'+Date.now()); const d=await r.json();
+ ALL_ITEMS = Object.values(d.codes);
+ ALL_EVENTS = d.events;
+ render();
+}
+
+document.getElementById('search').addEventListener('input', render);
+document.getElementById('sort').addEventListener('change', render);
 
 async function copyCode(text){
  if(navigator.clipboard){

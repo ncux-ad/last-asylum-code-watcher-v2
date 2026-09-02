@@ -1,5 +1,51 @@
 {
   "codes": {
+    "26CHOCO": {
+      "code": "26CHOCO",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-07-07T13:00:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511834+00:00",
+      "manual_verification": {
+        "result": "invalid",
+        "reward": null,
+        "verified_at": "2026-09-02T09:20:01.183315+00:00"
+      },
+      "notified": false,
+      "reward": null,
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-07-07T13:00:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "candidate"
+    },
+    "61HW4LA": {
+      "code": "61HW4LA",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-06-19T13:06:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511821+00:00",
+      "manual_verification": {
+        "result": "ok",
+        "reward": "10x20 алмазов,  20х5 мин, 1000х10 зерна, 1000х10 бревна, 2 билета призыва.",
+        "verified_at": "2026-09-02T09:23:18.378367+00:00"
+      },
+      "notified": false,
+      "reward": "10x20 алмазов,  20х5 мин, 1000х10 зерна, 1000х10 бревна, 2 билета призыва.",
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-06-19T13:06:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "candidate"
+    },
     "HAPPYKID61": {
       "code": "HAPPYKID61",
       "confidence": 0.53,
@@ -476,6 +522,52 @@
       },
       "status": "confirmed"
     },
+    "LA9WC6O": {
+      "code": "LA9WC6O",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-07-15T07:27:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511846+00:00",
+      "manual_verification": {
+        "result": "invalid",
+        "reward": null,
+        "verified_at": "2026-09-02T09:23:35.958438+00:00"
+      },
+      "notified": false,
+      "reward": null,
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-07-15T07:27:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "candidate"
+    },
+    "LAAS777": {
+      "code": "LAAS777",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-05-01T12:37:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511713+00:00",
+      "manual_verification": {
+        "result": "ok",
+        "reward": "100x2 алмазов,  6х5 мин лечения, 5000х5 зерна, 5000х5 бревна, 5 билета призыва.",
+        "verified_at": "2026-09-02T09:25:53.477478+00:00"
+      },
+      "notified": false,
+      "reward": "100x2 алмазов,  6х5 мин лечения, 5000х5 зерна, 5000х5 бревна, 5 билета призыва.",
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-05-01T12:37:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "candidate"
+    },
     "LABOR26": {
       "code": "LABOR26",
       "confidence": 0.99,
@@ -769,18 +861,51 @@
     },
     "LAKR10K6L": {
       "code": "LAKR10K6L",
-      "confidence": 0.53,
+      "confidence": 0.71,
       "expired": null,
       "expires_at": null,
-      "first_seen": "2026-09-01T06:40:29.005085+00:00",
-      "last_seen": "2026-09-02T09:30:19.353731+00:00",
+      "first_seen": "2026-07-16T10:31:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511858+00:00",
+      "manual_verification": {
+        "result": "ok",
+        "reward": "100x3 алмазов,  6х5 мин лечения, 1х50000 зерна, 1х50000 бревна, 3 билета призыва.",
+        "verified_at": "2026-09-02T09:27:48.230697+00:00"
+      },
       "notified": false,
-      "reward": "300 Diamonds",
+      "reward": "100x3 алмазов,  6х5 мин лечения, 1х50000 зерна, 1х50000 бревна, 3 билета призыва.",
       "sources": {
         "gamsgo": {
           "last_seen": "2026-09-02T09:30:19.353731+00:00",
           "status": "observed",
           "url": "https://www.gamsgo.com/blog/last-asylum-plague-codes"
+        },
+        "telegram-manual": {
+          "last_seen": "2026-07-16T10:31:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "probable"
+    },
+    "LAKR12K7O": {
+      "code": "LAKR12K7O",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-07-28T14:01:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511912+00:00",
+      "manual_verification": {
+        "result": "ok",
+        "reward": "100x3 алмазов,  40х5 мин ускор, 1х50000 зерна, 1х50000 бревна, 3 билета призыва.",
+        "verified_at": "2026-09-02T09:29:16.312925+00:00"
+      },
+      "notified": false,
+      "reward": "100x3 алмазов,  40х5 мин ускор, 1х50000 зерна, 1х50000 бревна, 3 билета призыва.",
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-07-28T14:01:00+00:00",
+          "status": "reported",
+          "url": null
         }
       },
       "status": "candidate"
@@ -871,6 +996,29 @@
         }
       },
       "status": "confirmed"
+    },
+    "LAPJAP777": {
+      "code": "LAPJAP777",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-04-23T14:58:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511677+00:00",
+      "manual_verification": {
+        "result": "ok",
+        "reward": "100x3 алмазов, 3х10000 зерна, 3х10000 бревна, 5 билета призыва.",
+        "verified_at": "2026-09-02T09:31:31.344127+00:00"
+      },
+      "notified": false,
+      "reward": "100x3 алмазов, 3х10000 зерна, 3х10000 бревна, 5 билета призыва.",
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-04-23T14:58:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "candidate"
     },
     "LAQIXI26": {
       "code": "LAQIXI26",
@@ -1055,6 +1203,29 @@
       },
       "status": "candidate"
     },
+    "LAW1HCK": {
+      "code": "LAW1HCK",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-05-20T15:49:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511734+00:00",
+      "manual_verification": {
+        "result": "invalid",
+        "reward": null,
+        "verified_at": "2026-09-02T09:31:52.524117+00:00"
+      },
+      "notified": false,
+      "reward": null,
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-05-20T15:49:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "candidate"
+    },
     "LAW2W2D": {
       "code": "LAW2W2D",
       "confidence": 0.53,
@@ -1093,6 +1264,52 @@
           "last_seen": "2026-09-02T09:30:16.073667+00:00",
           "status": "observed",
           "url": "https://lota.games/en/game/019f735d-8adc-751f-8073-3930143815c9/giftcodes"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAW4A8V": {
+      "code": "LAW4A8V",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-06-10T06:12:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511786+00:00",
+      "manual_verification": {
+        "result": "invalid",
+        "reward": null,
+        "verified_at": "2026-09-02T09:32:08.904704+00:00"
+      },
+      "notified": false,
+      "reward": null,
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-06-10T06:12:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "candidate"
+    },
+    "LAW5HBR": {
+      "code": "LAW5HBR",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-06-17T13:45:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511809+00:00",
+      "manual_verification": {
+        "result": "invalid",
+        "reward": null,
+        "verified_at": "2026-09-02T09:32:25.340619+00:00"
+      },
+      "notified": false,
+      "reward": null,
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-06-17T13:45:00+00:00",
+          "status": "reported",
+          "url": null
         }
       },
       "status": "candidate"
@@ -1156,6 +1373,121 @@
           "last_seen": "2026-09-02T09:30:15.634709+00:00",
           "status": "observed",
           "url": "https://www.last-asylum.fun/"
+        }
+      },
+      "status": "candidate"
+    },
+    "LAWTD16F": {
+      "code": "LAWTD16F",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-09-02T09:38:05.511926+00:00",
+      "last_seen": "2026-09-02T09:38:05.511926+00:00",
+      "manual_verification": {
+        "result": "ok",
+        "reward": "1х200 алмазов, 2х10к зерна, 2х10к бревна, 20х5 мин ускор, 1х18к травы",
+        "verified_at": "2026-09-02T09:34:05.875609+00:00"
+      },
+      "notified": false,
+      "reward": "1х200 алмазов, 2х10к зерна, 2х10к бревна, 20х5 мин ускор, 1х18к травы",
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-09-02T10:59:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "candidate"
+    },
+    "LUCK777": {
+      "code": "LUCK777",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-05-27T09:15:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511749+00:00",
+      "manual_verification": {
+        "result": "invalid",
+        "reward": null,
+        "verified_at": "2026-09-02T09:34:21.294899+00:00"
+      },
+      "notified": false,
+      "reward": null,
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-05-27T09:15:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "candidate"
+    },
+    "TWLAP666": {
+      "code": "TWLAP666",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-07-23T12:05:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511876+00:00",
+      "manual_verification": {
+        "result": "invalid",
+        "reward": null,
+        "verified_at": "2026-09-02T09:34:37.793034+00:00"
+      },
+      "notified": false,
+      "reward": null,
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-07-23T12:05:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "candidate"
+    },
+    "TWLAP888": {
+      "code": "TWLAP888",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-07-23T21:35:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511895+00:00",
+      "manual_verification": {
+        "result": "invalid",
+        "reward": null,
+        "verified_at": "2026-09-02T09:34:49.973669+00:00"
+      },
+      "notified": false,
+      "reward": null,
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-07-23T21:35:00+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "candidate"
+    },
+    "WLTLAP": {
+      "code": "WLTLAP",
+      "confidence": 0.53,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-02-17T04:32:00+00:00",
+      "last_seen": "2026-09-02T09:38:05.511623+00:00",
+      "manual_verification": {
+        "result": "ok",
+        "reward": "5х10 алмазов, 3 мешка, 3х5 мин ускор",
+        "verified_at": "2026-09-02T09:36:08.937369+00:00"
+      },
+      "notified": false,
+      "reward": "5х10 алмазов, 3 мешка, 3х5 мин ускор",
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-02-17T04:32:00+00:00",
+          "status": "reported",
+          "url": null
         }
       },
       "status": "candidate"
@@ -1407,6 +1739,90 @@
       "code": "LAKR10K6L",
       "kind": "new",
       "source": "gamsgo"
+    },
+    {
+      "at": "2026-02-17T04:32:00+00:00",
+      "code": "WLTLAP",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-04-23T14:58:00+00:00",
+      "code": "LAPJAP777",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-05-01T12:37:00+00:00",
+      "code": "LAAS777",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-05-20T15:49:00+00:00",
+      "code": "LAW1HCK",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-05-27T09:15:00+00:00",
+      "code": "LUCK777",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-06-10T06:12:00+00:00",
+      "code": "LAW4A8V",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-06-17T13:45:00+00:00",
+      "code": "LAW5HBR",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-06-19T13:06:00+00:00",
+      "code": "61HW4LA",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-07-07T13:00:00+00:00",
+      "code": "26CHOCO",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-07-15T07:27:00+00:00",
+      "code": "LA9WC6O",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-07-23T12:05:00+00:00",
+      "code": "TWLAP666",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-07-23T21:35:00+00:00",
+      "code": "TWLAP888",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-07-28T14:01:00+00:00",
+      "code": "LAKR12K7O",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-09-02T10:59:00+00:00",
+      "code": "LAWTD16F",
+      "kind": "new",
+      "source": "telegram-manual"
     }
   ],
   "not_found": [
