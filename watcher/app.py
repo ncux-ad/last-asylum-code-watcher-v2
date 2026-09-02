@@ -1,6 +1,8 @@
 from dotenv import load_dotenv
 load_dotenv()
 
+from html import escape
+
 from .config import (
     SOURCES, SEARCH_QUERIES, STATE_PATH,
     TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, TELEGRAM_MESSAGE_THREAD_ID,
@@ -17,19 +19,12 @@ def notify_new_candidates(state):
         if item["confidence"] < 0.60:
             continue
 
-        sources = sorted(item["sources"])
         text = (
-            "🆕 Last Asylum: Plague\n\n"
-            f"Код: {code}\n"
-            f"Статус: {item['status']}\n"
-            f"Confidence: {item['confidence']:.0%}\n"
+            f"Код: <code>{escape(code)}</code>\n"
+            f"Статус: {escape(item['status'])}\n"
         )
         if item.get("reward"):
-            text += f"Награда: {item['reward']}\n"
-        if item.get("expires_at"):
-            flag = " (уже истёк)" if item.get("expired") else ""
-            text += f"Истекает: {item['expires_at']}{flag}\n"
-        text += f"Источники: {len(sources)}\n\n" + "\n".join(f"• {s}" for s in sources)
+            text += f"Награда: {escape(item['reward'])}\n"
 
         try:
             send_telegram(TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, text, TELEGRAM_MESSAGE_THREAD_ID)
