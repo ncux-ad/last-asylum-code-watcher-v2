@@ -78,6 +78,11 @@ function isExpired(x){
  return x.expired === true || x.manual_verification?.result === 'expired';
 }
 
+function isFailedVerification(x){
+ const result = x.manual_verification?.result;
+ return isExpired(x) || (result && result !== 'ok');
+}
+
 function renderCard(x){
  const sources = Object.entries(x.sources);
  const rewardLine = x.reward ? `<div class="meta">Награда: ${x.reward}</div>` : '';
@@ -135,17 +140,17 @@ function render(){
  document.getElementById('summary').innerHTML =
  `<div class="card summary"><div><b>${ALL_ITEMS.length}</b> known codes</div><div><b>${ALL_ITEMS.filter(x=>x.status==='confirmed').length}</b> confirmed</div><div><b>${ALL_EVENTS.length}</b> recent events</div></div>`;
 
- const activeItems = items.filter(x=>!isExpired(x));
- const expiredItems = items.filter(isExpired);
+ const activeItems = items.filter(x=>!isFailedVerification(x));
+ const failedItems = items.filter(isFailedVerification);
 
  document.getElementById('list').innerHTML = activeItems.length
   ? activeItems.map(renderCard).join('')
   : (query ? '<div class="no-results">Ничего не найдено</div>' : '');
 
- document.getElementById('expired-list').innerHTML = expiredItems.length ? `
+ document.getElementById('expired-list').innerHTML = failedItems.length ? `
  <details class="expired-block">
-  <summary>Истёкшие коды (${expiredItems.length})</summary>
-  <div class="expired-items">${expiredItems.map(renderCard).join('')}</div>
+  <summary>Истёкшие / не прошедшие проверку коды (${failedItems.length})</summary>
+  <div class="expired-items">${failedItems.map(renderCard).join('')}</div>
  </details>` : '';
 }
 
