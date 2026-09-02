@@ -1,7 +1,10 @@
 from dotenv import load_dotenv
 load_dotenv()
 
-from .config import SOURCES, SEARCH_QUERIES, STATE_PATH, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
+from .config import (
+    SOURCES, SEARCH_QUERIES, STATE_PATH,
+    TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, TELEGRAM_MESSAGE_THREAD_ID,
+)
 from .state import State
 from .sources import scan_source
 from .search import scan_search
@@ -29,7 +32,7 @@ def notify_new_candidates(state):
         text += f"Источники: {len(sources)}\n\n" + "\n".join(f"• {s}" for s in sources)
 
         try:
-            send_telegram(TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, text)
+            send_telegram(TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, text, TELEGRAM_MESSAGE_THREAD_ID)
         finally:
             item["notified"] = True
 
