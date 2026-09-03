@@ -59,7 +59,7 @@ class State:
 
     def recalculate(self, code):
         item = self.data["codes"][code]
-        n = len(item["sources"])
+        n = len(item.get("sources", {}))
 
         # Independent-source heuristic.
         item["confidence"] = round(min(0.99, 0.35 + 0.18 * n), 2)
