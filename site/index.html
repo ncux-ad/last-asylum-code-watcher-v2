@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Fenix — клан выживших Last Asylum: Plague</title>
-<meta name="description" content="Fenix — клан выживших Last Asylum: Plague. Сайт в разработке, радар промокодов уже работает.">
+<title>ФенНкс [FNX] — клан выживших Last Asylum: Plague</title>
+<meta name="description" content="ФенНкс [FNX] — клан выживших Last Asylum: Plague. Сайт в разработке, радар промокодов уже работает.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='96' fill='%2315120f'/%3E%3Ccircle cx='100' cy='100' r='90' fill='none' stroke='%23d9a441' stroke-width='4' stroke-dasharray='6 14' transform='rotate(-4 100 100)'/%3E%3Cg fill='%23e8542a'%3E%3Cpath transform='translate(100,100) rotate(0)' d='M0,-22 C-16,-34 -18,-55 -7,-78 C-13,-64 -2,-58 0,-82 C2,-58 13,-64 7,-78 C18,-55 16,-34 0,-22 Z'/%3E%3Cpath transform='translate(100,100) rotate(120)' d='M0,-22 C-16,-34 -18,-55 -7,-78 C-13,-64 -2,-58 0,-82 C2,-58 13,-64 7,-78 C18,-55 16,-34 0,-22 Z'/%3E%3Cpath transform='translate(100,100) rotate(240)' d='M0,-22 C-16,-34 -18,-55 -7,-78 C-13,-64 -2,-58 0,-82 C2,-58 13,-64 7,-78 C18,-55 16,-34 0,-22 Z'/%3E%3C/g%3E%3Ccircle cx='100' cy='100' r='16' fill='%231e1916' stroke='%23d9a441' stroke-width='4'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +50,13 @@ body::before,body::after{
 body::before{top:0}
 body::after{bottom:0}
 body{
-  background-image:radial-gradient(ellipse at 50% 35%, #1c1712 0%, var(--bg) 60%, #0e0c0a 100%);
+  background-image:
+    linear-gradient(180deg, rgba(10,9,8,.2) 0%, rgba(10,9,8,.6) 62%, var(--bg) 100%),
+    radial-gradient(ellipse 68% 55% at 50% 34%, rgba(21,18,15,.9) 0%, rgba(21,18,15,.62) 45%, rgba(21,18,15,.22) 74%, rgba(21,18,15,0) 100%),
+    url('assets/hero-bg.jpg');
+  background-repeat:no-repeat,no-repeat,no-repeat;
+  background-position:center,center,center top;
+  background-size:100% 100%,100% 100%,cover;
 }
 
 .stage{
@@ -76,7 +82,22 @@ body{
   margin:0 auto 18px;
   position:relative;
 }
-.mark svg{width:100%;height:100%;overflow:visible}
+.mark svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.mark img{
+  position:absolute;
+  left:50%;top:52%;
+  transform:translate(-50%,-50%);
+  height:80%;width:auto;
+  filter:drop-shadow(0 6px 16px rgba(0,0,0,.55));
+}
+.clan-tag{
+  font-family:var(--font-mono);
+  font-size:.8rem;
+  letter-spacing:.12em;
+  color:var(--ink-dim);
+  margin:0 0 2px;
+}
+.clan-tag b{color:var(--amber);font-weight:400}
 
 .ember{
   position:absolute;
@@ -195,27 +216,14 @@ footer{
     <span class="ember"></span><span class="ember"></span><span class="ember"></span>
     <span class="ember"></span><span class="ember"></span>
     <svg viewBox="0 0 200 200">
-      <defs>
-        <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
-          <stop offset="0" stop-color="#e8542a"/>
-          <stop offset="1" stop-color="#d9a441"/>
-        </linearGradient>
-      </defs>
       <circle cx="100" cy="100" r="95" fill="none" stroke="#d9a441" stroke-width="2"
         stroke-dasharray="3 7" opacity=".8" transform="rotate(-4 100 100)"/>
-      <g fill="url(#flameGrad)" opacity=".95">
-        <path transform="translate(100,100) rotate(0)"
-          d="M0,-22 C-16,-34 -18,-55 -7,-78 C-13,-64 -2,-58 0,-82 C2,-58 13,-64 7,-78 C18,-55 16,-34 0,-22 Z"/>
-        <path transform="translate(100,100) rotate(120)"
-          d="M0,-22 C-16,-34 -18,-55 -7,-78 C-13,-64 -2,-58 0,-82 C2,-58 13,-64 7,-78 C18,-55 16,-34 0,-22 Z"/>
-        <path transform="translate(100,100) rotate(240)"
-          d="M0,-22 C-16,-34 -18,-55 -7,-78 C-13,-64 -2,-58 0,-82 C2,-58 13,-64 7,-78 C18,-55 16,-34 0,-22 Z"/>
-      </g>
-      <circle cx="100" cy="100" r="15" fill="#1e1916" stroke="#d9a441" stroke-width="2"/>
     </svg>
+    <img src="assets/fnx-banner.png" alt="">
   </div>
 
-  <h1>FENIX</h1>
+  <p class="clan-tag">альянс <b>[FNX]</b></p>
+  <h1>ФенНкс</h1>
   <p class="tagline">клан выживших Last Asylum: Plague</p>
 
   <p class="lede">Сайт клана ещё строится. Пока здесь — то, что уже работает: радар сам ловит новые промокоды и обновляет список без ручной возни.</p>
@@ -229,7 +237,7 @@ footer{
 
   <p class="soon">скоро <span class="sep">·</span> <span>гайды</span> <span class="sep">·</span> <span>состав клана</span> <span class="sep">·</span> <span>чат</span></p>
 
-  <footer>FENIX — Last Asylum: Plague community</footer>
+  <footer>[FNX] ФенНкс — Last Asylum: Plague community</footer>
 </div>
 </body>
 </html>
