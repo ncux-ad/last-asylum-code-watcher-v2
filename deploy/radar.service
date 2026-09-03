@@ -13,3 +13,8 @@ Wants=network-online.target
 Type=oneshot
 WorkingDirectory=%h/last-asylum-code-watcher-v2
 ExecStart=%h/last-asylum-code-watcher-v2/.venv/bin/python -m watcher
+# Публикация актуальных кодов на fenix-clan.ru/promocodes/. Ключ ограничен
+# forced-command'ом на стороне hosting_vds — умеет только перезаписать
+# один файл (state.json), больше ничего. -ExecStart с ведущим "-" не
+# валит весь юнит, если сеть/хост временно недоступны.
+ExecStart=-/bin/sh -c 'ssh -i %h/.ssh/keys/id_ed25519_senko_to_hostingvds_fenix -o BatchMode=yes -o ConnectTimeout=10 -p 2022 tot@charcoal-pezzottaite18418.my-vm.work < %h/last-asylum-code-watcher-v2/data/state.json'

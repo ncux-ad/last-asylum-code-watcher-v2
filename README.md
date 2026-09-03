@@ -119,7 +119,28 @@ journalctl --user -u radar.service -n 50 --no-pager
 
 Частота — раз в 2 часа (`OnCalendar=0/2:00:00` в `deploy/radar.timer`), сознательно снижена с исходных 30 минут — см. RUNBOOK.
 
-**Известное ограничение:** таймер только сканирует и постит в Telegram — обновлённый `data/state.json` остаётся локально на сервере и никуда не закоммичен/запушен автоматически. Публичный dashboard (GitHub Pages/GitLab Pages) этим состоянием сейчас не обновляется. Если понадобится синхронизация — дописать `git add/commit/push` в `deploy/radar.service` после `python -m watcher` (нужен настроенный push-доступ на сервере).
+Таймер запускает два шага подряд (оба — `ExecStart=` в `deploy/radar.service`): сканирование (`python -m watcher`), затем публикация свежего `data/state.json` на публичный сайт (см. ниже). Второй шаг помечен ведущим `-` — сбой публикации (сеть, недоступен хостинг сайта) не валит весь юнит.
+
+## Публичный сайт: fenix-clan.ru
+
+Статика в `site/`: `site/index.html` — заглушка главной страницы клана, `site/promocodes/index.html` — тот же дашборд, что и `docs/index.html`, только под брендинг клана (логика поиска/сортировки/копирования не менялась, поменялось только оформление).
+
+Хостится отдельно от радара — на VPS `hosting_vds` (nginx, конфиг в `deploy/nginx-fenix-clan.ru.conf`), а не на `senko`, где крутится сам радар. Обновлённые коды долетают туда так:
+
+```
+senko: python -m watcher → data/state.json
+     └─ ssh (ограниченный ключ) → hosting_vds:/var/www/fenix-clan.ru/promocodes/state.json
+```
+
+Ключ `~/.ssh/keys/id_ed25519_senko_to_hostingvds_fenix` на `senko` может **только** перезаписать этот один файл — на стороне `hosting_vds` в `~/.ssh/authorized_keys` у него принудительная команда:
+```
+command="cat > /var/www/fenix-clan.ru/promocodes/state.json",no-agent-forwarding,no-port-forwarding,no-pty,no-X11-forwarding,no-user-rc ssh-ed25519 AAAA... senko-fenix-state-sync
+```
+Что бы клиент ни попросил выполнить (`ssh ... 'whoami'` и т.п.) — реально выполнится только эта команда. Компрометация `senko` (публичный скрапер, самая внешняя точка во всей системе) не даёт shell-доступа на сервер с сайтом.
+
+Сама статика (`index.html` страниц) обновляется вручную через `scp`, автоматом не деплоится — она меняется редко, в отличие от `state.json`.
+
+DNS — reg.ru, управляется через `~/server-init/regru-dns.sh` (готовый скрипт с SSL-сертификатной авторизацией, работает с любого IP без привязки к whitelist). TLS — `certbot --nginx -d fenix-clan.ru -d www.fenix-clan.ru` после того, как A/AAAA-записи пропагируются.
 
 ## GitHub Actions / GitLab CI (резервные варианты)
 
