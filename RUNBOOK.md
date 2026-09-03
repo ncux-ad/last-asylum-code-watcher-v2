@@ -4,7 +4,7 @@
 
 Репозиторий: https://github.com/ncux-ad/last-asylum-code-watcher-v2 (аккаунт заблокирован GitHub с 2026-09-02, см. ниже) · зеркало: https://gitlab.com/ncuxyLLla/last-asylum-code-watcher-v2
 Дашборд (GitHub Pages): https://ncux-ad.github.io/last-asylum-code-watcher-v2/ (недоступен, пока аккаунт заблокирован)
-Публичный сайт: https://fenix-clan.ru/ и https://fenix-clan.ru/promocodes/ (на `hosting_vds`, см. README → «Публичный сайт: fenix-clan.ru»)
+Публичный сайт: https://fenix-clan.ru/ и https://fenix-clan.ru/promocodes/, зеркало на https://fenix-clan.online/ (на `hosting_vds`, см. README → «Публичный сайт: fenix-clan.ru (зеркало: fenix-clan.online)»)
 Прод (сканер): systemd-таймер на VPS `senko`, см. README → «Продакшен: self-hosted»
 
 ## Ежедневная рутина
@@ -72,7 +72,7 @@ GitLab CI убран (2026-09-03) — `.gitlab-ci.yml`, pipeline schedule, CI/CD
 
 ## Публичный сайт (fenix-clan.ru): что делать руками
 
-`state.json` на сайт доставляется автоматически (шаг в `radar.service`) — руками трогать нужно только саму статику и DNS/TLS.
+`state.json` на сайт доставляется автоматически (шаг в `radar.service`) — руками трогать нужно только саму статику и DNS/TLS. `fenix-clan.online` — второй домен на том же nginx `server_name`/`root` (см. `deploy/nginx-fenix-clan.conf`), отдельной статики/деплоя под него нет — правки в `site/` и доставка `state.json` разом покрывают оба домена.
 
 **Обновить главную/промокоды-страницу после правок в `site/`:**
 ```bash
@@ -89,16 +89,21 @@ ssh hosting_vds "stat -c '%y %s bytes' /var/www/fenix-clan.ru/promocodes/state.j
 ```
 Сверить время с последним запуском `radar.service` на `senko` (`journalctl --user -u radar.service -n 5`).
 
-**DNS (reg.ru):** управляется `~/server-init/regru-dns.sh` (SSL-сертификатная авторизация, credentials в `~/.config/regru/`, работает с любого IP):
+**DNS (reg.ru):** управляется `~/server-init/regru-dns.sh` (SSL-сертификатная авторизация, credentials в `~/.config/regru/`, работает с любого IP). Оба домена (`fenix-clan.ru` и `fenix-clan.online`) зарегистрированы на reg.ru и правятся одинаково — только меняется `DOMAIN=`:
 ```bash
 DOMAIN=fenix-clan.ru ~/server-init/regru-dns.sh list
 DOMAIN=fenix-clan.ru ~/server-init/regru-dns.sh set-a @ <IP>
+DOMAIN=fenix-clan.ru ~/server-init/regru-dns.sh set-a www <IP>
 DOMAIN=fenix-clan.ru ~/server-init/regru-dns.sh add AAAA @ <IPv6>
+
+DOMAIN=fenix-clan.online ~/server-init/regru-dns.sh list
+DOMAIN=fenix-clan.online ~/server-init/regru-dns.sh set-a @ <IP>
+DOMAIN=fenix-clan.online ~/server-init/regru-dns.sh set-a www <IP>
 ```
 
-**TLS:** после того, как A/AAAA пропагировались (`dig @8.8.8.8 +short fenix-clan.ru A` возвращает нужный IP):
+**TLS:** после того, как A/AAAA пропагировались (`dig @8.8.8.8 +short fenix-clan.ru A` и `dig @8.8.8.8 +short fenix-clan.online A` возвращают нужный IP) — одним сертификатом на оба домена:
 ```bash
-ssh hosting_vds "sudo certbot --nginx -d fenix-clan.ru -d www.fenix-clan.ru"
+ssh hosting_vds "sudo certbot --nginx -d fenix-clan.ru -d www.fenix-clan.ru -d fenix-clan.online -d www.fenix-clan.online"
 ```
 certbot сам допишет 443-блок в `/etc/nginx/sites-available/fenix-clan.ru` и настроит редирект с 80 — руками этот файл после этого не трогать.
 
@@ -129,8 +134,10 @@ git push
 - **(Закрыто 2026-09-03) GitLab: protected-ветка и роль Project Access Token должны быть согласованы.** Роль токена и то, кому protected-ветка разрешает push, должны совпадать — иначе push из CI отклоняется правами доступа, не ошибкой аутентификации. Актуально только если снова понадобится push-токен для CI/CD.
 - **API-запросы на изменение CI/CD Variables и уровня доступа участников GitLab блокируются классификатором Claude Code** (даже с валидным токеном) — такие вещи нужно делать руками через веб-интерфейс GitLab, автоматизировать их через ассистента не получится.
 - **`State.recalculate()` должен переживать item без ключа `sources`.** Тестовые фикстуры в `test_verify_codes.py` собирают `item` вручную (`{"code":..., "reward":..., "expired":...}`) без `sources`/`status`/`confidence` — раз `apply_manual_verification()` теперь сама вызывает `recalculate()` (чтобы ручная проверка `ok` сразу поднимала confidence/status, а не только на следующем `observe()`), `len(item["sources"])` кидал `KeyError`. Используйте `item.get("sources", {})`.
-- **Свежезарегистрированный домен на reg.ru уже приходит с A-записями на парковочный IP** (`95.163.244.138` — это IP парковочной страницы reg.ru, не ошибка). `regru-dns.sh list` показывает их сразу после регистрации — не проверив, легко решить, что DNS "ещё не настроен", когда на самом деле нужно просто заменить существующую запись (`set-a`, не `add`, иначе будет дубль).
-- **Не полагайтесь на публичный DNS-резолвер сразу после смены записи в панели reg.ru** — обновление NS-серверов reg.ru и последующая пропагация занимают от пары минут до пары часов. `dig @8.8.8.8 +short <домен> A` в первые минуты после правки может отдавать пусто даже при верно выставленной записи.
+- **Свежезарегистрированный домен на reg.ru уже приходит с A-записями на парковочный IP** (`95.163.244.138` — это IP парковочной страницы reg.ru, один и тот же для любого нового домена, не ошибка). `regru-dns.sh list` показывает их сразу после регистрации — не проверив, легко решить, что DNS "ещё не настроен", когда на самом деле нужно просто заменить существующую запись (`set-a`, не `add`, иначе будет дубль). Подтверждено дважды — на `fenix-clan.ru` и на `fenix-clan.online`.
+- **`regru-dns.sh set-a` требует два позиционных аргумента — `<субдомен> <ip>`, а не только IP.** Вызов `set-a <IP>` без субдомена не даёт понятной ошибки использования, а падает глубоко внутри скрипта (`line 257: 2: IP-адрес` — bash интерпретирует сам IP как второй позиционный аргумент не там, где скрипт его ждёт) и ничего не меняет в DNS. Правильно: `set-a @ <IP>` для корневого домена, `set-a www <IP>` для `www`.
+- **`add A www <IP>` не заменяет существующую A-запись `www`, а добавляет вторую** — тот же принцип, что и с `@`: для замены нужен `set-a`, `add` — только для случаев, когда записей с таким именем ещё нет (например, `add AAAA`, если A уже есть, а AAAA пока нет).
+- **Не полагайтесь на публичный DNS-резолвер сразу после смены записи в панели reg.ru** — обновление NS-серверов reg.ru и последующая пропагация занимают от пары минут до пары часов. `dig @8.8.8.8 +short <домен> A` в первые минуты после правки может отдавать пусто даже при верно выставленной записи; `dig @ns1.reg.ru +short <домен> A` при этом уже отдаёт актуальную. `dig +trace <домен> A` в этот момент обрывается на уровне TLD-делегации (`.ru`, NSEC3/DNSSEC-записи от `e.dns.ripn.net`) — это ожидаемо для свежей делегации, не повод считать её сломанной.
 - **Публичный VPS, который занимается скрапингом (`senko`), не должен иметь shell-доступ к серверу с продакшен-сайтом.** Для доставки `state.json` на `hosting_vds` использован ограниченный ключ с `command="cat > <путь>"` в `authorized_keys` — что бы клиент ни запросил, выполнится только эта одна команда. Подключение с любым другим запросом (например, `whoami`) не выполняет его, а просто зависает на forced-команде в ожидании stdin — это ожидаемое поведение, а не баг; не пытайтесь "проверить" ограничение повторным подключением без стандартного ввода к тому же ключу — оно перезапишет/обнулит целевой файл ещё раз (shell truncates the file on open, до чтения stdin).
 
 ## Осознанно не сделано

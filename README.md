@@ -121,11 +121,13 @@ journalctl --user -u radar.service -n 50 --no-pager
 
 Таймер запускает два шага подряд (оба — `ExecStart=` в `deploy/radar.service`): сканирование (`python -m watcher`), затем публикация свежего `data/state.json` на публичный сайт (см. ниже). Второй шаг помечен ведущим `-` — сбой публикации (сеть, недоступен хостинг сайта) не валит весь юнит.
 
-## Публичный сайт: fenix-clan.ru
+## Публичный сайт: fenix-clan.ru (зеркало: fenix-clan.online)
 
 Статика в `site/`: `site/index.html` — заглушка главной страницы клана, `site/promocodes/index.html` — тот же дашборд, что и `docs/index.html`, только под брендинг клана (логика поиска/сортировки/копирования не менялась, поменялось только оформление).
 
-Хостится отдельно от радара — на VPS `hosting_vds` (nginx, конфиг в `deploy/nginx-fenix-clan.ru.conf`), а не на `senko`, где крутится сам радар. Обновлённые коды долетают туда так:
+`fenix-clan.online` — второй домен, полное зеркало `fenix-clan.ru` на том же сервере и том же `root`: один и тот же nginx server block отвечает на оба имени (`server_name` в `deploy/nginx-fenix-clan.conf`), отдельного контента под второй домен нет, обновлять/синхронизировать нечего — правишь `site/` один раз, оба домена отдают актуальную версию.
+
+Хостится отдельно от радара — на VPS `hosting_vds` (nginx, конфиг в `deploy/nginx-fenix-clan.conf`), а не на `senko`, где крутится сам радар. Обновлённые коды долетают туда так:
 
 ```
 senko: python -m watcher → data/state.json
@@ -140,7 +142,7 @@ command="cat > /var/www/fenix-clan.ru/promocodes/state.json",no-agent-forwarding
 
 Сама статика (`index.html` страниц) обновляется вручную через `scp`, автоматом не деплоится — она меняется редко, в отличие от `state.json`.
 
-DNS — reg.ru, управляется через `~/server-init/regru-dns.sh` (готовый скрипт с SSL-сертификатной авторизацией, работает с любого IP без привязки к whitelist). TLS — `certbot --nginx -d fenix-clan.ru -d www.fenix-clan.ru` после того, как A/AAAA-записи пропагируются.
+DNS — reg.ru (оба домена, `fenix-clan.ru` и `fenix-clan.online`, зарегистрированы там), управляется через `~/server-init/regru-dns.sh` (готовый скрипт с SSL-сертификатной авторизацией, работает с любого IP без привязки к whitelist). TLS — `certbot --nginx -d fenix-clan.ru -d www.fenix-clan.ru -d fenix-clan.online -d www.fenix-clan.online` после того, как A/AAAA-записи пропагируются (одним сертификатом на оба домена, certbot поддерживает несколько `-d` в одной команде).
 
 ## GitHub Actions (резервный вариант)
 
