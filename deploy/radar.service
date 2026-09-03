@@ -1,0 +1,15 @@
+# systemd --user unit. Установка: см. README.md → «Продакшен: self-hosted».
+#   mkdir -p ~/.config/systemd/user
+#   cp deploy/radar.service deploy/radar.timer ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now radar.timer
+#   loginctl enable-linger "$(whoami)"   # переживает выход из SSH-сессии
+[Unit]
+Description=Last Asylum Code Radar (scan + notify)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/last-asylum-code-watcher-v2
+ExecStart=%h/last-asylum-code-watcher-v2/.venv/bin/python -m watcher

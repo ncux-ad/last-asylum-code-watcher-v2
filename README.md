@@ -87,22 +87,56 @@ python tools/verify_codes.py
 
 Кроме этого, лёгкая версия результата (`manual_verification: {result, reward, verified_at}`) сразу же пишется и в `data/state.json`, то есть попадает на публичный дашборд — реальная попытка редемпшна надёжнее эвристики по числу источников (код может быть "confirmed" тремя сайтами и при этом уже истёкшим). На дашборде это отдельный бейдж с подсказкой, что проверено на одном аккаунте/сервере, а не гарантированно для всех. `ok` дополнительно перезаписывает `reward` точным текстом награды из игры, `expired` — выставляет флаг `expired`.
 
-## GitHub Actions
+## Продакшен: self-hosted (VPS + systemd timer)
 
-Добавьте repository secrets:
+Основной прод-деплой с 2026-09-03 — не CI, а обычный `systemd --user` таймер на своём сервере. Причина: GitHub заблокировал аккаунт за скрапинг ~13 сайтов каждые 30 минут годами подряд (типичный abuse-репорт на IP GitHub Actions), а GitLab.com требует identity verification для запуска джобов на shared runners, которую не всегда получается пройти. Собственный сервер не зависит ни от того, ни от другого.
 
-- `TELEGRAM_BOT_TOKEN`
-- `TELEGRAM_CHAT_ID`
+Файлы лежат в `deploy/`:
 
-Workflow запускается каждые 30 минут, обновляет `data/state.json`, строит dashboard и публикует его в GitHub Pages.
+```bash
+# на сервере, от обычного (не root) пользователя
+git clone <репозиторий> ~/last-asylum-code-watcher-v2
+cd ~/last-asylum-code-watcher-v2
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+cp .env.example .env   # заполнить TELEGRAM_BOT_TOKEN/CHAT_ID/MESSAGE_THREAD_ID
 
-Workflow имеет `contents: write`, потому что история кодов хранится непосредственно в Git-репозитории.
+mkdir -p ~/.config/systemd/user
+cp deploy/radar.service deploy/radar.timer ~/.config/systemd/user/
+systemctl --user daemon-reload
+systemctl --user enable --now radar.timer
+
+# таймер должен пережить выход из SSH-сессии и перезагрузку:
+loginctl enable-linger "$(whoami)"
+```
+
+Проверка:
+
+```bash
+systemctl --user list-timers radar.timer
+journalctl --user -u radar.service -n 50 --no-pager
+```
+
+Частота — раз в 2 часа (`OnCalendar=0/2:00:00` в `deploy/radar.timer`), сознательно снижена с исходных 30 минут — см. RUNBOOK.
+
+**Известное ограничение:** таймер только сканирует и постит в Telegram — обновлённый `data/state.json` остаётся локально на сервере и никуда не закоммичен/запушен автоматически. Публичный dashboard (GitHub Pages/GitLab Pages) этим состоянием сейчас не обновляется. Если понадобится синхронизация — дописать `git add/commit/push` в `deploy/radar.service` после `python -m watcher` (нужен настроенный push-доступ на сервере).
+
+## GitHub Actions / GitLab CI (резервные варианты)
+
+Оба варианта настроены в репозитории (`.github/workflows/radar.yml`, `.gitlab-ci.yml`) и рабочие сами по себе, но каждый со своим ограничением:
+
+- **GitHub Actions** — `workflow_dispatch` с параметром `manual_code` (пост одного кода в обход confidence-порога, см. `watcher/manual_post.py`), расписание понижено до раз в 2 часа. Нужны repository secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `TELEGRAM_MESSAGE_THREAD_ID`. Требует незаблокированный аккаунт.
+- **GitLab CI** — pipeline schedule раз в 2 часа, CI/CD variable `MANUAL_CODE` для ручного поста. Нужны CI/CD Variables: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `TELEGRAM_MESSAGE_THREAD_ID`, `PUSH_TOKEN` (Project Access Token, scope `write_repository`; его роль должна совпадать с тем, кому protected-ветка `master` разрешает push — см. RUNBOOK). На бесплатных shared runners требует пройденную identity verification аккаунта; без неё — только self-hosted GitLab Runner (тогда verification не нужна, т.к. это не shared-раннер).
+
+Оба workflow'а коммитят `data/state.json`/`docs/state.json` обратно в репозиторий (`contents: write`) — в отличие от self-hosted варианта выше, который этого не делает.
 
 ## Dashboard
 
 После включения GitHub Pages dashboard будет доступен по адресу:
 
 `https://<user>.github.io/<repo>/`
+
+(Сейчас недоступен — GitHub Pages завязан на GitHub Actions, который не гоняется из-за блокировки аккаунта, см. RUNBOOK. Self-hosted прод на VPS дашборд не обновляет, см. «Известное ограничение» выше.)
 
 Он показывает:
 - активные коды и кандидаты, с цветными статусами (confirmed/probable/candidate);
