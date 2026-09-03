@@ -191,6 +191,48 @@ p.lede{
 }
 .status b{color:var(--amber);font-weight:400}
 
+.howto{
+  text-align:left;
+  background:var(--bg-raised);
+  border:1px solid var(--rule);
+  border-left:3px solid var(--amber);
+  border-radius:6px;
+  padding:4px 16px 16px;
+  margin:26px 0 0;
+}
+.howto summary{
+  cursor:pointer;
+  list-style:none;
+  color:var(--ink);
+  font-family:var(--font-display);
+  font-weight:700;
+  font-size:1rem;
+  padding:12px 0;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.howto summary::-webkit-details-marker{display:none}
+.howto summary::before{content:"▸ ";color:var(--amber)}
+.howto[open] summary::before{content:"▾ "}
+.howto-badge{
+  font-family:var(--font-mono);
+  font-size:.68rem;
+  letter-spacing:.03em;
+  background:var(--bg);
+  color:var(--amber);
+  border:1px solid var(--rule);
+  border-radius:4px;
+  padding:3px 8px;
+  white-space:nowrap;
+}
+.howto-note{color:var(--ink-dim);font-size:.88rem;line-height:1.5;margin:0 0 10px}
+.howto-note b{color:var(--ink)}
+.howto-steps{margin:0;padding-left:1.25em;display:flex;flex-direction:column;gap:6px;font-size:.9rem;line-height:1.4;color:var(--ink-dim)}
+.howto-steps b{color:var(--ink)}
+.howto-steps a{color:var(--amber)}
+
 .soon{
   margin:38px 0 0;
   padding-top:22px;
@@ -248,6 +290,21 @@ footer .credit a:hover{color:var(--ink-dim)}
     Смотреть промокоды
     <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
   </a>
+
+  <details class="howto">
+   <summary>Как ввести промокод <span class="howto-badge">🍎 на iPhone — только так</span></summary>
+   <p class="howto-note">На Android код можно ввести и в самой игре, но способ ниже универсальный и работает на обеих платформах. На <b>iPhone</b> ввести код в самой игре нельзя — получить подарок можно <b>только через сайт</b>.</p>
+   <ol class="howto-steps">
+    <li>Откройте сайт активации: <a href="https://gevents.globallap.com/gamecode/index.html?gameId=440" target="_blank" rel="noopener">gevents.globallap.com/gamecode</a></li>
+    <li>Войдите по одноразовому паролю (OTP)</li>
+    <li>Введите свой игровой ID</li>
+    <li>Введите одноразовый пароль</li>
+    <li>Выберите свой сервер</li>
+    <li>Выберите персонажа</li>
+    <li>Введите промокод</li>
+    <li>В игре откройте <b>Почту</b> персонажа — там будет подарок</li>
+   </ol>
+  </details>
 
   <p class="status">радар: <b>онлайн</b> · сайт: <b>в разработке</b></p>
 
