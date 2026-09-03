@@ -12,6 +12,32 @@ from .sources import scan_source
 from .search import scan_search
 from .notifier import send_telegram
 
+STATUS_LABELS = {
+    "confirmed": "подтверждён",
+    "probable": "вероятно рабочий",
+    "candidate": "не подтверждён",
+}
+
+def status_label(item):
+    """Manual redemption checks (tools/verify_codes.py) are stronger
+    evidence than the source-count heuristic, so they take priority
+    over item['status'] when present."""
+    manual = item.get("manual_verification")
+    if manual and manual.get("result") == "ok":
+        return "проверен вручную, рабочий"
+    if manual and manual.get("result") == "expired":
+        return "истёк"
+    return STATUS_LABELS.get(item["status"], item["status"])
+
+def format_post(code, item):
+    text = (
+        f"Код: <code>{escape(code)}</code>\n"
+        f"Статус: {escape(status_label(item))}\n"
+    )
+    if item.get("reward"):
+        text += f"Награда: {escape(item['reward'])}\n"
+    return text
+
 def notify_new_candidates(state):
     for code, item in state.data["codes"].items():
         if item["notified"]:
@@ -19,12 +45,7 @@ def notify_new_candidates(state):
         if item["confidence"] < 0.60:
             continue
 
-        text = (
-            f"Код: <code>{escape(code)}</code>\n"
-            f"Статус: {escape(item['status'])}\n"
-        )
-        if item.get("reward"):
-            text += f"Награда: {escape(item['reward'])}\n"
+        text = format_post(code, item)
 
         try:
             send_telegram(TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, text, TELEGRAM_MESSAGE_THREAD_ID)

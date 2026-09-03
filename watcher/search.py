@@ -3,7 +3,9 @@ import requests
 from bs4 import BeautifulSoup
 from .extractor import extract_candidates
 
-HEADERS = {"User-Agent": "LastAsylumCodeRadar/2.0"}
+HEADERS = {
+    "User-Agent": "LastAsylumCodeRadarBot/2.1 (+https://github.com/ncux-ad/last-asylum-code-watcher-v2; low-frequency hobby code tracker, runs every few hours)"
+}
 
 def google_news_rss(query):
     url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({

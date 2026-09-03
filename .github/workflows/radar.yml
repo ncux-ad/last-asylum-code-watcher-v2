@@ -2,8 +2,15 @@ name: Last Asylum Code Radar
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    # Lowered from */30 to reduce load on the scanned sites after the
+    # account got suspended for scraping every 30 min for years.
+    - cron: "0 */2 * * *"
   workflow_dispatch:
+    inputs:
+      manual_code:
+        description: "Post this already-known code to Telegram now, bypassing auto-notify (leave empty for a normal scan run)"
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -22,7 +29,17 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - name: Post one code manually
+        if: github.event.inputs.manual_code != ''
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_MESSAGE_THREAD_ID: ${{ secrets.TELEGRAM_MESSAGE_THREAD_ID }}
+          STATE_PATH: data/state.json
+        run: python -m watcher.manual_post "${{ github.event.inputs.manual_code }}"
+
       - name: Scan
+        if: github.event.inputs.manual_code == ''
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
