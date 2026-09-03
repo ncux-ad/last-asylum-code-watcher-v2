@@ -2,7 +2,7 @@ import requests
 from .extractor import extract_candidates
 
 HEADERS = {
-    "User-Agent": "LastAsylumCodeRadar/2.0 (+public-page-monitor)"
+    "User-Agent": "LastAsylumCodeRadarBot/2.1 (+https://github.com/ncux-ad/last-asylum-code-watcher-v2; low-frequency hobby code tracker, runs every few hours)"
 }
 
 def fetch(url, timeout=20):
