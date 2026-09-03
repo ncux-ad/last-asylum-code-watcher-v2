@@ -192,45 +192,45 @@ p.lede{
 .status b{color:var(--amber);font-weight:400}
 
 .howto{
-  text-align:left;
-  background:var(--bg-raised);
-  border:1px solid var(--rule);
-  border-left:3px solid var(--amber);
-  border-radius:6px;
-  padding:4px 16px 16px;
-  margin:26px 0 0;
+  margin:30px 0 0;
+  padding-top:20px;
+  border-top:1px solid var(--rule);
 }
 .howto summary{
   cursor:pointer;
   list-style:none;
-  color:var(--ink);
-  font-family:var(--font-display);
-  font-weight:700;
-  font-size:1rem;
-  padding:12px 0;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  flex-wrap:wrap;
+  font-family:var(--font-mono);
+  font-size:.75rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--ink-dim);
 }
 .howto summary::-webkit-details-marker{display:none}
 .howto summary::before{content:"▸ ";color:var(--amber)}
 .howto[open] summary::before{content:"▾ "}
-.howto-badge{
-  font-family:var(--font-mono);
-  font-size:.68rem;
-  letter-spacing:.03em;
-  background:var(--bg);
-  color:var(--amber);
-  border:1px solid var(--rule);
-  border-radius:4px;
-  padding:3px 8px;
-  white-space:nowrap;
+.howto summary b{color:var(--amber);font-weight:400}
+.howto-note{
+  color:var(--ink-dim);
+  font-size:.92rem;
+  line-height:1.55;
+  max-width:38ch;
+  margin:16px auto 18px;
 }
-.howto-note{color:var(--ink-dim);font-size:.88rem;line-height:1.5;margin:0 0 10px}
 .howto-note b{color:var(--ink)}
-.howto-steps{margin:0;padding-left:1.25em;display:flex;flex-direction:column;gap:6px;font-size:.9rem;line-height:1.4;color:var(--ink-dim)}
+.howto-steps{
+  max-width:280px;
+  margin:0 auto;
+  text-align:left;
+  padding-left:1.2em;
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+  font-size:.85rem;
+  line-height:1.4;
+  color:var(--ink-dim);
+}
 .howto-steps b{color:var(--ink)}
+.howto-steps a{color:var(--amber)}
 .howto-steps a{color:var(--amber)}
 
 .soon{
@@ -292,7 +292,7 @@ footer .credit a:hover{color:var(--ink-dim)}
   </a>
 
   <details class="howto">
-   <summary>Как ввести промокод <span class="howto-badge">🍎 на iPhone — только так</span></summary>
+   <summary>как ввести промокод <b>· на iPhone — только так</b></summary>
    <p class="howto-note">На Android код можно ввести и в самой игре, но способ ниже универсальный и работает на обеих платформах. На <b>iPhone</b> ввести код в самой игре нельзя — получить подарок можно <b>только через сайт</b>.</p>
    <ol class="howto-steps">
     <li>Откройте сайт активации: <a href="https://gevents.globallap.com/gamecode/index.html?gameId=440" target="_blank" rel="noopener">gevents.globallap.com/gamecode</a></li>
