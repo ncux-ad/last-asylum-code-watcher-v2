@@ -1,6 +1,6 @@
 import urllib.parse
+import xml.etree.ElementTree as ET
 import requests
-from bs4 import BeautifulSoup
 from .extractor import extract_candidates
 
 HEADERS = {
@@ -16,8 +16,8 @@ def google_news_rss(query):
     })
     r = requests.get(url, headers=HEADERS, timeout=20)
     r.raise_for_status()
-    soup = BeautifulSoup(r.text, "xml")
-    return [x.find("link").text for x in soup.find_all("item") if x.find("link")]
+    root = ET.fromstring(r.text)
+    return [item.find("link").text for item in root.iter("item") if item.find("link") is not None]
 
 def scan_search(query):
     merged = {}
