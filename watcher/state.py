@@ -71,6 +71,16 @@ class State:
         else:
             item["status"] = "candidate"
 
+        # A human redeeming the code in-game (tools/verify_codes.py) is
+        # stronger evidence than any number of aggregator sites just
+        # listing it, so it overrides the source-count heuristic above.
+        # Recomputed here (not only in apply_manual_verification) so a
+        # later observe() of the same code can't quietly undo the boost.
+        manual = item.get("manual_verification")
+        if manual and manual.get("result") == "ok":
+            item["confidence"] = 0.99
+            item["status"] = "confirmed"
+
     def mark_not_found(self, code):
         self.data["codes"].pop(code, None)
         if code not in self.data["not_found"]:
@@ -95,6 +105,7 @@ class State:
             item["reward"] = reward
         if result == "expired":
             item["expired"] = True
+        self.recalculate(code)
 
     def mark_missing(self, source, currently_seen):
         for code, item in self.data["codes"].items():
