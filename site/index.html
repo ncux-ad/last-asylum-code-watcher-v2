@@ -198,9 +198,14 @@ p.lede{
   font-size:.78rem;
   letter-spacing:.06em;
   color:var(--ink-dim);
+  white-space:nowrap;
 }
 .soon span{color:var(--ink)}
 .soon .sep{color:var(--rule);margin:0 8px}
+@media (max-width:460px){
+  .soon{font-size:.62rem;letter-spacing:.02em;white-space:normal}
+  .soon .sep{margin:0 5px}
+}
 
 footer{
   margin-top:34px;
