@@ -1,0 +1,12 @@
+# systemd --user unit. Установка — см. README.md → «Мониторинг аптайма».
+#   cp deploy/uptime-check.sh ~/last-asylum-code-watcher-v2/deploy/
+#   chmod +x ~/last-asylum-code-watcher-v2/deploy/uptime-check.sh
+#   cp deploy/uptime-check.service deploy/uptime-check.timer ~/.config/systemd/user/
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now uptime-check.timer
+[Unit]
+Description=Проверка доступности fenix-clan.ru / fenix-clan.online
+
+[Service]
+Type=oneshot
+ExecStart=%h/last-asylum-code-watcher-v2/deploy/uptime-check.sh

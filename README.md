@@ -144,6 +144,21 @@ command="cat > /var/www/fenix-clan.ru/promocodes/state.json",no-agent-forwarding
 
 DNS — reg.ru (оба домена, `fenix-clan.ru` и `fenix-clan.online`, зарегистрированы там), управляется через `~/server-init/regru-dns.sh` (готовый скрипт с SSL-сертификатной авторизацией, работает с любого IP без привязки к whitelist). TLS — `certbot --nginx -d fenix-clan.ru -d www.fenix-clan.ru -d fenix-clan.online -d www.fenix-clan.online` после того, как A/AAAA-записи пропагируются (одним сертификатом на оба домена, certbot поддерживает несколько `-d` в одной команде).
 
+SEO: `site/robots.txt` + `site/sitemap.xml` (только канонические URL на `fenix-clan.ru`), Open Graph/Twitter Card теги на обеих страницах (`site/assets/og-image.jpg` — альбомный кроп hero-арта под превью-карточки в Telegram/Discord), `<link rel="canonical">` на `fenix-clan.ru` на обеих страницах (у `.online` контент идентичен, canonical явно называет основной домен, чтобы поисковик не решил, что это дубли).
+
+### Мониторинг аптайма
+
+`deploy/uptime-check.sh` — systemd `--user` таймер на `senko` (не на `hosting_vds`, где сам сайт — так проверка идёт снаружи, как у реального посетителя), каждые 10 минут дёргает `https://fenix-clan.ru/` и `https://fenix-clan.online/` и шлёт алерт в тот же Telegram-бот/чат, что и радар (переиспользует `.env`, отдельный токен не нужен). Алерт только на **смену** состояния (up→down, down→up) — не на каждый прогон, иначе таймер будет спамить всё время, пока сайт лежит. Состояние — в `~/.local/state/fenix-uptime/{ru,online}` на `senko`.
+
+Установка — как у `radar.timer` (см. «Продакшен: self-hosted» выше):
+```bash
+cp deploy/uptime-check.sh ~/last-asylum-code-watcher-v2/deploy/
+chmod +x ~/last-asylum-code-watcher-v2/deploy/uptime-check.sh
+cp deploy/uptime-check.service deploy/uptime-check.timer ~/.config/systemd/user/
+systemctl --user daemon-reload
+systemctl --user enable --now uptime-check.timer
+```
+
 ## GitHub Actions (резервный вариант)
 
 `.github/workflows/radar.yml` настроен и рабочий сам по себе, но требует незаблокированный аккаунт (см. RUNBOOK — сейчас заблокирован). `workflow_dispatch` с параметром `manual_code` постит один код в обход confidence-порога (см. `watcher/manual_post.py`), расписание понижено до раз в 2 часа. Нужны repository secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `TELEGRAM_MESSAGE_THREAD_ID`. Workflow коммитит `data/state.json`/`docs/state.json` обратно в репозиторий (`contents: write`) — в отличие от self-hosted варианта выше, который этого не делает.
