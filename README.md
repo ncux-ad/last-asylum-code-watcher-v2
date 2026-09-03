@@ -142,14 +142,11 @@ command="cat > /var/www/fenix-clan.ru/promocodes/state.json",no-agent-forwarding
 
 DNS — reg.ru, управляется через `~/server-init/regru-dns.sh` (готовый скрипт с SSL-сертификатной авторизацией, работает с любого IP без привязки к whitelist). TLS — `certbot --nginx -d fenix-clan.ru -d www.fenix-clan.ru` после того, как A/AAAA-записи пропагируются.
 
-## GitHub Actions / GitLab CI (резервные варианты)
+## GitHub Actions (резервный вариант)
 
-Оба варианта настроены в репозитории (`.github/workflows/radar.yml`, `.gitlab-ci.yml`) и рабочие сами по себе, но каждый со своим ограничением:
+`.github/workflows/radar.yml` настроен и рабочий сам по себе, но требует незаблокированный аккаунт (см. RUNBOOK — сейчас заблокирован). `workflow_dispatch` с параметром `manual_code` постит один код в обход confidence-порога (см. `watcher/manual_post.py`), расписание понижено до раз в 2 часа. Нужны repository secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `TELEGRAM_MESSAGE_THREAD_ID`. Workflow коммитит `data/state.json`/`docs/state.json` обратно в репозиторий (`contents: write`) — в отличие от self-hosted варианта выше, который этого не делает.
 
-- **GitHub Actions** — `workflow_dispatch` с параметром `manual_code` (пост одного кода в обход confidence-порога, см. `watcher/manual_post.py`), расписание понижено до раз в 2 часа. Нужны repository secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `TELEGRAM_MESSAGE_THREAD_ID`. Требует незаблокированный аккаунт.
-- **GitLab CI** — pipeline schedule раз в 2 часа, CI/CD variable `MANUAL_CODE` для ручного поста. Нужны CI/CD Variables: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `TELEGRAM_MESSAGE_THREAD_ID`, `PUSH_TOKEN` (Project Access Token, scope `write_repository`; его роль должна совпадать с тем, кому protected-ветка `master` разрешает push — см. RUNBOOK). На бесплатных shared runners требует пройденную identity verification аккаунта; без неё — только self-hosted GitLab Runner (тогда verification не нужна, т.к. это не shared-раннер).
-
-Оба workflow'а коммитят `data/state.json`/`docs/state.json` обратно в репозиторий (`contents: write`) — в отличие от self-hosted варианта выше, который этого не делает.
+GitLab CI (`.gitlab-ci.yml`, pipeline schedule) был настроен как второй резервный вариант при миграции с GitHub, но упёрся в identity verification для shared runners и стал избыточен, как только self-hosted на `senko` заработал стабильно — конфиг, расписание, CI/CD Variables и Project Access Token убраны (2026-09-03). GitLab-репозиторий остался просто зеркалом кода. Если понадобится снова — см. историю коммитов этого файла и RUNBOOK на дату миграции, там весь сетап описан.
 
 ## Dashboard
 
