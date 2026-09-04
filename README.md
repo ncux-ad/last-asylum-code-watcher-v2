@@ -125,13 +125,9 @@ journalctl --user -u radar.service -n 50 --no-pager
 
 Таймер запускает два шага подряд (оба — `ExecStart=` в `deploy/radar.service`): сканирование (`python -m watcher`), затем публикация свежего `data/state.json` на публичный сайт (см. ниже). Второй шаг помечен ведущим `-` — сбой публикации (сеть, недоступен хостинг сайта) не валит весь юнит.
 
-## Публичный сайт: fenix-clan.ru (зеркало: fenix-clan.online)
+## Публикация данных на fenix-clan.ru
 
-Статика в `site/`: `site/index.html` — заглушка главной страницы клана, `site/promocodes/index.html` — тот же дашборд, что и `docs/index.html`, только под брендинг клана (логика поиска/сортировки/копирования не менялась, поменялось только оформление). `site/assets/` — реальные ассеты альянса из игры: `hero-bg.jpg` (кадр загрузочного экрана Last Asylum: Plague, обрезан от UI-шелухи — версии/кнопки/прогресс-бара — и используется как атмосферный фон заглавной страницы) и `fnx-banner.png` (знамя альянса `[FNX]`, вырезано из скриншота экрана альянса в игре с прозрачным фоном). Название клана на сайте — `_ФенNкс_` (`[FNX]`) написано так же, как в самой игре (обратите внимание — это латинская `N`, не кириллическая `Н`, и подчёркивания — часть написания), а не как домен (`fenix-clan.ru`/`.online` — это просто латинское доменное имя, к написанию клана в игре отношения не имеет).
-
-`fenix-clan.online` — второй домен, полное зеркало `fenix-clan.ru` на том же сервере и том же `root`: один и тот же nginx server block отвечает на оба имени (`server_name` в `deploy/nginx-fenix-clan.conf`), отдельного контента под второй домен нет, обновлять/синхронизировать нечего — правишь `site/` один раз, оба домена отдают актуальную версию.
-
-Хостится отдельно от радара — на VPS `hosting_vds` (nginx, конфиг в `deploy/nginx-fenix-clan.conf`), а не на `senko`, где крутится сам радар. Обновлённые коды долетают туда так:
+Публичный сайт клана (`fenix-clan.ru`, зеркало `fenix-clan.online`) — **отдельный репозиторий**, [`fenix-clan-site`](https://gitlab.com/ncuxyLLla/fenix-clan-site) (выделен из этого 2026-09-04: сайт — не про скрапинг промокодов, у него свой дизайн/деплой/DNS/мониторинг, смешивать в одну историю смысла не было). Здесь, в радаре, живёт только отправляющая сторона — второй шаг `radar.service`:
 
 ```
 senko: python -m watcher → data/state.json
@@ -144,24 +140,7 @@ command="cat > /var/www/fenix-clan.ru/promocodes/state.json",no-agent-forwarding
 ```
 Что бы клиент ни попросил выполнить (`ssh ... 'whoami'` и т.п.) — реально выполнится только эта команда. Компрометация `senko` (публичный скрапер, самая внешняя точка во всей системе) не даёт shell-доступа на сервер с сайтом.
 
-Сама статика (`index.html` страниц) обновляется вручную через `scp`, автоматом не деплоится — она меняется редко, в отличие от `state.json`.
-
-DNS — reg.ru (оба домена, `fenix-clan.ru` и `fenix-clan.online`, зарегистрированы там), управляется через `~/server-init/regru-dns.sh` (готовый скрипт с SSL-сертификатной авторизацией, работает с любого IP без привязки к whitelist). TLS — `certbot --nginx -d fenix-clan.ru -d www.fenix-clan.ru -d fenix-clan.online -d www.fenix-clan.online` после того, как A/AAAA-записи пропагируются (одним сертификатом на оба домена, certbot поддерживает несколько `-d` в одной команде).
-
-SEO: `site/robots.txt` + `site/sitemap.xml` (только канонические URL на `fenix-clan.ru`), Open Graph/Twitter Card теги на обеих страницах (`site/assets/og-image.jpg` — альбомный кроп hero-арта под превью-карточки в Telegram/Discord), `<link rel="canonical">` на `fenix-clan.ru` на обеих страницах (у `.online` контент идентичен, canonical явно называет основной домен, чтобы поисковик не решил, что это дубли).
-
-### Мониторинг аптайма
-
-`deploy/uptime-check.sh` — systemd `--user` таймер на `senko` (не на `hosting_vds`, где сам сайт — так проверка идёт снаружи, как у реального посетителя), каждые 10 минут дёргает `https://fenix-clan.ru/` и `https://fenix-clan.online/` и шлёт алерт в тот же Telegram-бот/чат, что и радар (переиспользует `.env`, отдельный токен не нужен). Алерт только на **смену** состояния (up→down, down→up) — не на каждый прогон, иначе таймер будет спамить всё время, пока сайт лежит. Состояние — в `~/.local/state/fenix-uptime/{ru,online}` на `senko`.
-
-Установка — как у `radar.timer` (см. «Продакшен: self-hosted» выше):
-```bash
-cp deploy/uptime-check.sh ~/last-asylum-code-watcher-v2/deploy/
-chmod +x ~/last-asylum-code-watcher-v2/deploy/uptime-check.sh
-cp deploy/uptime-check.service deploy/uptime-check.timer ~/.config/systemd/user/
-systemctl --user daemon-reload
-systemctl --user enable --now uptime-check.timer
-```
+Всё остальное про сайт — статика, ассеты, nginx, DNS/TLS, SEO, мониторинг аптайма — в README/RUNBOOK репозитория `fenix-clan-site`.
 
 ## GitHub Actions (резервный вариант)
 

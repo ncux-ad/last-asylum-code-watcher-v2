@@ -4,7 +4,7 @@
 
 Репозиторий: https://github.com/ncux-ad/last-asylum-code-watcher-v2 (аккаунт заблокирован GitHub с 2026-09-02, см. ниже) · зеркало: https://gitlab.com/ncuxyLLla/last-asylum-code-watcher-v2
 Дашборд (GitHub Pages): https://ncux-ad.github.io/last-asylum-code-watcher-v2/ (недоступен, пока аккаунт заблокирован)
-Публичный сайт: https://fenix-clan.ru/ и https://fenix-clan.ru/promocodes/, зеркало на https://fenix-clan.online/ (на `hosting_vds`, см. README → «Публичный сайт: fenix-clan.ru (зеркало: fenix-clan.online)»)
+Публичный сайт: https://fenix-clan.ru/ и https://fenix-clan.ru/promocodes/, зеркало на https://fenix-clan.online/ — отдельный репозиторий https://gitlab.com/ncuxyLLla/fenix-clan-site (выделен из этого 2026-09-04), свой RUNBOOK там
 Прод (сканер): systemd-таймер на VPS `senko`, см. README → «Продакшен: self-hosted»
 
 ## Ежедневная рутина
@@ -72,46 +72,11 @@ GitLab CI убран (2026-09-03) — `.gitlab-ci.yml`, pipeline schedule, CI/CD
 
 ## Публичный сайт (fenix-clan.ru): что делать руками
 
-`state.json` на сайт доставляется автоматически (шаг в `radar.service`) — руками трогать нужно только саму статику и DNS/TLS. `fenix-clan.online` — второй домен на том же nginx `server_name`/`root` (см. `deploy/nginx-fenix-clan.conf`), отдельной статики/деплоя под него нет — правки в `site/` и доставка `state.json` разом покрывают оба домена.
-
-**Обновить главную/промокоды-страницу после правок в `site/`:**
-```bash
-scp site/index.html hosting_vds:/tmp/fenix-index.html
-scp site/promocodes/index.html hosting_vds:/tmp/fenix-promocodes-index.html
-ssh hosting_vds "mv /tmp/fenix-index.html /var/www/fenix-clan.ru/index.html \
-  && mv /tmp/fenix-promocodes-index.html /var/www/fenix-clan.ru/promocodes/index.html \
-  && chown tot:tot /var/www/fenix-clan.ru/index.html /var/www/fenix-clan.ru/promocodes/index.html"
-```
-
-**Обновить ассеты (`site/assets/` — знамя альянса, фон из игры и т.п.) после правок:**
-```bash
-scp site/assets/*.{png,jpg} hosting_vds:/tmp/
-ssh hosting_vds "mkdir -p /var/www/fenix-clan.ru/assets && mv /tmp/*.png /tmp/*.jpg /var/www/fenix-clan.ru/assets/ && chown -R tot:tot /var/www/fenix-clan.ru/assets"
-```
-
-**Проверить, что state.json на сайте свежий:**
+Статика, ассеты, DNS, TLS, SEO, мониторинг аптайма — всё это теперь в репозитории [`fenix-clan-site`](https://gitlab.com/ncuxyLLla/fenix-clan-site) (RUNBOOK.md там же). Здесь остаётся только проверка, что `state.json` на сайте свежий (доставляется автоматически, шаг в `radar.service`):
 ```bash
 ssh hosting_vds "stat -c '%y %s bytes' /var/www/fenix-clan.ru/promocodes/state.json"
 ```
 Сверить время с последним запуском `radar.service` на `senko` (`journalctl --user -u radar.service -n 5`).
-
-**DNS (reg.ru):** управляется `~/server-init/regru-dns.sh` (SSL-сертификатная авторизация, credentials в `~/.config/regru/`, работает с любого IP). Оба домена (`fenix-clan.ru` и `fenix-clan.online`) зарегистрированы на reg.ru и правятся одинаково — только меняется `DOMAIN=`:
-```bash
-DOMAIN=fenix-clan.ru ~/server-init/regru-dns.sh list
-DOMAIN=fenix-clan.ru ~/server-init/regru-dns.sh set-a @ <IP>
-DOMAIN=fenix-clan.ru ~/server-init/regru-dns.sh set-a www <IP>
-DOMAIN=fenix-clan.ru ~/server-init/regru-dns.sh add AAAA @ <IPv6>
-
-DOMAIN=fenix-clan.online ~/server-init/regru-dns.sh list
-DOMAIN=fenix-clan.online ~/server-init/regru-dns.sh set-a @ <IP>
-DOMAIN=fenix-clan.online ~/server-init/regru-dns.sh set-a www <IP>
-```
-
-**TLS:** после того, как A/AAAA пропагировались (`dig @8.8.8.8 +short fenix-clan.ru A` и `dig @8.8.8.8 +short fenix-clan.online A` возвращают нужный IP) — одним сертификатом на оба домена:
-```bash
-ssh hosting_vds "sudo certbot --nginx -d fenix-clan.ru -d www.fenix-clan.ru -d fenix-clan.online -d www.fenix-clan.online"
-```
-certbot сам допишет 443-блок в `/etc/nginx/sites-available/fenix-clan.ru` и настроит редирект с 80 — руками этот файл после этого не трогать.
 
 ## Работа с git: шедулер коммитит в фоне
 
@@ -140,12 +105,8 @@ git push
 - **(Закрыто 2026-09-03) GitLab: protected-ветка и роль Project Access Token должны быть согласованы.** Роль токена и то, кому protected-ветка разрешает push, должны совпадать — иначе push из CI отклоняется правами доступа, не ошибкой аутентификации. Актуально только если снова понадобится push-токен для CI/CD.
 - **API-запросы на изменение CI/CD Variables и уровня доступа участников GitLab блокируются классификатором Claude Code** (даже с валидным токеном) — такие вещи нужно делать руками через веб-интерфейс GitLab, автоматизировать их через ассистента не получится.
 - **`State.recalculate()` должен переживать item без ключа `sources`.** Тестовые фикстуры в `test_verify_codes.py` собирают `item` вручную (`{"code":..., "reward":..., "expired":...}`) без `sources`/`status`/`confidence` — раз `apply_manual_verification()` теперь сама вызывает `recalculate()` (чтобы ручная проверка `ok` сразу поднимала confidence/status, а не только на следующем `observe()`), `len(item["sources"])` кидал `KeyError`. Используйте `item.get("sources", {})`.
-- **Свежезарегистрированный домен на reg.ru уже приходит с A-записями на парковочный IP** (`95.163.244.138` — это IP парковочной страницы reg.ru, один и тот же для любого нового домена, не ошибка). `regru-dns.sh list` показывает их сразу после регистрации — не проверив, легко решить, что DNS "ещё не настроен", когда на самом деле нужно просто заменить существующую запись (`set-a`, не `add`, иначе будет дубль). Подтверждено дважды — на `fenix-clan.ru` и на `fenix-clan.online`.
-- **`regru-dns.sh set-a` требует два позиционных аргумента — `<субдомен> <ip>`, а не только IP.** Вызов `set-a <IP>` без субдомена не даёт понятной ошибки использования, а падает глубоко внутри скрипта (`line 257: 2: IP-адрес` — bash интерпретирует сам IP как второй позиционный аргумент не там, где скрипт его ждёт) и ничего не меняет в DNS. Правильно: `set-a @ <IP>` для корневого домена, `set-a www <IP>` для `www`.
-- **`add A www <IP>` не заменяет существующую A-запись `www`, а добавляет вторую** — тот же принцип, что и с `@`: для замены нужен `set-a`, `add` — только для случаев, когда записей с таким именем ещё нет (например, `add AAAA`, если A уже есть, а AAAA пока нет).
-- **`certbot --nginx -d <только часть доменов из server_name>` ломает HTTP (порт 80) для доменов, которых не было в `-d`.** Certbot редактирует единый `server{}`-блок под все имена, попавшие в `server_name` этого блока: дописывает `listen 443 ssl` туда же и создаёт отдельный HTTP(80)-блок с `if ($host = <только домены из -d>) { return 301 https://...; }`, а после всех `if` добавляет безусловный `return 404;` — под него попадают все остальные имена из `server_name`, включая те, что не передавались в `-d`. Ловили на `fenix-clan.ru`: пока для него не было DNS/сертификата, а `-d` указывался только на `fenix-clan.online`, plain HTTP `fenix-clan.ru` (который до этого прекрасно отдавал 200) стал 404. Чинится через `certbot --nginx -d <все домены сразу> --expand` — именно поэтому оба домена стоит добавлять в сертификат одной командой, как только у обоих готов DNS, а не по одному.
-- **Не полагайтесь на публичный DNS-резолвер сразу после смены записи в панели reg.ru** — обновление NS-серверов reg.ru и последующая пропагация занимают от пары минут до пары часов. `dig @8.8.8.8 +short <домен> A` в первые минуты после правки может отдавать пусто даже при верно выставленной записи; `dig @ns1.reg.ru +short <домен> A` при этом уже отдаёт актуальную. `dig +trace <домен> A` в этот момент обрывается на уровне TLD-делегации (`.ru`, NSEC3/DNSSEC-записи от `e.dns.ripn.net`) — это ожидаемо для свежей делегации, не повод считать её сломанной.
 - **Публичный VPS, который занимается скрапингом (`senko`), не должен иметь shell-доступ к серверу с продакшен-сайтом.** Для доставки `state.json` на `hosting_vds` использован ограниченный ключ с `command="cat > <путь>"` в `authorized_keys` — что бы клиент ни запросил, выполнится только эта одна команда. Подключение с любым другим запросом (например, `whoami`) не выполняет его, а просто зависает на forced-команде в ожидании stdin — это ожидаемое поведение, а не баг; не пытайтесь "проверить" ограничение повторным подключением без стандартного ввода к тому же ключу — оно перезапишет/обнулит целевой файл ещё раз (shell truncates the file on open, до чтения stdin).
+- **Executable-бит на новом `deploy/*.sh` файле теряется, если `chmod +x` сделан ПОСЛЕ первого `git add`/коммита, а не до.** Наступали дважды: `radar.service`/`uptime-check.sh` попадали в git как `100644`, `scp`+`chmod +x` вручную на сервере это маскировало (файл там рабочий), а следующий `git pull --ff-only` на этом же сервере перезаписывал файл версией из git и сбрасывал бит — таймер переставал запускаться без явной ошибки при деплое, только при следующем прогоне. Проверка перед коммитом: `git ls-files -s <файл>` должен показывать `100755`, не `100644`. Если делаете `chmod +x` на сервере отдельно от git — это долг, который надо тут же занести и в репозиторий, иначе следующий `pull` его смоет.
 
 ## Осознанно не сделано
 
