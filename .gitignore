@@ -5,3 +5,4 @@ __pycache__/
 data/codes.sqlite3
 data/discord-discoveries.json
 data/manual_verifications.json
+data/redemption-traffic.jsonl
