@@ -14,6 +14,8 @@ class State:
         else:
             self.data = {"version": 2, "codes": {}, "events": []}
         self.data.setdefault("not_found", [])
+        self.data.setdefault("codes", {})
+        self.data.setdefault("events", [])
 
     def observe(self, code, source, url=None, status="observed", reward=None, expires_at=None, expired=None):
         if code in self.data["not_found"]:

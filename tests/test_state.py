@@ -63,6 +63,17 @@ def test_apply_manual_verification_expired_sets_flag(tmp_path):
         "verified_at": "2026-08-29T00:00:00+00:00",
     }
 
+def test_state_backfills_missing_top_level_keys(tmp_path):
+    # A hand-written or pre-"events" state.json shouldn't crash observe().
+    p = tmp_path / "state.json"
+    p.write_text('{"codes": {}}', encoding="utf-8")
+    s = State(p)
+
+    s.observe("LA26ALLY", "source-a", "https://example.com")
+
+    assert s.data["codes"]["LA26ALLY"]["status"] == "candidate"
+    assert len(s.data["events"]) == 1
+
 def test_apply_manual_verification_not_found_delegates_to_mark_not_found(tmp_path):
     p = tmp_path / "state.json"
     s = State(p)
