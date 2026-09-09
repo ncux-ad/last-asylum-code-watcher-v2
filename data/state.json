@@ -532,6 +532,29 @@
       },
       "status": "confirmed"
     },
+    "LA30W7F2M": {
+      "code": "LA30W7F2M",
+      "confidence": 0.99,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-09-09T12:51:53.286653+00:00",
+      "last_seen": "2026-09-09T12:51:53.286653+00:00",
+      "manual_verification": {
+        "result": "ok",
+        "reward": "200 алмазов",
+        "verified_at": "2026-09-09T12:51:53.286630+00:00"
+      },
+      "notified": false,
+      "reward": "200 алмазов",
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-09-09T12:51:53.286653+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "confirmed"
+    },
     "LA9WC6O": {
       "code": "LA9WC6O",
       "confidence": 0.53,
@@ -1836,6 +1859,12 @@
     {
       "at": "2026-09-02T10:59:00+00:00",
       "code": "LAWTD16F",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-09-09T12:51:53.286658+00:00",
+      "code": "LA30W7F2M",
       "kind": "new",
       "source": "telegram-manual"
     }

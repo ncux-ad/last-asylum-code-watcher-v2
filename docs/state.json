@@ -25,7 +25,7 @@
     },
     "61HW4LA": {
       "code": "61HW4LA",
-      "confidence": 0.53,
+      "confidence": 0.99,
       "expired": null,
       "expires_at": null,
       "first_seen": "2026-06-19T13:06:00+00:00",
@@ -44,7 +44,7 @@
           "url": null
         }
       },
-      "status": "candidate"
+      "status": "confirmed"
     },
     "HAPPYKID61": {
       "code": "HAPPYKID61",
@@ -532,6 +532,29 @@
       },
       "status": "confirmed"
     },
+    "LA30W7F2M": {
+      "code": "LA30W7F2M",
+      "confidence": 0.99,
+      "expired": null,
+      "expires_at": null,
+      "first_seen": "2026-09-09T12:51:53.286653+00:00",
+      "last_seen": "2026-09-09T12:51:53.286653+00:00",
+      "manual_verification": {
+        "result": "ok",
+        "reward": "200 алмазов",
+        "verified_at": "2026-09-09T12:51:53.286630+00:00"
+      },
+      "notified": false,
+      "reward": "200 алмазов",
+      "sources": {
+        "telegram-manual": {
+          "last_seen": "2026-09-09T12:51:53.286653+00:00",
+          "status": "reported",
+          "url": null
+        }
+      },
+      "status": "confirmed"
+    },
     "LA9WC6O": {
       "code": "LA9WC6O",
       "confidence": 0.53,
@@ -557,7 +580,7 @@
     },
     "LAAS777": {
       "code": "LAAS777",
-      "confidence": 0.53,
+      "confidence": 0.99,
       "expired": null,
       "expires_at": null,
       "first_seen": "2026-05-01T12:37:00+00:00",
@@ -576,7 +599,7 @@
           "url": null
         }
       },
-      "status": "candidate"
+      "status": "confirmed"
     },
     "LABOR26": {
       "code": "LABOR26",
@@ -871,7 +894,7 @@
     },
     "LAKR10K6L": {
       "code": "LAKR10K6L",
-      "confidence": 0.71,
+      "confidence": 0.99,
       "expired": null,
       "expires_at": null,
       "first_seen": "2026-07-16T10:31:00+00:00",
@@ -895,11 +918,11 @@
           "url": null
         }
       },
-      "status": "probable"
+      "status": "confirmed"
     },
     "LAKR12K7O": {
       "code": "LAKR12K7O",
-      "confidence": 0.53,
+      "confidence": 0.99,
       "expired": null,
       "expires_at": null,
       "first_seen": "2026-07-28T14:01:00+00:00",
@@ -918,11 +941,11 @@
           "url": null
         }
       },
-      "status": "candidate"
+      "status": "confirmed"
     },
     "LAKR15K9A": {
       "code": "LAKR15K9A",
-      "confidence": 0.89,
+      "confidence": 0.99,
       "first_seen": "2026-08-29T13:29:16.842689+00:00",
       "last_seen": "2026-09-02T14:13:16.193418+00:00",
       "manual_verification": {
@@ -1009,7 +1032,7 @@
     },
     "LAPJAP777": {
       "code": "LAPJAP777",
-      "confidence": 0.53,
+      "confidence": 0.99,
       "expired": null,
       "expires_at": null,
       "first_seen": "2026-04-23T14:58:00+00:00",
@@ -1028,7 +1051,7 @@
           "url": null
         }
       },
-      "status": "candidate"
+      "status": "confirmed"
     },
     "LAQIXI26": {
       "code": "LAQIXI26",
@@ -1073,7 +1096,7 @@
     },
     "LAU15CHG": {
       "code": "LAU15CHG",
-      "confidence": 0.89,
+      "confidence": 0.99,
       "expired": null,
       "expires_at": null,
       "first_seen": "2026-08-29T18:08:13.279949+00:00",
@@ -1394,7 +1417,7 @@
     },
     "LAWTD16F": {
       "code": "LAWTD16F",
-      "confidence": 0.53,
+      "confidence": 0.99,
       "expired": null,
       "expires_at": null,
       "first_seen": "2026-09-02T09:38:05.511926+00:00",
@@ -1413,7 +1436,7 @@
           "url": null
         }
       },
-      "status": "candidate"
+      "status": "confirmed"
     },
     "LUCK777": {
       "code": "LUCK777",
@@ -1486,7 +1509,7 @@
     },
     "WLTLAP": {
       "code": "WLTLAP",
-      "confidence": 0.53,
+      "confidence": 0.99,
       "expired": null,
       "expires_at": null,
       "first_seen": "2026-02-17T04:32:00+00:00",
@@ -1505,7 +1528,7 @@
           "url": null
         }
       },
-      "status": "candidate"
+      "status": "confirmed"
     }
   },
   "events": [
@@ -1836,6 +1859,12 @@
     {
       "at": "2026-09-02T10:59:00+00:00",
       "code": "LAWTD16F",
+      "kind": "new",
+      "source": "telegram-manual"
+    },
+    {
+      "at": "2026-09-09T12:51:53.286658+00:00",
+      "code": "LA30W7F2M",
       "kind": "new",
       "source": "telegram-manual"
     }
