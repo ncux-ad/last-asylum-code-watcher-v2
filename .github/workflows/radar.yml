@@ -2,9 +2,10 @@ name: Last Asylum Code Radar
 
 on:
   schedule:
-    # Lowered from */30 to reduce load on the scanned sites after the
-    # account got suspended for scraping every 30 min for years.
-    - cron: "0 */2 * * *"
+    # Restored to */30 (was lowered to every 2h after the account got
+    # suspended for scraping every 30 min for years) — see RUNBOOK.md.
+    # Risk of a repeat suspension accepted.
+    - cron: "*/30 * * * *"
   workflow_dispatch:
     inputs:
       manual_code:

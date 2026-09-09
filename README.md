@@ -121,7 +121,7 @@ systemctl --user list-timers radar.timer
 journalctl --user -u radar.service -n 50 --no-pager
 ```
 
-Частота — раз в 2 часа (`OnCalendar=0/2:00:00` в `deploy/radar.timer`), сознательно снижена с исходных 30 минут — см. RUNBOOK.
+Частота — раз в 30 минут (`OnCalendar=*:0/30:00` в `deploy/radar.timer`); ранее уже стоял этот интервал, снижался до 2 часов после бана GitHub-аккаунта, затем сознательно возвращён — см. RUNBOOK.
 
 Таймер запускает два шага подряд (оба — `ExecStart=` в `deploy/radar.service`): сканирование (`python -m watcher`), затем публикация свежего `data/state.json` на публичный сайт (см. ниже). Второй шаг помечен ведущим `-` — сбой публикации (сеть, недоступен хостинг сайта) не валит весь юнит.
 
@@ -144,7 +144,7 @@ command="cat > /var/www/fenix-clan.ru/promocodes/state.json",no-agent-forwarding
 
 ## GitHub Actions (резервный вариант)
 
-`.github/workflows/radar.yml` настроен и рабочий сам по себе, но требует незаблокированный аккаунт (см. RUNBOOK — сейчас заблокирован). `workflow_dispatch` с параметром `manual_code` постит один код в обход confidence-порога (см. `watcher/manual_post.py`), расписание понижено до раз в 2 часа. Нужны repository secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `TELEGRAM_MESSAGE_THREAD_ID`. Workflow коммитит `data/state.json`/`docs/state.json` обратно в репозиторий (`contents: write`) — в отличие от self-hosted варианта выше, который этого не делает.
+`.github/workflows/radar.yml` настроен и рабочий сам по себе, но требует незаблокированный аккаунт (см. RUNBOOK — сейчас заблокирован). `workflow_dispatch` с параметром `manual_code` постит один код в обход confidence-порога (см. `watcher/manual_post.py`), расписание — раз в 30 минут (см. выше про риск повторного бана). Нужны repository secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `TELEGRAM_MESSAGE_THREAD_ID`. Workflow коммитит `data/state.json`/`docs/state.json` обратно в репозиторий (`contents: write`) — в отличие от self-hosted варианта выше, который этого не делает.
 
 GitLab CI (`.gitlab-ci.yml`, pipeline schedule) был настроен как второй резервный вариант при миграции с GitHub, но упёрся в identity verification для shared runners и стал избыточен, как только self-hosted на `senko` заработал стабильно — конфиг, расписание, CI/CD Variables и Project Access Token убраны (2026-09-03). GitLab-репозиторий остался просто зеркалом кода. Если понадобится снова — см. историю коммитов этого файла и RUNBOOK на дату миграции, там весь сетап описан.
 

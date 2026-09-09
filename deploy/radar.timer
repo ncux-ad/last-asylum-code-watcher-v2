@@ -1,10 +1,11 @@
-# Раз в 2 часа, сознательно снижено с исходных 30 минут — см. RUNBOOK.md
-# → «Известные грабли» (GitHub забанил аккаунт за слишком частый скрапинг).
+# Раз в 30 минут. Ранее уже стоял этот интервал и был снижен до 2 часов
+# после бана GitHub-аккаунта за частый скрапинг (см. RUNBOOK.md → «Известные
+# грабли»); сознательно возвращён обратно — риск повторного бана принят.
 [Unit]
-Description=Run Last Asylum Code Radar every 2 hours
+Description=Run Last Asylum Code Radar every 30 minutes
 
 [Timer]
-OnCalendar=0/2:00:00
+OnCalendar=*:0/30:00
 Persistent=true
 RandomizedDelaySec=120
 
